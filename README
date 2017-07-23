@@ -2,6 +2,8 @@
 
 The source code for Fractal library is in libfractal/src/
 
+This version is old version (I remember that it was coded in 2.5 years ago)
+
 I add comments "/* IBM check start */" for every src line that I handled for quantization and cudnn.
 
 Please use the grep command.
