@@ -1,0 +1,12 @@
+<map id="fractal::Layer::GetGroup" name="fractal::Layer::GetGroup">
+<area shape="rect" id="node2" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="648,31,793,58"/>
+<area shape="rect" id="node8" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="643,82,799,109"/>
+<area shape="rect" id="node9" href="$de/dca/classfractal_1_1Rnn.html#aff5d760fe57f949ad69a913757deb874" title="Perform Tarjan&#39;s strongly connected component (SCC) algorithm. " alt="" coords="246,133,381,159"/>
+<area shape="rect" id="node11" href="$de/dca/classfractal_1_1Rnn.html#adaf84bde48406ad0c51bfbba084c5516" title="Create a PStream object with the location loc. " alt="" coords="216,183,411,210"/>
+<area shape="rect" id="node3" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="847,5,969,47"/>
+<area shape="rect" id="node6" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="847,71,969,112"/>
+<area shape="rect" id="node4" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="1018,5,1139,47"/>
+<area shape="rect" id="node5" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="1188,71,1337,112"/>
+<area shape="rect" id="node7" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="1017,71,1140,112"/>
+<area shape="rect" id="node10" href="$de/dca/classfractal_1_1Rnn.html#a907f94c280782ef96ee7041d5711db61" title="Get ready to perform forward and backward propagation. " alt="" coords="459,133,595,159"/>
+</map>

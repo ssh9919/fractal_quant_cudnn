@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['randgen',['randGen',['../de/d67/classfractal_1_1DataStream.html#a31caefa3fd9d99bbe0b8a19191687b53',1,'fractal::DataStream']]],
+  ['randn',['RANDN',['../d6/d60/Engine_8cc.html#adacf998ffcb446719286551da998a2bc',1,'Engine.cc']]],
+  ['ready',['Ready',['../de/dca/classfractal_1_1Rnn.html#a907f94c280782ef96ee7041d5711db61',1,'fractal::Rnn']]],
+  ['recentloc',['recentLoc',['../d2/d2d/classfractal_1_1Mem.html#a88ed47770d54303686603e4c16e959bb',1,'fractal::Mem']]],
+  ['regressionevaluator',['RegressionEvaluator',['../da/da8/classfractal_1_1RegressionEvaluator.html#a52a29990f3eee02f9792c38b4f765e95',1,'fractal::RegressionEvaluator']]],
+  ['regressionevaluator',['RegressionEvaluator',['../da/da8/classfractal_1_1RegressionEvaluator.html',1,'fractal']]],
+  ['regressionevaluator_2ecc',['RegressionEvaluator.cc',['../d3/de9/RegressionEvaluator_8cc.html',1,'']]],
+  ['regressionevaluator_2eh',['RegressionEvaluator.h',['../da/d12/RegressionEvaluator_8h.html',1,'']]],
+  ['removedstconnection',['RemoveDstConnection',['../dc/d55/classfractal_1_1Layer.html#afbdad6fd27ae9498f4b2070099b84619',1,'fractal::Layer']]],
+  ['removesrcconnection',['RemoveSrcConnection',['../dc/d55/classfractal_1_1Layer.html#a2d2919469482d824750ef4b901181a35',1,'fractal::Layer']]],
+  ['reset',['Reset',['../d2/d9c/classfractal_1_1ClassificationEvaluator.html#a5bb2747a1915e12e6e0eec31fd857b84',1,'fractal::ClassificationEvaluator::Reset()'],['../de/d67/classfractal_1_1DataStream.html#aff176d1279fbd908dd4e5053877c8431',1,'fractal::DataStream::Reset()'],['../d2/d13/classfractal_1_1Evaluator.html#a53ebcfd31f9742a6f0e8eec5556c6cd2',1,'fractal::Evaluator::Reset()'],['../da/da8/classfractal_1_1RegressionEvaluator.html#a3e7c99c111583353ae5a1ccb76cb86db',1,'fractal::RegressionEvaluator::Reset()'],['../df/db7/classfractal_1_1Stream.html#a0d31428cf827092ade973edf9c7fe340',1,'fractal::Stream::Reset()']]],
+  ['resize',['Resize',['../da/db4/classfractal_1_1Matrix.html#aca1a601a0a04affdf12f6b0d1454cc55',1,'fractal::Matrix']]],
+  ['rmsdecayrate',['rmsDecayRate',['../da/dbf/classfractal_1_1Connection.html#ade0067c963f876032c92cd4198deaa32',1,'fractal::Connection::rmsDecayRate()'],['../d0/dc0/classfractal_1_1AutoOptimizer.html#a83f0519b89b1a33810fec7503a35f732',1,'fractal::AutoOptimizer::rmsDecayRate()']]],
+  ['rmsprop',['Rmsprop',['../d0/d81/classfractal_1_1Engine.html#a0099bf1f318cebb68c7d11640fb40a8e',1,'fractal::Engine::Rmsprop()'],['../d0/dc0/classfractal_1_1AutoOptimizer.html#a358367f581267c957fc7fe705b19ece2',1,'fractal::AutoOptimizer::rmsprop()'],['../d8/ddf/classfractal_1_1Optimizer.html#a8724cfada07f856e1d69d53cf380ad13',1,'fractal::Optimizer::rmsprop()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#a596801702086d94d5078d612296a2207',1,'fractal::cudaKernels::Rmsprop()']]],
+  ['rnn',['Rnn',['../de/dca/classfractal_1_1Rnn.html',1,'fractal']]],
+  ['rnn',['Rnn',['../de/dca/classfractal_1_1Rnn.html#a544edffb4b139d116f151647a024f0cc',1,'fractal::Rnn::Rnn()'],['../dc/d5f/classfractal_1_1EvaluateArgs.html#aaf7bd34d480385ed5d821673f60f41d5',1,'fractal::EvaluateArgs::rnn()'],['../de/d3f/classfractal_1_1BackpropArgs.html#a97feb3d265db3976066700f99b657e42',1,'fractal::BackpropArgs::rnn()']]],
+  ['rnn_2ecc',['Rnn.cc',['../d2/d9a/Rnn_8cc.html',1,'']]],
+  ['rnn_2eh',['Rnn.h',['../df/d7e/Rnn_8h.html',1,'']]]
+];

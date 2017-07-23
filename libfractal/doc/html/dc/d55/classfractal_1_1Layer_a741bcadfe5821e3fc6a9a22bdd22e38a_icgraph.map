@@ -1,0 +1,7 @@
+<map id="fractal::Layer::DistributeErr" name="fractal::Layer::DistributeErr">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#af4754297e3aa7fcf27d68e7fc034d069" title="fractal::Connection\l::UpdateDstErr" alt="" coords="232,5,364,47"/>
+<area shape="rect" id="node3" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="412,13,568,39"/>
+<area shape="rect" id="node4" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="616,5,739,47"/>
+<area shape="rect" id="node5" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="787,5,909,47"/>
+<area shape="rect" id="node6" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="957,5,1107,47"/>
+</map>

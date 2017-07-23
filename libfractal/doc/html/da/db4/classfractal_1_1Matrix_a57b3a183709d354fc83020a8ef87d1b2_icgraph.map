@@ -1,0 +1,7 @@
+<map id="fractal::Matrix::HostPull" name="fractal::Matrix::HostPull">
+<area shape="rect" id="node2" href="$d2/d9c/classfractal_1_1ClassificationEvaluator.html#a75e22cc1abbbeb16aa4d3e700fbe182c" title="fractal::ClassificationEvaluator\l::EvaluateFrames" alt="" coords="213,5,413,47"/>
+<area shape="rect" id="node3" href="$d2/d13/classfractal_1_1Evaluator.html#aea59965bbba49d9ccd91dfe81ede68d2" title="fractal::Evaluator\l::EvaluatePipe5" alt="" coords="253,71,374,112"/>
+<area shape="rect" id="node6" href="$da/da8/classfractal_1_1RegressionEvaluator.html#ade117e7b38544fcee8c8a6518c7308b4" title="fractal::RegressionEvaluator\l::EvaluateFrames" alt="" coords="220,136,407,177"/>
+<area shape="rect" id="node4" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="461,71,583,112"/>
+<area shape="rect" id="node5" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="631,71,780,112"/>
+</map>

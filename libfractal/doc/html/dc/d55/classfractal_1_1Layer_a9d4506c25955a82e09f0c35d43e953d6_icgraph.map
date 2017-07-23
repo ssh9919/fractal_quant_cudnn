@@ -1,0 +1,11 @@
+<map id="fractal::Layer::StreamWaitEvent" name="fractal::Layer::StreamWaitEvent">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#a4ccde8145227156ce639a1c050ddb2a4" title="fractal::Connection\l::ForwardWait" alt="" coords="228,5,360,47"/>
+<area shape="rect" id="node9" href="$da/dbf/classfractal_1_1Connection.html#aca0b898cc635378f3f246dfc6de384c6" title="fractal::Connection\l::BackwardWait" alt="" coords="228,71,360,112"/>
+<area shape="rect" id="node3" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="413,13,559,39"/>
+<area shape="rect" id="node4" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="613,5,734,47"/>
+<area shape="rect" id="node7" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="612,71,735,112"/>
+<area shape="rect" id="node5" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="783,5,905,47"/>
+<area shape="rect" id="node6" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="953,39,1103,80"/>
+<area shape="rect" id="node8" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="783,71,905,112"/>
+<area shape="rect" id="node10" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="408,78,564,105"/>
+</map>

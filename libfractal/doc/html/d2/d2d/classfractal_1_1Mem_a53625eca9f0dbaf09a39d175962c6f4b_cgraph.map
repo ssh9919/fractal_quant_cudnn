@@ -1,0 +1,15 @@
+<map id="fractal::Mem::CopyFromHost" name="fractal::Mem::CopyFromHost">
+<area shape="rect" id="node2" href="$d0/d81/classfractal_1_1Engine.html#a71cd485bef6bde65f3b372e130eeb32b" title="fractal::Engine::MemCopy\lFromHost" alt="" coords="245,145,420,186"/>
+<area shape="rect" id="node3" href="$d2/d2d/classfractal_1_1Mem.html#ac8e506d4c690fed4e7247a8c1cf2e024" title="fractal::Mem::GetEngine" alt="" coords="935,152,1099,179"/>
+<area shape="rect" id="node4" href="$d0/d81/classfractal_1_1Engine.html#adc5826324465c211533c9899243bcb60" title="fractal::Engine::GetHostLoc" alt="" coords="468,51,652,77"/>
+<area shape="rect" id="node5" href="$d2/d2d/classfractal_1_1Mem.html#af6c5ae15ba7a93fbe8c817ac5795aac6" title="fractal::Mem::GetRecentLoc" alt="" coords="700,101,887,128"/>
+<area shape="rect" id="node6" href="$d0/d81/classfractal_1_1Engine.html#a17bcae32ab712a4b5e6a80fbaf229596" title="fractal::Engine::MemAlloc" alt="" coords="707,253,879,280"/>
+<area shape="rect" id="node11" href="$d2/d2d/classfractal_1_1Mem.html#a978e450c0bba7860c86f7b850aca0a8c" title="fractal::Mem::GetPtr" alt="" coords="489,203,631,229"/>
+<area shape="rect" id="node12" href="$d0/d81/classfractal_1_1Engine.html#a0459bc0fb6fcf39f8dccbd0f0ceb0446" title="fractal::Engine::MemCopy" alt="" coords="473,152,647,179"/>
+<area shape="rect" id="node14" href="$d2/d2d/classfractal_1_1Mem.html#a25560a7b7449ea9dd5362c0174281e66" title="fractal::Mem::Push" alt="" coords="727,304,860,331"/>
+<area shape="rect" id="node7" href="$d2/d2d/classfractal_1_1Mem.html#a0e59780ee2946da2b5747b80265adee6" title="fractal::Mem::Lock" alt="" coords="951,355,1082,381"/>
+<area shape="rect" id="node8" href="$d2/d2d/classfractal_1_1Mem.html#a9c3533baf2dcbdc104da53029e687710" title="fractal::Mem::GetPtrs" alt="" coords="943,203,1091,229"/>
+<area shape="rect" id="node9" href="$d2/d2d/classfractal_1_1Mem.html#ab247f522279cc0de74a9d21256026b95" title="fractal::Mem::Unlock" alt="" coords="945,304,1089,331"/>
+<area shape="rect" id="node10" href="$d2/d2d/classfractal_1_1Mem.html#ad43670c786097e153ce1348e57ca615c" title="fractal::Mem::GetSize" alt="" coords="941,253,1092,280"/>
+<area shape="rect" id="node13" href="$d2/d2d/classfractal_1_1Mem.html#aff8487ed33c6a9130f04c913901ee074" title="fractal::Mem::IsValid" alt="" coords="722,203,865,229"/>
+</map>

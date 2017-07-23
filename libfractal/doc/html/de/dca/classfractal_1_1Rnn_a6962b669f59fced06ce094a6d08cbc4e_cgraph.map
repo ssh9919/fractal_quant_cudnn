@@ -1,0 +1,7 @@
+<map id="fractal::Rnn::DeleteConnection" name="fractal::Rnn::DeleteConnection">
+<area shape="rect" id="node2" href="$dc/d55/classfractal_1_1Layer.html#af834c8d49a9c2edffd2652b4ae344aa9" title="fractal::Layer::UnlinkMatrices" alt="" coords="269,5,463,32"/>
+<area shape="rect" id="node4" href="$dc/d55/classfractal_1_1Layer.html#a345e1871562625f4f230f66a2953efa8" title="fractal::Layer::GetSrcConnections" alt="" coords="256,56,476,83"/>
+<area shape="rect" id="node5" href="$dc/d55/classfractal_1_1Layer.html#afbdad6fd27ae9498f4b2070099b84619" title="fractal::Layer::RemoveDst\lConnection" alt="" coords="278,107,454,149"/>
+<area shape="rect" id="node6" href="$dc/d55/classfractal_1_1Layer.html#a2d2919469482d824750ef4b901181a35" title="fractal::Layer::RemoveSrc\lConnection" alt="" coords="279,173,453,214"/>
+<area shape="rect" id="node3" href="$da/db4/classfractal_1_1Matrix.html#aff4e5e09948b75ee8677357708b8b266" title="fractal::Matrix::Unlink" alt="" coords="524,5,671,32"/>
+</map>

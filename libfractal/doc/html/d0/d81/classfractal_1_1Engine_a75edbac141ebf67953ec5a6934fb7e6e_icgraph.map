@@ -1,0 +1,8 @@
+<map id="fractal::Engine::MatTranspose" name="fractal::Engine::MatTranspose">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#a9901894e4bd46fdcc7a8d8aa8c35b586" title="fractal::Connection\l::TransposeWeightMatrix" alt="" coords="251,5,419,47"/>
+<area shape="rect" id="node3" href="$da/dbf/classfractal_1_1Connection.html#a983f5ebf6c8072f950a0ca3c0bfdb6f1" title="fractal::Connection\l::Backward" alt="" coords="467,5,599,47"/>
+<area shape="rect" id="node4" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="647,13,803,39"/>
+<area shape="rect" id="node5" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="851,5,973,47"/>
+<area shape="rect" id="node6" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="1021,5,1144,47"/>
+<area shape="rect" id="node7" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="1192,5,1341,47"/>
+</map>

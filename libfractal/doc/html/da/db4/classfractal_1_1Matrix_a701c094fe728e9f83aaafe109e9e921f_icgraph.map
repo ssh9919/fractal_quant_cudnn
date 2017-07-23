@@ -1,0 +1,26 @@
+<map id="fractal::Matrix::Unlock" name="fractal::Matrix::Unlock">
+<area shape="rect" id="node2" href="$da/db4/classfractal_1_1Matrix.html#a30a6e15e354bdc6594e5f5fb62c2750d" title="fractal::Matrix::Matrix" alt="" coords="204,139,351,166"/>
+<area shape="rect" id="node3" href="$da/db4/classfractal_1_1Matrix.html#aab75a76f7b7f9c91b76ce4c9adc076ed" title="fractal::Matrix::Link" alt="" coords="210,190,345,217"/>
+<area shape="rect" id="node21" href="$da/db4/classfractal_1_1Matrix.html#aefedaea457f317ae9c5b37fb464d123a" title="fractal::Matrix::Swap" alt="" coords="852,362,995,389"/>
+<area shape="rect" id="node4" href="$da/dbf/classfractal_1_1Connection.html#af95b3556c57e92edb06a4d33364dc0c2" title="fractal::Connection\l::Forward" alt="" coords="649,208,781,249"/>
+<area shape="rect" id="node11" href="$da/dbf/classfractal_1_1Connection.html#a983f5ebf6c8072f950a0ca3c0bfdb6f1" title="fractal::Connection\l::Backward" alt="" coords="649,71,781,112"/>
+<area shape="rect" id="node13" href="$dc/d55/classfractal_1_1Layer.html#a15ae052db7f8840740bb8f0eb61ac495" title="fractal::Layer::Activation" alt="" coords="410,266,574,293"/>
+<area shape="rect" id="node15" href="$dc/d55/classfractal_1_1Layer.html#a85bedac6dd991b7a01a3332f469e2675" title="fractal::Layer::UpdateState" alt="" coords="403,317,581,343"/>
+<area shape="rect" id="node16" href="$dc/d55/classfractal_1_1Layer.html#a0fe2f9c641f45e5214ff8606a12a3bbe" title="fractal::Layer::UpdateDstErr" alt="" coords="399,114,585,141"/>
+<area shape="rect" id="node18" href="$dc/d55/classfractal_1_1Layer.html#a19537c998c460cdeae37f20d522540fa" title="fractal::Layer::UpdateSrcErr" alt="" coords="399,165,585,191"/>
+<area shape="rect" id="node19" href="$dc/d55/classfractal_1_1Layer.html#a741bcadfe5821e3fc6a9a22bdd22e38a" title="fractal::Layer::DistributeErr" alt="" coords="403,13,581,39"/>
+<area shape="rect" id="node5" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="851,226,996,253"/>
+<area shape="rect" id="node6" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="1050,221,1171,263"/>
+<area shape="rect" id="node9" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="1049,156,1172,197"/>
+<area shape="rect" id="node7" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="1221,320,1342,361"/>
+<area shape="rect" id="node8" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="1391,255,1540,296"/>
+<area shape="rect" id="node10" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="1220,189,1343,231"/>
+<area shape="rect" id="node12" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="845,107,1001,134"/>
+<area shape="rect" id="node14" href="$dc/d55/classfractal_1_1Layer.html#a242176b7a427ac0f4e522ca43f311878" title="fractal::Layer::Forward" alt="" coords="639,274,792,301"/>
+<area shape="rect" id="node17" href="$dc/d55/classfractal_1_1Layer.html#abebbf457abc715017fc0f5813ccfa699" title="fractal::Layer::Backward" alt="" coords="633,137,797,163"/>
+<area shape="rect" id="node20" href="$da/dbf/classfractal_1_1Connection.html#af4754297e3aa7fcf27d68e7fc034d069" title="fractal::Connection\l::UpdateDstErr" alt="" coords="649,5,781,47"/>
+<area shape="rect" id="node22" href="$d2/d13/classfractal_1_1Evaluator.html#a37874e270a3691656a3840f3d6e87d8d" title="fractal::Evaluator\l::EvaluatePipe1" alt="" coords="1050,483,1171,524"/>
+<area shape="rect" id="node23" href="$d2/d13/classfractal_1_1Evaluator.html#a3e189048bf105581682a2dad0cd5d951" title="fractal::Evaluator\l::EvaluatePipe2" alt="" coords="1050,287,1171,328"/>
+<area shape="rect" id="node24" href="$d2/d13/classfractal_1_1Evaluator.html#a0d2aaa3679819e39c7627319179d66d5" title="fractal::Evaluator\l::EvaluatePipe4" alt="" coords="1050,352,1171,393"/>
+<area shape="rect" id="node25" href="$d2/d13/classfractal_1_1Evaluator.html#aea59965bbba49d9ccd91dfe81ede68d2" title="fractal::Evaluator\l::EvaluatePipe5" alt="" coords="1050,417,1171,459"/>
+</map>

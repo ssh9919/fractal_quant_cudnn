@@ -1,0 +1,12 @@
+<map id="fractal::Engine::MatMult" name="fractal::Engine::MatMult">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#af95b3556c57e92edb06a4d33364dc0c2" title="fractal::Connection\l::Forward" alt="" coords="215,5,347,47"/>
+<area shape="rect" id="node9" href="$da/dbf/classfractal_1_1Connection.html#a983f5ebf6c8072f950a0ca3c0bfdb6f1" title="fractal::Connection\l::Backward" alt="" coords="215,71,347,112"/>
+<area shape="rect" id="node11" href="$da/dbf/classfractal_1_1Connection.html#a2b8a12fcdb97fe575d48348ac3e42daa" title="fractal::Connection\l::UpdateWeights" alt="" coords="215,136,347,177"/>
+<area shape="rect" id="node3" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="400,13,545,39"/>
+<area shape="rect" id="node4" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="599,5,721,47"/>
+<area shape="rect" id="node7" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="599,71,721,112"/>
+<area shape="rect" id="node5" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="770,5,891,47"/>
+<area shape="rect" id="node6" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="940,39,1089,80"/>
+<area shape="rect" id="node8" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="769,71,892,112"/>
+<area shape="rect" id="node10" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="395,78,551,105"/>
+</map>

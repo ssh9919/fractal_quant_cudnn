@@ -1,0 +1,10 @@
+<map id="fractal::Engine::FuncRectLinear" name="fractal::Engine::FuncRectLinear">
+<area shape="rect" id="node2" href="$dc/d55/classfractal_1_1Layer.html#a15ae052db7f8840740bb8f0eb61ac495" title="fractal::Layer::Activation" alt="" coords="224,46,388,73"/>
+<area shape="rect" id="node3" href="$dc/d55/classfractal_1_1Layer.html#a242176b7a427ac0f4e522ca43f311878" title="fractal::Layer::Forward" alt="" coords="436,46,589,73"/>
+<area shape="rect" id="node4" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="637,46,783,73"/>
+<area shape="rect" id="node5" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="831,5,953,47"/>
+<area shape="rect" id="node8" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="831,71,953,112"/>
+<area shape="rect" id="node6" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="1002,5,1123,47"/>
+<area shape="rect" id="node7" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="1172,39,1321,80"/>
+<area shape="rect" id="node9" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="1001,71,1124,112"/>
+</map>

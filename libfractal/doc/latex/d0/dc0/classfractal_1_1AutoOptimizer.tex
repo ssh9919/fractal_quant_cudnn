@@ -1,0 +1,453 @@
+\hypertarget{classfractal_1_1AutoOptimizer}{\section{fractal\+:\+:Auto\+Optimizer Class Reference}
+\label{classfractal_1_1AutoOptimizer}\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+}
+
+
+{\ttfamily \#include $<$Auto\+Optimizer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1AutoOptimizer_a256411fbacb9251bd378d64e6cbf01d3}{Auto\+Optimizer} ()
+\item 
+virtual \hyperlink{classfractal_1_1AutoOptimizer_acc67d4d6dcd986151cda294e9a937235}{$\sim$\+Auto\+Optimizer} ()
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_afd0ac1c7fc8ee5ac80fabd38fa8891c7}{Optimize} (\hyperlink{classfractal_1_1Rnn}{Rnn} \&rnn, \hyperlink{classfractal_1_1Stream}{Stream} \&train\+Stream, \hyperlink{classfractal_1_1Stream}{Stream} \&eval\+Stream, \hyperlink{classfractal_1_1Evaluator}{Evaluator} \&evaluator, const \hyperlink{namespacefractal_a9697dee0746adccf37331470de749c2b}{Port\+Map\+List} \&input\+Ports, const \hyperlink{namespacefractal_a9697dee0746adccf37331470de749c2b}{Port\+Map\+List} \&output\+Ports, const unsigned long n\+Train\+Frame\+Per\+Epoch, const unsigned long n\+Eval\+Frame\+Per\+Epoch, const unsigned long window\+Size, const unsigned long step\+Size)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_ab54934b953c1b8fe43daf8ae842c1e72}{Set\+Workspace\+Path} (const std\+::string \&path)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_aa89945094acb81bc70df7811fb2b8e4b}{Set\+Init\+Learning\+Rate} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_a2bcb64164719207cc07363ed691bdbdf}{Set\+Min\+Learning\+Rate} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_a180cb033daeb09a77e310e6f8db390ee}{Set\+Momentum} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_a952cb29558d31e51b5dd660a3feabea4}{Set\+Rmsprop} (const bool val)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_aa89f019725afed0d82ed44580ad67041}{Set\+Adadelta} (const bool val)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_a77cc8ed1ad995342a795dd0bfcfdbca9}{Set\+Rms\+Decay\+Rate} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_a952ed95e33579334a22ebad63cd5a3a1}{Set\+Max\+Retry\+Count} (const unsigned long val)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_a34def384fd138ba5b986ceac988d7cd2}{Set\+Learning\+Rate\+Decay\+Rate} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_ad8ff2b8b03172470c3f6e04e6c80e2e5}{Set\+Lambda\+Loss} (std\+::function$<$ double(\hyperlink{classfractal_1_1Evaluator}{Evaluator} \&)$>$ lambda)
+\item 
+void \hyperlink{classfractal_1_1AutoOptimizer_a599d01238939f6e6b7edc17a2c75837f}{Set\+Lambda\+Post\+Eval} (std\+::function$<$ void(\hyperlink{classfractal_1_1Evaluator}{Evaluator} \&)$>$ lambda)
+\item 
+const std\+::string \& \hyperlink{classfractal_1_1AutoOptimizer_a40ddbe471d220a99ff63b5f6e36d9f23}{Get\+Workspace\+Path} ()
+\item 
+const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_a615800e1d9f8a74e059c6cefd8ae34a7}{Get\+Init\+Learning\+Rate} ()
+\item 
+const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_a62c50420cc7a21afccfe6dd1851cea08}{Get\+Min\+Learning\+Rate} ()
+\item 
+const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_afbabc25af9b3e25a9d574ecb4fb21d8b}{Get\+Momentum} ()
+\item 
+const bool \hyperlink{classfractal_1_1AutoOptimizer_a267e331f05ab03a7342c8b335894780f}{Get\+Rmsprop} ()
+\item 
+const bool \hyperlink{classfractal_1_1AutoOptimizer_a3ea55a1c6bcefea20d73566c6daa274d}{Get\+Adadelta} ()
+\item 
+const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_af4698e9f1d10bb66983b228b6f420ff1}{Get\+Rms\+Decay\+Rate} ()
+\item 
+const unsigned long \hyperlink{classfractal_1_1AutoOptimizer_a54cd7b56cb4436b9a7cffc201d9b7c9b}{Get\+Max\+Retry\+Count} ()
+\item 
+const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_aaa5835c8a82b8b02ba5b81aa8af449c9}{Get\+Learning\+Rate\+Decay\+Rate} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ double(\hyperlink{classfractal_1_1Evaluator}{Evaluator} \&)$>$ \hyperlink{classfractal_1_1AutoOptimizer_a6e9db9d03a39a7f9c3754562d54c8e6b}{lambda\+Loss}
+\item 
+std\+::function$<$ void(\hyperlink{classfractal_1_1Evaluator}{Evaluator} \&)$>$ \hyperlink{classfractal_1_1AutoOptimizer_a0b32551c87870d815b3333315fc72a31}{lambda\+Post\+Eval}
+\item 
+std\+::string \hyperlink{classfractal_1_1AutoOptimizer_a2395471e6bc9585b3a42295a030a6f80}{workspace\+Path}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_a45091ce24c1eff24e60644d2d5eddb0a}{init\+Learning\+Rate}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_aefc6501717ce6fc3ad1ea83ee8743c01}{min\+Learning\+Rate}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_a06a388ab208b871f47edd111aad33f78}{momentum}
+\item 
+bool \hyperlink{classfractal_1_1AutoOptimizer_a358367f581267c957fc7fe705b19ece2}{rmsprop}
+\item 
+bool \hyperlink{classfractal_1_1AutoOptimizer_a7b41188a4a23629e69144073493d317f}{adadelta}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_a83f0519b89b1a33810fec7503a35f732}{rms\+Decay\+Rate}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1AutoOptimizer_a063181ceec0a4c7f4e98ba15b74ae6a8}{learning\+Rate\+Decay\+Rate}
+\item 
+unsigned long \hyperlink{classfractal_1_1AutoOptimizer_a2cf0c04067aba8fd08551d9a973d3de3}{max\+Retry\+Count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file Auto\+Optimizer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1AutoOptimizer_a256411fbacb9251bd378d64e6cbf01d3}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Auto\+Optimizer@{Auto\+Optimizer}}
+\index{Auto\+Optimizer@{Auto\+Optimizer}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Auto\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Auto\+Optimizer\+::\+Auto\+Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1AutoOptimizer_a256411fbacb9251bd378d64e6cbf01d3}
+
+
+Definition at line 28 of file Auto\+Optimizer.\+cc.
+
+\hypertarget{classfractal_1_1AutoOptimizer_acc67d4d6dcd986151cda294e9a937235}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!````~Auto\+Optimizer@{$\sim$\+Auto\+Optimizer}}
+\index{````~Auto\+Optimizer@{$\sim$\+Auto\+Optimizer}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{$\sim$\+Auto\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}virtual fractal\+::\+Auto\+Optimizer\+::$\sim$\+Auto\+Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classfractal_1_1AutoOptimizer_acc67d4d6dcd986151cda294e9a937235}
+
+
+Definition at line 36 of file Auto\+Optimizer.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1AutoOptimizer_a3ea55a1c6bcefea20d73566c6daa274d}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Adadelta@{Get\+Adadelta}}
+\index{Get\+Adadelta@{Get\+Adadelta}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Adadelta}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Auto\+Optimizer\+::\+Get\+Adadelta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a3ea55a1c6bcefea20d73566c6daa274d}
+
+
+Definition at line 61 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a615800e1d9f8a74e059c6cefd8ae34a7}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Init\+Learning\+Rate@{Get\+Init\+Learning\+Rate}}
+\index{Get\+Init\+Learning\+Rate@{Get\+Init\+Learning\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Init\+Learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::\+Get\+Init\+Learning\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a615800e1d9f8a74e059c6cefd8ae34a7}
+
+
+Definition at line 57 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_aaa5835c8a82b8b02ba5b81aa8af449c9}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Learning\+Rate\+Decay\+Rate@{Get\+Learning\+Rate\+Decay\+Rate}}
+\index{Get\+Learning\+Rate\+Decay\+Rate@{Get\+Learning\+Rate\+Decay\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Learning\+Rate\+Decay\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::\+Get\+Learning\+Rate\+Decay\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_aaa5835c8a82b8b02ba5b81aa8af449c9}
+
+
+Definition at line 64 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a54cd7b56cb4436b9a7cffc201d9b7c9b}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Max\+Retry\+Count@{Get\+Max\+Retry\+Count}}
+\index{Get\+Max\+Retry\+Count@{Get\+Max\+Retry\+Count}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Max\+Retry\+Count}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Auto\+Optimizer\+::\+Get\+Max\+Retry\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a54cd7b56cb4436b9a7cffc201d9b7c9b}
+
+
+Definition at line 63 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a62c50420cc7a21afccfe6dd1851cea08}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Min\+Learning\+Rate@{Get\+Min\+Learning\+Rate}}
+\index{Get\+Min\+Learning\+Rate@{Get\+Min\+Learning\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Min\+Learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::\+Get\+Min\+Learning\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a62c50420cc7a21afccfe6dd1851cea08}
+
+
+Definition at line 58 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_afbabc25af9b3e25a9d574ecb4fb21d8b}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Momentum@{Get\+Momentum}}
+\index{Get\+Momentum@{Get\+Momentum}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Momentum}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::\+Get\+Momentum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_afbabc25af9b3e25a9d574ecb4fb21d8b}
+
+
+Definition at line 59 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_af4698e9f1d10bb66983b228b6f420ff1}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Rms\+Decay\+Rate@{Get\+Rms\+Decay\+Rate}}
+\index{Get\+Rms\+Decay\+Rate@{Get\+Rms\+Decay\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Rms\+Decay\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::\+Get\+Rms\+Decay\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_af4698e9f1d10bb66983b228b6f420ff1}
+
+
+Definition at line 62 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a267e331f05ab03a7342c8b335894780f}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Rmsprop@{Get\+Rmsprop}}
+\index{Get\+Rmsprop@{Get\+Rmsprop}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Auto\+Optimizer\+::\+Get\+Rmsprop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a267e331f05ab03a7342c8b335894780f}
+
+
+Definition at line 60 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a40ddbe471d220a99ff63b5f6e36d9f23}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Get\+Workspace\+Path@{Get\+Workspace\+Path}}
+\index{Get\+Workspace\+Path@{Get\+Workspace\+Path}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Get\+Workspace\+Path}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& fractal\+::\+Auto\+Optimizer\+::\+Get\+Workspace\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a40ddbe471d220a99ff63b5f6e36d9f23}
+
+
+Definition at line 56 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_afd0ac1c7fc8ee5ac80fabd38fa8891c7}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Optimize@{Optimize}}
+\index{Optimize@{Optimize}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Optimize}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Optimize (
+\begin{DoxyParamCaption}
+\item[{{\bf Rnn} \&}]{rnn, }
+\item[{{\bf Stream} \&}]{train\+Stream, }
+\item[{{\bf Stream} \&}]{eval\+Stream, }
+\item[{{\bf Evaluator} \&}]{evaluator, }
+\item[{const {\bf Port\+Map\+List} \&}]{input\+Ports, }
+\item[{const {\bf Port\+Map\+List} \&}]{output\+Ports, }
+\item[{const unsigned long}]{n\+Train\+Frame\+Per\+Epoch, }
+\item[{const unsigned long}]{n\+Eval\+Frame\+Per\+Epoch, }
+\item[{const unsigned long}]{window\+Size, }
+\item[{const unsigned long}]{step\+Size}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1AutoOptimizer_afd0ac1c7fc8ee5ac80fabd38fa8891c7}
+
+
+Definition at line 65 of file Auto\+Optimizer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/dc0/classfractal_1_1AutoOptimizer_afd0ac1c7fc8ee5ac80fabd38fa8891c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1AutoOptimizer_aa89f019725afed0d82ed44580ad67041}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Adadelta@{Set\+Adadelta}}
+\index{Set\+Adadelta@{Set\+Adadelta}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Adadelta}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Adadelta (
+\begin{DoxyParamCaption}
+\item[{const bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_aa89f019725afed0d82ed44580ad67041}
+
+
+Definition at line 48 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_aa89945094acb81bc70df7811fb2b8e4b}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Init\+Learning\+Rate@{Set\+Init\+Learning\+Rate}}
+\index{Set\+Init\+Learning\+Rate@{Set\+Init\+Learning\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Init\+Learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Init\+Learning\+Rate (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_aa89945094acb81bc70df7811fb2b8e4b}
+
+
+Definition at line 44 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_ad8ff2b8b03172470c3f6e04e6c80e2e5}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Lambda\+Loss@{Set\+Lambda\+Loss}}
+\index{Set\+Lambda\+Loss@{Set\+Lambda\+Loss}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Lambda\+Loss}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Lambda\+Loss (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ double({\bf Evaluator} \&)$>$}]{lambda}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_ad8ff2b8b03172470c3f6e04e6c80e2e5}
+
+
+Definition at line 53 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a599d01238939f6e6b7edc17a2c75837f}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Lambda\+Post\+Eval@{Set\+Lambda\+Post\+Eval}}
+\index{Set\+Lambda\+Post\+Eval@{Set\+Lambda\+Post\+Eval}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Lambda\+Post\+Eval}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Lambda\+Post\+Eval (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ void({\bf Evaluator} \&)$>$}]{lambda}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a599d01238939f6e6b7edc17a2c75837f}
+
+
+Definition at line 54 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a34def384fd138ba5b986ceac988d7cd2}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Learning\+Rate\+Decay\+Rate@{Set\+Learning\+Rate\+Decay\+Rate}}
+\index{Set\+Learning\+Rate\+Decay\+Rate@{Set\+Learning\+Rate\+Decay\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Learning\+Rate\+Decay\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Learning\+Rate\+Decay\+Rate (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a34def384fd138ba5b986ceac988d7cd2}
+
+
+Definition at line 51 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a952ed95e33579334a22ebad63cd5a3a1}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Max\+Retry\+Count@{Set\+Max\+Retry\+Count}}
+\index{Set\+Max\+Retry\+Count@{Set\+Max\+Retry\+Count}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Max\+Retry\+Count}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Max\+Retry\+Count (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a952ed95e33579334a22ebad63cd5a3a1}
+
+
+Definition at line 50 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a2bcb64164719207cc07363ed691bdbdf}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Min\+Learning\+Rate@{Set\+Min\+Learning\+Rate}}
+\index{Set\+Min\+Learning\+Rate@{Set\+Min\+Learning\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Min\+Learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Min\+Learning\+Rate (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a2bcb64164719207cc07363ed691bdbdf}
+
+
+Definition at line 45 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a180cb033daeb09a77e310e6f8db390ee}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Momentum@{Set\+Momentum}}
+\index{Set\+Momentum@{Set\+Momentum}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Momentum}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Momentum (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a180cb033daeb09a77e310e6f8db390ee}
+
+
+Definition at line 46 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a77cc8ed1ad995342a795dd0bfcfdbca9}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Rms\+Decay\+Rate@{Set\+Rms\+Decay\+Rate}}
+\index{Set\+Rms\+Decay\+Rate@{Set\+Rms\+Decay\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Rms\+Decay\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Rms\+Decay\+Rate (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a77cc8ed1ad995342a795dd0bfcfdbca9}
+
+
+Definition at line 49 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a952cb29558d31e51b5dd660a3feabea4}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Rmsprop@{Set\+Rmsprop}}
+\index{Set\+Rmsprop@{Set\+Rmsprop}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Rmsprop (
+\begin{DoxyParamCaption}
+\item[{const bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_a952cb29558d31e51b5dd660a3feabea4}
+
+
+Definition at line 47 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_ab54934b953c1b8fe43daf8ae842c1e72}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!Set\+Workspace\+Path@{Set\+Workspace\+Path}}
+\index{Set\+Workspace\+Path@{Set\+Workspace\+Path}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{Set\+Workspace\+Path}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Auto\+Optimizer\+::\+Set\+Workspace\+Path (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1AutoOptimizer_ab54934b953c1b8fe43daf8ae842c1e72}
+
+
+Definition at line 43 of file Auto\+Optimizer.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1AutoOptimizer_a7b41188a4a23629e69144073493d317f}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!adadelta@{adadelta}}
+\index{adadelta@{adadelta}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{adadelta}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Auto\+Optimizer\+::adadelta\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a7b41188a4a23629e69144073493d317f}
+
+
+Definition at line 78 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a45091ce24c1eff24e60644d2d5eddb0a}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!init\+Learning\+Rate@{init\+Learning\+Rate}}
+\index{init\+Learning\+Rate@{init\+Learning\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{init\+Learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::init\+Learning\+Rate\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a45091ce24c1eff24e60644d2d5eddb0a}
+
+
+Definition at line 73 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a6e9db9d03a39a7f9c3754562d54c8e6b}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!lambda\+Loss@{lambda\+Loss}}
+\index{lambda\+Loss@{lambda\+Loss}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{lambda\+Loss}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$double ({\bf Evaluator} \&)$>$ fractal\+::\+Auto\+Optimizer\+::lambda\+Loss\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a6e9db9d03a39a7f9c3754562d54c8e6b}
+
+
+Definition at line 68 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a0b32551c87870d815b3333315fc72a31}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!lambda\+Post\+Eval@{lambda\+Post\+Eval}}
+\index{lambda\+Post\+Eval@{lambda\+Post\+Eval}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{lambda\+Post\+Eval}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void ({\bf Evaluator} \&)$>$ fractal\+::\+Auto\+Optimizer\+::lambda\+Post\+Eval\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a0b32551c87870d815b3333315fc72a31}
+
+
+Definition at line 69 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a063181ceec0a4c7f4e98ba15b74ae6a8}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!learning\+Rate\+Decay\+Rate@{learning\+Rate\+Decay\+Rate}}
+\index{learning\+Rate\+Decay\+Rate@{learning\+Rate\+Decay\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{learning\+Rate\+Decay\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::learning\+Rate\+Decay\+Rate\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a063181ceec0a4c7f4e98ba15b74ae6a8}
+
+
+Definition at line 81 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a2cf0c04067aba8fd08551d9a973d3de3}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!max\+Retry\+Count@{max\+Retry\+Count}}
+\index{max\+Retry\+Count@{max\+Retry\+Count}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{max\+Retry\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Auto\+Optimizer\+::max\+Retry\+Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a2cf0c04067aba8fd08551d9a973d3de3}
+
+
+Definition at line 83 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_aefc6501717ce6fc3ad1ea83ee8743c01}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!min\+Learning\+Rate@{min\+Learning\+Rate}}
+\index{min\+Learning\+Rate@{min\+Learning\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{min\+Learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::min\+Learning\+Rate\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_aefc6501717ce6fc3ad1ea83ee8743c01}
+
+
+Definition at line 74 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a06a388ab208b871f47edd111aad33f78}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!momentum@{momentum}}
+\index{momentum@{momentum}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{momentum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::momentum\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a06a388ab208b871f47edd111aad33f78}
+
+
+Definition at line 75 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a83f0519b89b1a33810fec7503a35f732}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!rms\+Decay\+Rate@{rms\+Decay\+Rate}}
+\index{rms\+Decay\+Rate@{rms\+Decay\+Rate}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{rms\+Decay\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Auto\+Optimizer\+::rms\+Decay\+Rate\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a83f0519b89b1a33810fec7503a35f732}
+
+
+Definition at line 79 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a358367f581267c957fc7fe705b19ece2}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!rmsprop@{rmsprop}}
+\index{rmsprop@{rmsprop}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Auto\+Optimizer\+::rmsprop\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a358367f581267c957fc7fe705b19ece2}
+
+
+Definition at line 77 of file Auto\+Optimizer.\+h.
+
+\hypertarget{classfractal_1_1AutoOptimizer_a2395471e6bc9585b3a42295a030a6f80}{\index{fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}!workspace\+Path@{workspace\+Path}}
+\index{workspace\+Path@{workspace\+Path}!fractal\+::\+Auto\+Optimizer@{fractal\+::\+Auto\+Optimizer}}
+\subsubsection[{workspace\+Path}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fractal\+::\+Auto\+Optimizer\+::workspace\+Path\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1AutoOptimizer_a2395471e6bc9585b3a42295a030a6f80}
+
+
+Definition at line 71 of file Auto\+Optimizer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\hyperlink{AutoOptimizer_8h}{Auto\+Optimizer.\+h}\item 
+src/util/\hyperlink{AutoOptimizer_8cc}{Auto\+Optimizer.\+cc}\end{DoxyCompactItemize}

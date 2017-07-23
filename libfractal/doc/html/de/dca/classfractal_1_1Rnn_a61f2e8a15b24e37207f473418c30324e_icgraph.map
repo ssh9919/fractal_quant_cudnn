@@ -1,0 +1,5 @@
+<map id="fractal::Rnn::Synchronize" name="fractal::Rnn::Synchronize">
+<area shape="rect" id="node2" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="225,5,346,47"/>
+<area shape="rect" id="node4" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="224,71,347,112"/>
+<area shape="rect" id="node3" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="395,39,544,80"/>
+</map>

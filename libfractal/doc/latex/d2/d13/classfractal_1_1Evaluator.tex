@@ -1,0 +1,600 @@
+\hypertarget{classfractal_1_1Evaluator}{\section{fractal\+:\+:Evaluator Class Reference}
+\label{classfractal_1_1Evaluator}\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+}
+
+
+{\ttfamily \#include $<$Evaluator.\+h$>$}
+
+
+
+Inheritance diagram for fractal\+:\+:Evaluator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{dc/d3f/classfractal_1_1Evaluator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for fractal\+:\+:Evaluator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d87/classfractal_1_1Evaluator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Evaluator_a5f0c980a04028f0278f6d81780d1cef2}{Evaluator} ()
+\item 
+void \hyperlink{classfractal_1_1Evaluator_a66e573448393210cf678e564d0595879}{Evaluate} (\hyperlink{classfractal_1_1Rnn}{Rnn} \&rnn, \hyperlink{classfractal_1_1Stream}{Stream} \&stream, const \hyperlink{namespacefractal_a9697dee0746adccf37331470de749c2b}{Port\+Map\+List} \&input\+Ports, const \hyperlink{namespacefractal_a9697dee0746adccf37331470de749c2b}{Port\+Map\+List} \&output\+Ports, const unsigned long num\+Frame, const unsigned long step\+Size)
+\item 
+virtual const double \hyperlink{classfractal_1_1Evaluator_adefc2a02527a14868fed601bd6827525}{Get\+Loss} (const unsigned long output\+Idx) const =0
+\item 
+const unsigned long \hyperlink{classfractal_1_1Evaluator_a42d49a2c230f7fca213c0d65fde3538e}{Get\+Num\+Output} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classfractal_1_1Evaluator_a53ebcfd31f9742a6f0e8eec5556c6cd2}{Reset} ()=0
+\item 
+virtual void \hyperlink{classfractal_1_1Evaluator_a9bb323a73e59475ce155bb593911b0f7}{Evaluate\+Frames} (const unsigned long output\+Idx, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&target, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&output, const unsigned long n\+Stream, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)=0
+\item 
+virtual void \hyperlink{classfractal_1_1Evaluator_a52a8eb1bb6fd4d1194050479ecb31c65}{Mem\+Alloc} ()=0
+\item 
+void \hyperlink{classfractal_1_1Evaluator_a3251a42209e27f5c5e502b805cb8a58b}{Set\+Num\+Output} (const unsigned long \hyperlink{classfractal_1_1Evaluator_a2bfee4084662b6816c8c07c818f7482e}{n\+Output})
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classfractal_1_1Evaluator_a01d3e00a030bc70c5e217f193bf25841}{Evaluate\+Pipe0} (\hyperlink{classfractal_1_1Evaluator}{Evaluator} $\ast$evaluator, \hyperlink{classfractal_1_1EvaluateArgs}{Evaluate\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Evaluator_a37874e270a3691656a3840f3d6e87d8d}{Evaluate\+Pipe1} (\hyperlink{classfractal_1_1Evaluator}{Evaluator} $\ast$evaluator, \hyperlink{classfractal_1_1EvaluateArgs}{Evaluate\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Evaluator_a3e189048bf105581682a2dad0cd5d951}{Evaluate\+Pipe2} (\hyperlink{classfractal_1_1Evaluator}{Evaluator} $\ast$evaluator, \hyperlink{classfractal_1_1EvaluateArgs}{Evaluate\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Evaluator_a110e52128446e4a05007ba8a4660a665}{Evaluate\+Pipe3} (\hyperlink{classfractal_1_1Evaluator}{Evaluator} $\ast$evaluator, \hyperlink{classfractal_1_1EvaluateArgs}{Evaluate\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Evaluator_a0d2aaa3679819e39c7627319179d66d5}{Evaluate\+Pipe4} (\hyperlink{classfractal_1_1Evaluator}{Evaluator} $\ast$evaluator, \hyperlink{classfractal_1_1EvaluateArgs}{Evaluate\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Evaluator_aea59965bbba49d9ccd91dfe81ede68d2}{Evaluate\+Pipe5} (\hyperlink{classfractal_1_1Evaluator}{Evaluator} $\ast$evaluator, \hyperlink{classfractal_1_1EvaluateArgs}{Evaluate\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Evaluator_a79328ff78b4cc4cb8f712656cb9cfd82}{Evaluate\+Pipe6} (\hyperlink{classfractal_1_1Evaluator}{Evaluator} $\ast$evaluator, \hyperlink{classfractal_1_1EvaluateArgs}{Evaluate\+Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Pipe}{Pipe} \hyperlink{classfractal_1_1Evaluator_af1b7a76f5d14c5447561cbda1ecd37d6}{pipe} \mbox{[}7\mbox{]}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \hyperlink{classfractal_1_1Evaluator_ab34befc0627eb94e9559282c687eb183}{p\+Stream\+Data\+Transfer\+To\+Buf}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \hyperlink{classfractal_1_1Evaluator_a4e4c2b409fe2ab8460ebbbb1e41fca90}{p\+Stream\+Data\+Transfer\+To\+Rnn}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \hyperlink{classfractal_1_1Evaluator_a06f1136f2b87a4fbd5ea81aeb148e45f}{p\+Stream\+Data\+Transfer\+From\+Rnn}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \hyperlink{classfractal_1_1Evaluator_a58509a00a0d2c1d8088f8c8689b11f5c}{p\+Stream\+Data\+Transfer\+From\+Buf}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \hyperlink{classfractal_1_1Evaluator_a1b28c337bbd72ffbef3d74a98954bbee}{p\+Stream\+Evaluate\+Frames}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Evaluator_a8b97c09b92c03045342a14239bf6efdf}{p\+Event\+Data\+Transfer\+To\+Buf}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Evaluator_a8548966331cd0aa862ec992a720a5e1f}{p\+Event\+Data\+Transfer\+To\+Rnn}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Evaluator_a58cc420ff3c4d3eb859afc74c9fb3efa}{p\+Event\+Data\+Transfer\+From\+Rnn}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Evaluator_adc747963637fee84d11bae8101f0545f}{p\+Event\+Data\+Transfer\+From\+Buf}
+\item 
+unsigned long \hyperlink{classfractal_1_1Evaluator_a2bfee4084662b6816c8c07c818f7482e}{n\+Output}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 56 of file Evaluator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Evaluator_a5f0c980a04028f0278f6d81780d1cef2}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluator@{Evaluator}}
+\index{Evaluator@{Evaluator}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Evaluator\+::\+Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Evaluator_a5f0c980a04028f0278f6d81780d1cef2}
+
+
+Definition at line 59 of file Evaluator.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Evaluator_a66e573448393210cf678e564d0595879}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{{\bf Rnn} \&}]{rnn, }
+\item[{{\bf Stream} \&}]{stream, }
+\item[{const {\bf Port\+Map\+List} \&}]{input\+Ports, }
+\item[{const {\bf Port\+Map\+List} \&}]{output\+Ports, }
+\item[{const unsigned long}]{num\+Frame, }
+\item[{const unsigned long}]{step\+Size}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Evaluator_a66e573448393210cf678e564d0595879}
+
+
+Definition at line 42 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d2/d13/classfractal_1_1Evaluator_a66e573448393210cf678e564d0595879_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{d2/d13/classfractal_1_1Evaluator_a66e573448393210cf678e564d0595879_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a9bb323a73e59475ce155bb593911b0f7}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate\+Frames@{Evaluate\+Frames}}
+\index{Evaluate\+Frames@{Evaluate\+Frames}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate\+Frames}]{\setlength{\rightskip}{0pt plus 5cm}virtual void fractal\+::\+Evaluator\+::\+Evaluate\+Frames (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{target, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{output, }
+\item[{const unsigned long}]{n\+Stream, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classfractal_1_1Evaluator_a9bb323a73e59475ce155bb593911b0f7}
+
+
+Implemented in \hyperlink{classfractal_1_1ClassificationEvaluator_a75e22cc1abbbeb16aa4d3e700fbe182c}{fractal\+::\+Classification\+Evaluator}, and \hyperlink{classfractal_1_1RegressionEvaluator_ade117e7b38544fcee8c8a6518c7308b4}{fractal\+::\+Regression\+Evaluator}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a9bb323a73e59475ce155bb593911b0f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a01d3e00a030bc70c5e217f193bf25841}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate\+Pipe0@{Evaluate\+Pipe0}}
+\index{Evaluate\+Pipe0@{Evaluate\+Pipe0}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate\+Pipe0}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Evaluate\+Pipe0 (
+\begin{DoxyParamCaption}
+\item[{{\bf Evaluator} $\ast$}]{evaluator, }
+\item[{{\bf Evaluate\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a01d3e00a030bc70c5e217f193bf25841}
+
+
+Definition at line 217 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a01d3e00a030bc70c5e217f193bf25841_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a01d3e00a030bc70c5e217f193bf25841_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a37874e270a3691656a3840f3d6e87d8d}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate\+Pipe1@{Evaluate\+Pipe1}}
+\index{Evaluate\+Pipe1@{Evaluate\+Pipe1}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate\+Pipe1}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Evaluate\+Pipe1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Evaluator} $\ast$}]{evaluator, }
+\item[{{\bf Evaluate\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a37874e270a3691656a3840f3d6e87d8d}
+
+
+Definition at line 264 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a37874e270a3691656a3840f3d6e87d8d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a37874e270a3691656a3840f3d6e87d8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a3e189048bf105581682a2dad0cd5d951}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate\+Pipe2@{Evaluate\+Pipe2}}
+\index{Evaluate\+Pipe2@{Evaluate\+Pipe2}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate\+Pipe2}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Evaluate\+Pipe2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Evaluator} $\ast$}]{evaluator, }
+\item[{{\bf Evaluate\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a3e189048bf105581682a2dad0cd5d951}
+
+
+Definition at line 296 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a3e189048bf105581682a2dad0cd5d951_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a3e189048bf105581682a2dad0cd5d951_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a110e52128446e4a05007ba8a4660a665}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate\+Pipe3@{Evaluate\+Pipe3}}
+\index{Evaluate\+Pipe3@{Evaluate\+Pipe3}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate\+Pipe3}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Evaluate\+Pipe3 (
+\begin{DoxyParamCaption}
+\item[{{\bf Evaluator} $\ast$}]{evaluator, }
+\item[{{\bf Evaluate\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a110e52128446e4a05007ba8a4660a665}
+
+
+Definition at line 342 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a110e52128446e4a05007ba8a4660a665_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a110e52128446e4a05007ba8a4660a665_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a0d2aaa3679819e39c7627319179d66d5}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate\+Pipe4@{Evaluate\+Pipe4}}
+\index{Evaluate\+Pipe4@{Evaluate\+Pipe4}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate\+Pipe4}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Evaluate\+Pipe4 (
+\begin{DoxyParamCaption}
+\item[{{\bf Evaluator} $\ast$}]{evaluator, }
+\item[{{\bf Evaluate\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a0d2aaa3679819e39c7627319179d66d5}
+
+
+Definition at line 389 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a0d2aaa3679819e39c7627319179d66d5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a0d2aaa3679819e39c7627319179d66d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_aea59965bbba49d9ccd91dfe81ede68d2}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate\+Pipe5@{Evaluate\+Pipe5}}
+\index{Evaluate\+Pipe5@{Evaluate\+Pipe5}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate\+Pipe5}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Evaluate\+Pipe5 (
+\begin{DoxyParamCaption}
+\item[{{\bf Evaluator} $\ast$}]{evaluator, }
+\item[{{\bf Evaluate\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_aea59965bbba49d9ccd91dfe81ede68d2}
+
+
+Definition at line 426 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_aea59965bbba49d9ccd91dfe81ede68d2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_aea59965bbba49d9ccd91dfe81ede68d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a79328ff78b4cc4cb8f712656cb9cfd82}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Evaluate\+Pipe6@{Evaluate\+Pipe6}}
+\index{Evaluate\+Pipe6@{Evaluate\+Pipe6}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Evaluate\+Pipe6}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Evaluate\+Pipe6 (
+\begin{DoxyParamCaption}
+\item[{{\bf Evaluator} $\ast$}]{evaluator, }
+\item[{{\bf Evaluate\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a79328ff78b4cc4cb8f712656cb9cfd82}
+
+
+Definition at line 458 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a79328ff78b4cc4cb8f712656cb9cfd82_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a79328ff78b4cc4cb8f712656cb9cfd82_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_adefc2a02527a14868fed601bd6827525}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Get\+Loss@{Get\+Loss}}
+\index{Get\+Loss@{Get\+Loss}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Get\+Loss}]{\setlength{\rightskip}{0pt plus 5cm}virtual const double fractal\+::\+Evaluator\+::\+Get\+Loss (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classfractal_1_1Evaluator_adefc2a02527a14868fed601bd6827525}
+
+
+Implemented in \hyperlink{classfractal_1_1ClassificationEvaluator_a15e9ad1d3e4c180729dd5bd07d4a6b78}{fractal\+::\+Classification\+Evaluator}, and \hyperlink{classfractal_1_1RegressionEvaluator_ab1b2e523dfb7a9886f9637541670b3e7}{fractal\+::\+Regression\+Evaluator}.
+
+\hypertarget{classfractal_1_1Evaluator_a42d49a2c230f7fca213c0d65fde3538e}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Get\+Num\+Output@{Get\+Num\+Output}}
+\index{Get\+Num\+Output@{Get\+Num\+Output}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Get\+Num\+Output}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Evaluator\+::\+Get\+Num\+Output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Evaluator_a42d49a2c230f7fca213c0d65fde3538e}
+
+
+Definition at line 66 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_a52a8eb1bb6fd4d1194050479ecb31c65}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Mem\+Alloc@{Mem\+Alloc}}
+\index{Mem\+Alloc@{Mem\+Alloc}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Mem\+Alloc}]{\setlength{\rightskip}{0pt plus 5cm}virtual void fractal\+::\+Evaluator\+::\+Mem\+Alloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classfractal_1_1Evaluator_a52a8eb1bb6fd4d1194050479ecb31c65}
+
+
+Implemented in \hyperlink{classfractal_1_1ClassificationEvaluator_aed4e92ea92c89ba01dd12cdde7215e70}{fractal\+::\+Classification\+Evaluator}, and \hyperlink{classfractal_1_1RegressionEvaluator_ac2c59ad7a08a7a86b2d1b5585dd725c2}{fractal\+::\+Regression\+Evaluator}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a52a8eb1bb6fd4d1194050479ecb31c65_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a53ebcfd31f9742a6f0e8eec5556c6cd2}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Reset@{Reset}}
+\index{Reset@{Reset}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void fractal\+::\+Evaluator\+::\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classfractal_1_1Evaluator_a53ebcfd31f9742a6f0e8eec5556c6cd2}
+
+
+Implemented in \hyperlink{classfractal_1_1ClassificationEvaluator_a5bb2747a1915e12e6e0eec31fd857b84}{fractal\+::\+Classification\+Evaluator}, and \hyperlink{classfractal_1_1RegressionEvaluator_a3e7c99c111583353ae5a1ccb76cb86db}{fractal\+::\+Regression\+Evaluator}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a53ebcfd31f9742a6f0e8eec5556c6cd2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Evaluator_a3251a42209e27f5c5e502b805cb8a58b}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!Set\+Num\+Output@{Set\+Num\+Output}}
+\index{Set\+Num\+Output@{Set\+Num\+Output}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{Set\+Num\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Evaluator\+::\+Set\+Num\+Output (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{n\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a3251a42209e27f5c5e502b805cb8a58b}
+
+
+Definition at line 33 of file Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d2/d13/classfractal_1_1Evaluator_a3251a42209e27f5c5e502b805cb8a58b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d13/classfractal_1_1Evaluator_a3251a42209e27f5c5e502b805cb8a58b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Evaluator_a2bfee4084662b6816c8c07c818f7482e}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!n\+Output@{n\+Output}}
+\index{n\+Output@{n\+Output}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{n\+Output}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Evaluator\+::n\+Output\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a2bfee4084662b6816c8c07c818f7482e}
+
+
+Definition at line 98 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_adc747963637fee84d11bae8101f0545f}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Event\+Data\+Transfer\+From\+Buf@{p\+Event\+Data\+Transfer\+From\+Buf}}
+\index{p\+Event\+Data\+Transfer\+From\+Buf@{p\+Event\+Data\+Transfer\+From\+Buf}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Event\+Data\+Transfer\+From\+Buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Evaluator\+::p\+Event\+Data\+Transfer\+From\+Buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_adc747963637fee84d11bae8101f0545f}
+
+
+Definition at line 96 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_a58cc420ff3c4d3eb859afc74c9fb3efa}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Event\+Data\+Transfer\+From\+Rnn@{p\+Event\+Data\+Transfer\+From\+Rnn}}
+\index{p\+Event\+Data\+Transfer\+From\+Rnn@{p\+Event\+Data\+Transfer\+From\+Rnn}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Event\+Data\+Transfer\+From\+Rnn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Evaluator\+::p\+Event\+Data\+Transfer\+From\+Rnn\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a58cc420ff3c4d3eb859afc74c9fb3efa}
+
+
+Definition at line 95 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_a8b97c09b92c03045342a14239bf6efdf}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Event\+Data\+Transfer\+To\+Buf@{p\+Event\+Data\+Transfer\+To\+Buf}}
+\index{p\+Event\+Data\+Transfer\+To\+Buf@{p\+Event\+Data\+Transfer\+To\+Buf}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Event\+Data\+Transfer\+To\+Buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Evaluator\+::p\+Event\+Data\+Transfer\+To\+Buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a8b97c09b92c03045342a14239bf6efdf}
+
+
+Definition at line 93 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_a8548966331cd0aa862ec992a720a5e1f}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Event\+Data\+Transfer\+To\+Rnn@{p\+Event\+Data\+Transfer\+To\+Rnn}}
+\index{p\+Event\+Data\+Transfer\+To\+Rnn@{p\+Event\+Data\+Transfer\+To\+Rnn}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Event\+Data\+Transfer\+To\+Rnn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Evaluator\+::p\+Event\+Data\+Transfer\+To\+Rnn\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a8548966331cd0aa862ec992a720a5e1f}
+
+
+Definition at line 94 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_af1b7a76f5d14c5447561cbda1ecd37d6}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!pipe@{pipe}}
+\index{pipe@{pipe}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{pipe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pipe} fractal\+::\+Evaluator\+::pipe\mbox{[}7\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_af1b7a76f5d14c5447561cbda1ecd37d6}
+
+
+Definition at line 87 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_a58509a00a0d2c1d8088f8c8689b11f5c}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Stream\+Data\+Transfer\+From\+Buf@{p\+Stream\+Data\+Transfer\+From\+Buf}}
+\index{p\+Stream\+Data\+Transfer\+From\+Buf@{p\+Stream\+Data\+Transfer\+From\+Buf}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Stream\+Data\+Transfer\+From\+Buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} fractal\+::\+Evaluator\+::p\+Stream\+Data\+Transfer\+From\+Buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a58509a00a0d2c1d8088f8c8689b11f5c}
+
+
+Definition at line 91 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_a06f1136f2b87a4fbd5ea81aeb148e45f}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Stream\+Data\+Transfer\+From\+Rnn@{p\+Stream\+Data\+Transfer\+From\+Rnn}}
+\index{p\+Stream\+Data\+Transfer\+From\+Rnn@{p\+Stream\+Data\+Transfer\+From\+Rnn}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Stream\+Data\+Transfer\+From\+Rnn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} fractal\+::\+Evaluator\+::p\+Stream\+Data\+Transfer\+From\+Rnn\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a06f1136f2b87a4fbd5ea81aeb148e45f}
+
+
+Definition at line 90 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_ab34befc0627eb94e9559282c687eb183}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Stream\+Data\+Transfer\+To\+Buf@{p\+Stream\+Data\+Transfer\+To\+Buf}}
+\index{p\+Stream\+Data\+Transfer\+To\+Buf@{p\+Stream\+Data\+Transfer\+To\+Buf}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Stream\+Data\+Transfer\+To\+Buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} fractal\+::\+Evaluator\+::p\+Stream\+Data\+Transfer\+To\+Buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_ab34befc0627eb94e9559282c687eb183}
+
+
+Definition at line 88 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_a4e4c2b409fe2ab8460ebbbb1e41fca90}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Stream\+Data\+Transfer\+To\+Rnn@{p\+Stream\+Data\+Transfer\+To\+Rnn}}
+\index{p\+Stream\+Data\+Transfer\+To\+Rnn@{p\+Stream\+Data\+Transfer\+To\+Rnn}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Stream\+Data\+Transfer\+To\+Rnn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} fractal\+::\+Evaluator\+::p\+Stream\+Data\+Transfer\+To\+Rnn\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a4e4c2b409fe2ab8460ebbbb1e41fca90}
+
+
+Definition at line 89 of file Evaluator.\+h.
+
+\hypertarget{classfractal_1_1Evaluator_a1b28c337bbd72ffbef3d74a98954bbee}{\index{fractal\+::\+Evaluator@{fractal\+::\+Evaluator}!p\+Stream\+Evaluate\+Frames@{p\+Stream\+Evaluate\+Frames}}
+\index{p\+Stream\+Evaluate\+Frames@{p\+Stream\+Evaluate\+Frames}!fractal\+::\+Evaluator@{fractal\+::\+Evaluator}}
+\subsubsection[{p\+Stream\+Evaluate\+Frames}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} fractal\+::\+Evaluator\+::p\+Stream\+Evaluate\+Frames\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Evaluator_a1b28c337bbd72ffbef3d74a98954bbee}
+
+
+Definition at line 92 of file Evaluator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\hyperlink{Evaluator_8h}{Evaluator.\+h}\item 
+src/util/\hyperlink{Evaluator_8cc}{Evaluator.\+cc}\end{DoxyCompactItemize}

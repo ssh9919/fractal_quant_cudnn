@@ -1,0 +1,10 @@
+<map id="fractal::Matrix::Resize" name="fractal::Matrix::Resize">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#a2e77dd8f37c2021d7b08fc012bdcd30c" title="fractal::Connection\l::Connection" alt="" coords="231,5,363,47"/>
+<area shape="rect" id="node3" href="$da/dbf/classfractal_1_1Connection.html#a09020f3027a886b7971baba901d8bf41" title="fractal::Connection\l::SetBatchSize" alt="" coords="231,71,363,112"/>
+<area shape="rect" id="node5" href="$da/dbf/classfractal_1_1Connection.html#a6beb3752a66f62f60238c22430486593" title="fractal::Connection\l::InitAdadelta" alt="" coords="231,136,363,177"/>
+<area shape="rect" id="node6" href="$da/dbf/classfractal_1_1Connection.html#a74c18a8efe61e4890c69b26063f74175" title="fractal::Connection\l::InitRmsprop" alt="" coords="231,201,363,243"/>
+<area shape="rect" id="node7" href="$dc/d55/classfractal_1_1Layer.html#af2dd6884fc31a42299d200e6c872e67f" title="fractal::Layer::SetBatchSize" alt="" coords="204,267,391,294"/>
+<area shape="rect" id="node4" href="$de/dca/classfractal_1_1Rnn.html#aab6852a5cb264078d3ea17c264bdd569" title="Add a connection. " alt="" coords="439,78,625,105"/>
+<area shape="rect" id="node8" href="$de/dca/classfractal_1_1Rnn.html#acd58e1c848aaa729566ab15fe53f0a11" title="Add a layer. " alt="" coords="455,267,609,294"/>
+<area shape="rect" id="node9" href="$d9/d1c/namespacefractal_1_1basicLayers.html#a5b99ed6a0ad103b5fbff76a2d5c60480" title="fractal::basicLayers\l::AddLstmLayer" alt="" coords="673,260,809,301"/>
+</map>

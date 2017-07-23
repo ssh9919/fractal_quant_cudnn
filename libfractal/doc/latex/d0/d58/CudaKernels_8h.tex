@@ -1,0 +1,59 @@
+\hypertarget{CudaKernels_8h}{\section{src/core/\+Cuda\+Kernels.h File Reference}
+\label{CudaKernels_8h}\index{src/core/\+Cuda\+Kernels.\+h@{src/core/\+Cuda\+Kernels.\+h}}
+}
+{\ttfamily \#include $<$cuda\+\_\+runtime.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Fractal\+Common.\+h\char`\"{}}\\*
+Include dependency graph for Cuda\+Kernels.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{dd/d93/CudaKernels_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{dd/d95/CudaKernels_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacefractal}{fractal}
+\begin{DoxyCompactList}\small\item\em The topmost namespace of libfractal. \end{DoxyCompactList}\item 
+ \hyperlink{namespacefractal_1_1cudaKernels}{fractal\+::cuda\+Kernels}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a2f4f2776037a4f202000996e3da29b29}{fractal\+::cuda\+Kernels\+::\+Mem\+Set} (T $\ast$\+\_\+x, const T val, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_af411d22b137514fd35f5da081eca1299}{fractal\+::cuda\+Kernels\+::\+Elem\+Mult} (const T $\ast$\+\_\+x, const T $\ast$\+\_\+y, T $\ast$\+\_\+z, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_ad08024d3280d81d84bd682a608f1c70d}{fractal\+::cuda\+Kernels\+::\+Add} (const T $\ast$\+\_\+x, const T $\ast$\+\_\+y, T $\ast$\+\_\+z, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a0253e39cf1f3905c6aaa5f8fc875206a}{fractal\+::cuda\+Kernels\+::\+Func\+Sigmoid} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_aab7275ddaf88bbdc0a340e1f6d1010a5}{fractal\+::cuda\+Kernels\+::\+Func\+Tanh} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a302c1507d587dd97bb1b0c0b4e5e6378}{fractal\+::cuda\+Kernels\+::\+Func\+Softplus} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a1214ead9e6a1af20689767f797e21ad7}{fractal\+::cuda\+Kernels\+::\+Func\+Rect\+Linear} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a715361cdca467605d0e1f1c617b3ab24}{fractal\+::cuda\+Kernels\+::\+Func\+Softmax} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long layer\+Size, const unsigned long batch\+Size, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a6feb31a8214d6d93c06164645f3f67ae}{fractal\+::cuda\+Kernels\+::\+Func\+Bound\+Range} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const T min, const T max, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a694c2d619f8a1707e7ed0c74e9e5e952}{fractal\+::cuda\+Kernels\+::\+Func\+Sigmoid\+Deriv} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a68955cd20f3f388efca2144a0ed07925}{fractal\+::cuda\+Kernels\+::\+Func\+Tanh\+Deriv} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_aba4be7ae2ab58b610d51df2fa9e7af73}{fractal\+::cuda\+Kernels\+::\+Func\+Softplus\+Deriv} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_ae718cea5137940efd2fc610705cb06b2}{fractal\+::cuda\+Kernels\+::\+Func\+Rect\+Linear\+Deriv} (const T $\ast$\+\_\+x, T $\ast$\+\_\+y, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a596801702086d94d5078d612296a2207}{fractal\+::cuda\+Kernels\+::\+Rmsprop} (T $\ast$\+\_\+new\+Derivs, const T $\ast$\+\_\+derivs, T $\ast$\+\_\+ms\+Deriv, const T decay\+Rate, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacefractal_1_1cudaKernels_a6ae4a4a96a55184eca0a59025292b6eb}{fractal\+::cuda\+Kernels\+::\+Adadelta} (T $\ast$\+\_\+deltas, const T $\ast$\+\_\+derivs, T $\ast$\+\_\+ms\+Deriv, T $\ast$\+\_\+ms\+Delta, const T learning\+Rate, const T decay\+Rate, const unsigned long n, const cuda\+Stream\+\_\+t stream)
+\end{DoxyCompactItemize}

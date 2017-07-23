@@ -1,0 +1,7 @@
+<map id="fractal::Probe::Wait" name="fractal::Probe::Wait">
+<area shape="rect" id="node2" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="189,5,310,47"/>
+<area shape="rect" id="node5" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="188,71,311,112"/>
+<area shape="rect" id="node3" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="359,5,481,47"/>
+<area shape="rect" id="node4" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="529,39,679,80"/>
+<area shape="rect" id="node6" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="359,71,481,112"/>
+</map>

@@ -1,0 +1,687 @@
+\hypertarget{classfractal_1_1Matrix}{\section{fractal\+:\+:Matrix$<$ T $>$ Class Template Reference}
+\label{classfractal_1_1Matrix}\index{fractal\+::\+Matrix$<$ T $>$@{fractal\+::\+Matrix$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Matrix.\+h$>$}
+
+
+
+Collaboration diagram for fractal\+:\+:Matrix$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{d3/d86/classfractal_1_1Matrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Matrix_a227540039b2776f434cfdf84d3f47b49}{Matrix} (const unsigned long \hyperlink{classfractal_1_1Matrix_a1f328cc516cc0090940aaef4c1511616}{n\+Rows}=0, const unsigned long \hyperlink{classfractal_1_1Matrix_a6098a4de6b5fd299195916b99d7f3046}{n\+Cols}=1)
+\item 
+\hyperlink{classfractal_1_1Matrix_a30a6e15e354bdc6594e5f5fb62c2750d}{Matrix} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ T $>$ \&A, const unsigned long a1, const unsigned long a2)
+\item 
+virtual \hyperlink{classfractal_1_1Matrix_a00462379475da0740d8b449450f4b796}{$\sim$\+Matrix} ()
+\item 
+void \hyperlink{classfractal_1_1Matrix_aa0ac62abd619f153baae9980b7731164}{Set\+Engine} (\hyperlink{classfractal_1_1Engine}{Engine} $\ast$\hyperlink{classfractal_1_1Matrix_a8cd6330ad7742ba28aca98d2a6be185d}{engine})
+\item 
+const unsigned long \hyperlink{classfractal_1_1Matrix_ad88d611ddf1f811d189229a80904b607}{Get\+Offset} () const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1Matrix_ab2b62fd6991c32429b80c5e8d7b1b7d3}{Get\+Num\+Rows} () const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1Matrix_a1877f1a0488da6737672fde4a1612718}{Get\+Num\+Cols} () const 
+\item 
+const \hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Matrix_a93c7ba34d553149900a652dcc8ece6c0}{Get\+Engine} () const 
+\item 
+\hyperlink{classfractal_1_1Mem}{Mem} $\ast$ \hyperlink{classfractal_1_1Matrix_a09197b1241a2a0dab1454beca8c0e759}{Get\+Mem} ()
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $\ast$const \hyperlink{classfractal_1_1Matrix_a30d2a69f1bbb44f10f430e56481b818c}{Get\+Host\+Data} ()
+\item 
+void \hyperlink{classfractal_1_1Matrix_af69ce9268ef1aad1bd2bbef2d3bce66c}{Host\+Push} ()
+\item 
+void \hyperlink{classfractal_1_1Matrix_a57b3a183709d354fc83020a8ef87d1b2}{Host\+Pull} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Matrix_aca1a601a0a04affdf12f6b0d1454cc55}{Resize} (const unsigned long \hyperlink{classfractal_1_1Matrix_a1f328cc516cc0090940aaef4c1511616}{n\+Rows}, const unsigned long \hyperlink{classfractal_1_1Matrix_a6098a4de6b5fd299195916b99d7f3046}{n\+Cols})
+\item 
+void \hyperlink{classfractal_1_1Matrix_aab75a76f7b7f9c91b76ce4c9adc076ed}{Link} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ T $>$ \&src)
+\item 
+void \hyperlink{classfractal_1_1Matrix_aff4e5e09948b75ee8677357708b8b266}{Unlink} ()
+\item 
+void \hyperlink{classfractal_1_1Matrix_afaa53ad5fa474a1c4fa662028a96afe9}{Import} (const std\+::vector$<$ T $>$ \&vec, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Matrix_a645a6f2f96e95698793124397c96457f}{Import} (const \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ T $>$ \&mat, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Matrix_ad320af8c8e5c1e882d56cb5f935da75e}{Export} (std\+::vector$<$ T $>$ \&vec, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream) const 
+\item 
+void \hyperlink{classfractal_1_1Matrix_affdcf02e6ca987dc753d931a26ed9738}{Export} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ T $>$ \&mat, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream) const 
+\item 
+void \hyperlink{classfractal_1_1Matrix_aefedaea457f317ae9c5b37fb464d123a}{Swap} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ T $>$ \&mat)
+\item 
+void \hyperlink{classfractal_1_1Matrix_ad50c4aba6a3ea0496ffb863ad23e494f}{Lock} ()
+\item 
+void \hyperlink{classfractal_1_1Matrix_a701c094fe728e9f83aaafe109e9e921f}{Unlock} ()
+\item 
+void \hyperlink{classfractal_1_1Matrix_ab3c9ceb8d18394e440f897047890aa6c}{Save} (const std\+::string \&filename)
+\item 
+void \hyperlink{classfractal_1_1Matrix_a2a01c4bb1aeea5046cde3d1974225f2e}{Load} (const std\+::string \&filename)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Matrix_a5a21ac036432fabf45a8d7bc3ab80cb4}{Matrix} (const \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ T $>$ \&)
+\item 
+void \hyperlink{classfractal_1_1Matrix_a853bffc92778e846bb9c9c841978a992}{Malloc} ()
+\item 
+void \hyperlink{classfractal_1_1Matrix_a236c6b554535460eead0282d58d62cc4}{Clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Mem}{Mem} $\ast$ \hyperlink{classfractal_1_1Matrix_a98ec2abf749d3c6d1a525f873e87e681}{mem}
+\item 
+unsigned long \hyperlink{classfractal_1_1Matrix_adc683802129e0fff65fd3fc51d427b29}{offset}
+\item 
+unsigned long \hyperlink{classfractal_1_1Matrix_a1f328cc516cc0090940aaef4c1511616}{n\+Rows}
+\item 
+unsigned long \hyperlink{classfractal_1_1Matrix_a6098a4de6b5fd299195916b99d7f3046}{n\+Cols}
+\item 
+bool \hyperlink{classfractal_1_1Matrix_aacf488b80d376418358035986c1041ef}{is\+Sub}
+\item 
+std\+::recursive\+\_\+mutex \hyperlink{classfractal_1_1Matrix_ab062a0299275e1daf43287422ba381f6}{mtx}
+\item 
+\hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Matrix_a8cd6330ad7742ba28aca98d2a6be185d}{engine}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class fractal\+::\+Matrix$<$ T $>$}
+
+
+
+Definition at line 37 of file Matrix.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Matrix_a227540039b2776f434cfdf84d3f47b49}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf fractal\+::\+Matrix}$<$ T $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{n\+Rows = {\ttfamily 0}, }
+\item[{const unsigned long}]{n\+Cols = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_a227540039b2776f434cfdf84d3f47b49}
+
+
+Definition at line 29 of file Matrix.\+cc.
+
+\hypertarget{classfractal_1_1Matrix_a30a6e15e354bdc6594e5f5fb62c2750d}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf fractal\+::\+Matrix}$<$ T $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{A, }
+\item[{const unsigned long}]{a1, }
+\item[{const unsigned long}]{a2}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_a30a6e15e354bdc6594e5f5fb62c2750d}
+
+
+Definition at line 43 of file Matrix.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{da/db4/classfractal_1_1Matrix_a30a6e15e354bdc6594e5f5fb62c2750d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_a00462379475da0740d8b449450f4b796}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!````~Matrix@{$\sim$\+Matrix}}
+\index{````~Matrix@{$\sim$\+Matrix}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{$\sim$\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf fractal\+::\+Matrix}$<$ T $>$\+::$\sim${\bf Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1Matrix_a00462379475da0740d8b449450f4b796}
+
+
+Definition at line 67 of file Matrix.\+cc.
+
+\hypertarget{classfractal_1_1Matrix_a5a21ac036432fabf45a8d7bc3ab80cb4}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf fractal\+::\+Matrix}$<$ T $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_a5a21ac036432fabf45a8d7bc3ab80cb4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Matrix_a236c6b554535460eead0282d58d62cc4}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Clear@{Clear}}
+\index{Clear@{Clear}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_a236c6b554535460eead0282d58d62cc4}
+
+
+Definition at line 121 of file Matrix.\+cc.
+
+\hypertarget{classfractal_1_1Matrix_ad320af8c8e5c1e882d56cb5f935da75e}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Export@{Export}}
+\index{Export@{Export}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Export}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Export (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ T $>$ \&}]{vec, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Matrix_ad320af8c8e5c1e882d56cb5f935da75e}
+
+
+Definition at line 209 of file Matrix.\+cc.
+
+\hypertarget{classfractal_1_1Matrix_affdcf02e6ca987dc753d931a26ed9738}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Export@{Export}}
+\index{Export@{Export}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Export}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Export (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{mat, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Matrix_affdcf02e6ca987dc753d931a26ed9738}
+
+
+Definition at line 218 of file Matrix.\+cc.
+
+\hypertarget{classfractal_1_1Matrix_a93c7ba34d553149900a652dcc8ece6c0}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Get\+Engine@{Get\+Engine}}
+\index{Get\+Engine@{Get\+Engine}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Get\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const {\bf Engine}$\ast$ {\bf fractal\+::\+Matrix}$<$ T $>$\+::Get\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Matrix_a93c7ba34d553149900a652dcc8ece6c0}
+
+
+Definition at line 49 of file Matrix.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_a93c7ba34d553149900a652dcc8ece6c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_a30d2a69f1bbb44f10f430e56481b818c}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Get\+Host\+Data@{Get\+Host\+Data}}
+\index{Get\+Host\+Data@{Get\+Host\+Data}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Get\+Host\+Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf F\+L\+O\+A\+T} $\ast$const {\bf fractal\+::\+Matrix}$<$ T $>$\+::Get\+Host\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_a30d2a69f1bbb44f10f430e56481b818c}
+
+
+Definition at line 231 of file Matrix.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_a30d2a69f1bbb44f10f430e56481b818c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_a09197b1241a2a0dab1454beca8c0e759}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Get\+Mem@{Get\+Mem}}
+\index{Get\+Mem@{Get\+Mem}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Get\+Mem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Mem}$\ast$ {\bf fractal\+::\+Matrix}$<$ T $>$\+::Get\+Mem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Matrix_a09197b1241a2a0dab1454beca8c0e759}
+
+
+Definition at line 50 of file Matrix.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_a09197b1241a2a0dab1454beca8c0e759_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_a1877f1a0488da6737672fde4a1612718}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Get\+Num\+Cols@{Get\+Num\+Cols}}
+\index{Get\+Num\+Cols@{Get\+Num\+Cols}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Get\+Num\+Cols}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const unsigned long {\bf fractal\+::\+Matrix}$<$ T $>$\+::Get\+Num\+Cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Matrix_a1877f1a0488da6737672fde4a1612718}
+
+
+Definition at line 48 of file Matrix.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_a1877f1a0488da6737672fde4a1612718_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_ab2b62fd6991c32429b80c5e8d7b1b7d3}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Get\+Num\+Rows@{Get\+Num\+Rows}}
+\index{Get\+Num\+Rows@{Get\+Num\+Rows}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Get\+Num\+Rows}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const unsigned long {\bf fractal\+::\+Matrix}$<$ T $>$\+::Get\+Num\+Rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Matrix_ab2b62fd6991c32429b80c5e8d7b1b7d3}
+
+
+Definition at line 47 of file Matrix.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_ab2b62fd6991c32429b80c5e8d7b1b7d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_ad88d611ddf1f811d189229a80904b607}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Get\+Offset@{Get\+Offset}}
+\index{Get\+Offset@{Get\+Offset}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Get\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ const unsigned long {\bf fractal\+::\+Matrix}$<$ T $>$\+::Get\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Matrix_ad88d611ddf1f811d189229a80904b607}
+
+
+Definition at line 46 of file Matrix.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_ad88d611ddf1f811d189229a80904b607_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_a57b3a183709d354fc83020a8ef87d1b2}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Host\+Pull@{Host\+Pull}}
+\index{Host\+Pull@{Host\+Pull}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Host\+Pull}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Host\+Pull (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_a57b3a183709d354fc83020a8ef87d1b2}
+
+
+Definition at line 260 of file Matrix.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_a57b3a183709d354fc83020a8ef87d1b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_af69ce9268ef1aad1bd2bbef2d3bce66c}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Host\+Push@{Host\+Push}}
+\index{Host\+Push@{Host\+Push}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Host\+Push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Host\+Push (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_af69ce9268ef1aad1bd2bbef2d3bce66c}
+
+
+Definition at line 250 of file Matrix.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_af69ce9268ef1aad1bd2bbef2d3bce66c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_afaa53ad5fa474a1c4fa662028a96afe9}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Import@{Import}}
+\index{Import@{Import}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Import}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Import (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ T $>$ \&}]{vec, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_afaa53ad5fa474a1c4fa662028a96afe9}
+
+
+Definition at line 187 of file Matrix.\+cc.
+
+\hypertarget{classfractal_1_1Matrix_a645a6f2f96e95698793124397c96457f}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Import@{Import}}
+\index{Import@{Import}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Import}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Import (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{mat, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_a645a6f2f96e95698793124397c96457f}
+
+
+Definition at line 196 of file Matrix.\+cc.
+
+\hypertarget{classfractal_1_1Matrix_aab75a76f7b7f9c91b76ce4c9adc076ed}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Link@{Link}}
+\index{Link@{Link}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Link}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Link (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{src}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_aab75a76f7b7f9c91b76ce4c9adc076ed}
+
+
+Definition at line 133 of file Matrix.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{da/db4/classfractal_1_1Matrix_aab75a76f7b7f9c91b76ce4c9adc076ed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_aab75a76f7b7f9c91b76ce4c9adc076ed_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_a2a01c4bb1aeea5046cde3d1974225f2e}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Load@{Load}}
+\index{Load@{Load}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_a2a01c4bb1aeea5046cde3d1974225f2e}
+
+
+Definition at line 334 of file Matrix.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{da/db4/classfractal_1_1Matrix_a2a01c4bb1aeea5046cde3d1974225f2e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_ad50c4aba6a3ea0496ffb863ad23e494f}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Lock@{Lock}}
+\index{Lock@{Lock}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Lock}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Matrix_ad50c4aba6a3ea0496ffb863ad23e494f}
+
+
+Definition at line 67 of file Matrix.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_ad50c4aba6a3ea0496ffb863ad23e494f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_a853bffc92778e846bb9c9c841978a992}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Malloc@{Malloc}}
+\index{Malloc@{Malloc}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Malloc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Malloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_a853bffc92778e846bb9c9c841978a992}
+
+
+Definition at line 107 of file Matrix.\+cc.
+
+\hypertarget{classfractal_1_1Matrix_aca1a601a0a04affdf12f6b0d1454cc55}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Resize@{Resize}}
+\index{Resize@{Resize}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Resize (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{n\+Rows, }
+\item[{const unsigned long}]{n\+Cols}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_aca1a601a0a04affdf12f6b0d1454cc55}
+
+
+Definition at line 89 of file Matrix.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_aca1a601a0a04affdf12f6b0d1454cc55_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_ab3c9ceb8d18394e440f897047890aa6c}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Save@{Save}}
+\index{Save@{Save}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Save (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_ab3c9ceb8d18394e440f897047890aa6c}
+
+
+Definition at line 294 of file Matrix.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{da/db4/classfractal_1_1Matrix_ab3c9ceb8d18394e440f897047890aa6c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_aa0ac62abd619f153baae9980b7731164}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Set\+Engine@{Set\+Engine}}
+\index{Set\+Engine@{Set\+Engine}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Set\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Set\+Engine (
+\begin{DoxyParamCaption}
+\item[{{\bf Engine} $\ast$}]{engine}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_aa0ac62abd619f153baae9980b7731164}
+
+
+Definition at line 74 of file Matrix.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_aa0ac62abd619f153baae9980b7731164_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_aefedaea457f317ae9c5b37fb464d123a}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Swap@{Swap}}
+\index{Swap@{Swap}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Swap (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{mat}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_aefedaea457f317ae9c5b37fb464d123a}
+
+
+Definition at line 270 of file Matrix.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{da/db4/classfractal_1_1Matrix_aefedaea457f317ae9c5b37fb464d123a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_aefedaea457f317ae9c5b37fb464d123a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_aff4e5e09948b75ee8677357708b8b266}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Unlink@{Unlink}}
+\index{Unlink@{Unlink}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Unlink}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Unlink (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Matrix_aff4e5e09948b75ee8677357708b8b266}
+
+
+Definition at line 164 of file Matrix.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_aff4e5e09948b75ee8677357708b8b266_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Matrix_a701c094fe728e9f83aaafe109e9e921f}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{Unlock}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf fractal\+::\+Matrix}$<$ T $>$\+::Unlock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Matrix_a701c094fe728e9f83aaafe109e9e921f}
+
+
+Definition at line 68 of file Matrix.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/db4/classfractal_1_1Matrix_a701c094fe728e9f83aaafe109e9e921f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Matrix_a8cd6330ad7742ba28aca98d2a6be185d}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!engine@{engine}}
+\index{engine@{engine}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Engine}$\ast$ {\bf fractal\+::\+Matrix}$<$ T $>$\+::engine\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_a8cd6330ad7742ba28aca98d2a6be185d}
+
+
+Definition at line 86 of file Matrix.\+h.
+
+\hypertarget{classfractal_1_1Matrix_aacf488b80d376418358035986c1041ef}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!is\+Sub@{is\+Sub}}
+\index{is\+Sub@{is\+Sub}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{is\+Sub}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf fractal\+::\+Matrix}$<$ T $>$\+::is\+Sub\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_aacf488b80d376418358035986c1041ef}
+
+
+Definition at line 83 of file Matrix.\+h.
+
+\hypertarget{classfractal_1_1Matrix_a98ec2abf749d3c6d1a525f873e87e681}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!mem@{mem}}
+\index{mem@{mem}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{mem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Mem}$\ast$ {\bf fractal\+::\+Matrix}$<$ T $>$\+::mem\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_a98ec2abf749d3c6d1a525f873e87e681}
+
+
+Definition at line 80 of file Matrix.\+h.
+
+\hypertarget{classfractal_1_1Matrix_ab062a0299275e1daf43287422ba381f6}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!mtx@{mtx}}
+\index{mtx@{mtx}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{mtx}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ std\+::recursive\+\_\+mutex {\bf fractal\+::\+Matrix}$<$ T $>$\+::mtx\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_ab062a0299275e1daf43287422ba381f6}
+
+
+Definition at line 85 of file Matrix.\+h.
+
+\hypertarget{classfractal_1_1Matrix_a6098a4de6b5fd299195916b99d7f3046}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!n\+Cols@{n\+Cols}}
+\index{n\+Cols@{n\+Cols}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{n\+Cols}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ unsigned long {\bf fractal\+::\+Matrix}$<$ T $>$\+::n\+Cols\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_a6098a4de6b5fd299195916b99d7f3046}
+
+
+Definition at line 82 of file Matrix.\+h.
+
+\hypertarget{classfractal_1_1Matrix_a1f328cc516cc0090940aaef4c1511616}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!n\+Rows@{n\+Rows}}
+\index{n\+Rows@{n\+Rows}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{n\+Rows}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ unsigned long {\bf fractal\+::\+Matrix}$<$ T $>$\+::n\+Rows\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_a1f328cc516cc0090940aaef4c1511616}
+
+
+Definition at line 82 of file Matrix.\+h.
+
+\hypertarget{classfractal_1_1Matrix_adc683802129e0fff65fd3fc51d427b29}{\index{fractal\+::\+Matrix@{fractal\+::\+Matrix}!offset@{offset}}
+\index{offset@{offset}!fractal\+::\+Matrix@{fractal\+::\+Matrix}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ unsigned long {\bf fractal\+::\+Matrix}$<$ T $>$\+::offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Matrix_adc683802129e0fff65fd3fc51d427b29}
+
+
+Definition at line 81 of file Matrix.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\hyperlink{Matrix_8h}{Matrix.\+h}\item 
+src/core/\hyperlink{Matrix_8cc}{Matrix.\+cc}\end{DoxyCompactItemize}

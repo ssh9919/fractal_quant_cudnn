@@ -1,0 +1,589 @@
+\hypertarget{classfractal_1_1Probe}{\section{fractal\+:\+:Probe Class Reference}
+\label{classfractal_1_1Probe}\index{fractal\+::\+Probe@{fractal\+::\+Probe}}
+}
+
+
+{\ttfamily \#include $<$Probe.\+h$>$}
+
+
+
+Collaboration diagram for fractal\+:\+:Probe\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/dd3/classfractal_1_1Probe__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Probe_ae6f922ee5d4b5fbb050b0ff7e62f3584}{Probe} ()
+\item 
+virtual \hyperlink{classfractal_1_1Probe_ab17d168b158187ba42171551da0beb2e}{$\sim$\+Probe} ()
+\item 
+void \hyperlink{classfractal_1_1Probe_ab861ab7eb2377dda2c4f71f9d89de44c}{Set\+Engine} (\hyperlink{classfractal_1_1Engine}{Engine} $\ast$\hyperlink{classfractal_1_1Probe_a20487048a2d0f3e33eb4a53dac23dd22}{engine})
+\item 
+\hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Probe_a179259d205501a3a4cbcdaca68e9a1c9}{Get\+Engine} () const 
+\item 
+void \hyperlink{classfractal_1_1Probe_ae686d6bf13bd20fb3d92a0adc95f11f7}{Set\+Input} (const bool val)
+\item 
+void \hyperlink{classfractal_1_1Probe_aef282d33b0695e0b813fe6e2cd4c50ce}{Set\+Output} (const bool val)
+\item 
+const bool \hyperlink{classfractal_1_1Probe_a3e7f32bf6372d20f9235c9094fa82ab5}{Is\+Input} () const 
+\item 
+const bool \hyperlink{classfractal_1_1Probe_a93e07e319ac45653b129e627ff4f2174}{Is\+Output} () const 
+\item 
+void \hyperlink{classfractal_1_1Probe_a83518ea7168658d8a9dd58f6a6ac1019}{Link\+Layer} (\hyperlink{classfractal_1_1Layer}{Layer} $\ast$const layer)
+\item 
+void \hyperlink{classfractal_1_1Probe_a6919b6dea4da1b6945dfca5194adaa3d}{Unlink\+Layer} ()
+\item 
+const bool \hyperlink{classfractal_1_1Probe_a8abda82903370ff19b8afa122d4091b5}{Is\+Linked} () const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1Probe_a015e5e7f7535d4f67b3e191bea7cb42f}{Get\+Layer\+Size} () const 
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \& \hyperlink{classfractal_1_1Probe_aad059792f9676c8141d3aa88022763f1}{Get\+Activation} ()
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \& \hyperlink{classfractal_1_1Probe_a20b9a33116f00cdd56d3ae0fa8c7635c}{Get\+State} ()
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \& \hyperlink{classfractal_1_1Probe_aa38a65aec5733dc17757f5d8f2bc9eba}{Get\+Error} ()
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \& \hyperlink{classfractal_1_1Probe_a4cd80fb80b8c8a6fae9bc2e0afa3cc55}{Get\+P\+Stream} ()
+\item 
+void \hyperlink{classfractal_1_1Probe_a0ee39bdf4e92d6cb8482dffb5b05d1b0}{Event\+Record} ()
+\item 
+void \hyperlink{classfractal_1_1Probe_a3273f2b6b99cf3971a790fda6bc1ea76}{Event\+Synchronize} ()
+\item 
+void \hyperlink{classfractal_1_1Probe_a4348ca6db3c7a6ac3145d33a9d4bfcd3}{Stream\+Wait\+Event} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&\hyperlink{classfractal_1_1Probe_ae26569f9d3f272e044e62839fce87174}{stream})
+\item 
+void \hyperlink{classfractal_1_1Probe_a999335e1857d0d21155c5316eaf74f3e}{Wait} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classfractal_1_1Probe_ae30770576d97d498d261568425194dc7}{\+\_\+input}
+\item 
+bool \hyperlink{classfractal_1_1Probe_acbc689a83084b63d5d774a139e7f99b3}{\+\_\+output}
+\item 
+\hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Probe_a20487048a2d0f3e33eb4a53dac23dd22}{engine}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \hyperlink{classfractal_1_1Probe_ae26569f9d3f272e044e62839fce87174}{stream}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Probe_a09b0d12f41483fd93c6449040ba1f540}{event}
+\item 
+\hyperlink{classfractal_1_1Layer}{Layer} $\ast$ \hyperlink{classfractal_1_1Probe_a121e11df32602fb8b1864845aa93c3aa}{linked\+Layer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file Probe.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Probe_ae6f922ee5d4b5fbb050b0ff7e62f3584}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Probe@{Probe}}
+\index{Probe@{Probe}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Probe}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Probe\+::\+Probe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_ae6f922ee5d4b5fbb050b0ff7e62f3584}
+
+
+Definition at line 26 of file Probe.\+cc.
+
+\hypertarget{classfractal_1_1Probe_ab17d168b158187ba42171551da0beb2e}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!````~Probe@{$\sim$\+Probe}}
+\index{````~Probe@{$\sim$\+Probe}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{$\sim$\+Probe}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Probe\+::$\sim$\+Probe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1Probe_ab17d168b158187ba42171551da0beb2e}
+
+
+Definition at line 35 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_ab17d168b158187ba42171551da0beb2e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Probe_a0ee39bdf4e92d6cb8482dffb5b05d1b0}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Event\+Record@{Event\+Record}}
+\index{Event\+Record@{Event\+Record}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Event\+Record}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Event\+Record (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_a0ee39bdf4e92d6cb8482dffb5b05d1b0}
+
+
+Definition at line 143 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a0ee39bdf4e92d6cb8482dffb5b05d1b0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a0ee39bdf4e92d6cb8482dffb5b05d1b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a3273f2b6b99cf3971a790fda6bc1ea76}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Event\+Synchronize@{Event\+Synchronize}}
+\index{Event\+Synchronize@{Event\+Synchronize}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Event\+Synchronize}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Event\+Synchronize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_a3273f2b6b99cf3971a790fda6bc1ea76}
+
+
+Definition at line 150 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a3273f2b6b99cf3971a790fda6bc1ea76_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_aad059792f9676c8141d3aa88022763f1}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Get\+Activation@{Get\+Activation}}
+\index{Get\+Activation@{Get\+Activation}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Get\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \& fractal\+::\+Probe\+::\+Get\+Activation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_aad059792f9676c8141d3aa88022763f1}
+
+
+Definition at line 115 of file Probe.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_aad059792f9676c8141d3aa88022763f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a179259d205501a3a4cbcdaca68e9a1c9}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Get\+Engine@{Get\+Engine}}
+\index{Get\+Engine@{Get\+Engine}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Get\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Engine} $\ast$ fractal\+::\+Probe\+::\+Get\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Probe_a179259d205501a3a4cbcdaca68e9a1c9}
+
+
+Definition at line 60 of file Probe.\+cc.
+
+\hypertarget{classfractal_1_1Probe_aa38a65aec5733dc17757f5d8f2bc9eba}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Get\+Error@{Get\+Error}}
+\index{Get\+Error@{Get\+Error}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Get\+Error}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \& fractal\+::\+Probe\+::\+Get\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_aa38a65aec5733dc17757f5d8f2bc9eba}
+
+
+Definition at line 129 of file Probe.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_aa38a65aec5733dc17757f5d8f2bc9eba_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a015e5e7f7535d4f67b3e191bea7cb42f}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Get\+Layer\+Size@{Get\+Layer\+Size}}
+\index{Get\+Layer\+Size@{Get\+Layer\+Size}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Get\+Layer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Probe\+::\+Get\+Layer\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Probe_a015e5e7f7535d4f67b3e191bea7cb42f}
+
+
+Definition at line 108 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a015e5e7f7535d4f67b3e191bea7cb42f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a4cd80fb80b8c8a6fae9bc2e0afa3cc55}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Get\+P\+Stream@{Get\+P\+Stream}}
+\index{Get\+P\+Stream@{Get\+P\+Stream}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Get\+P\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} \& fractal\+::\+Probe\+::\+Get\+P\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_a4cd80fb80b8c8a6fae9bc2e0afa3cc55}
+
+
+Definition at line 136 of file Probe.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a4cd80fb80b8c8a6fae9bc2e0afa3cc55_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a20b9a33116f00cdd56d3ae0fa8c7635c}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Get\+State@{Get\+State}}
+\index{Get\+State@{Get\+State}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Get\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \& fractal\+::\+Probe\+::\+Get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_a20b9a33116f00cdd56d3ae0fa8c7635c}
+
+
+Definition at line 122 of file Probe.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a20b9a33116f00cdd56d3ae0fa8c7635c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a3e7f32bf6372d20f9235c9094fa82ab5}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Is\+Input@{Is\+Input}}
+\index{Is\+Input@{Is\+Input}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Is\+Input}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Probe\+::\+Is\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Probe_a3e7f32bf6372d20f9235c9094fa82ab5}
+
+
+Definition at line 43 of file Probe.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a3e7f32bf6372d20f9235c9094fa82ab5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a8abda82903370ff19b8afa122d4091b5}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Is\+Linked@{Is\+Linked}}
+\index{Is\+Linked@{Is\+Linked}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Is\+Linked}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Probe\+::\+Is\+Linked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Probe_a8abda82903370ff19b8afa122d4091b5}
+
+
+Definition at line 102 of file Probe.\+cc.
+
+\hypertarget{classfractal_1_1Probe_a93e07e319ac45653b129e627ff4f2174}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Is\+Output@{Is\+Output}}
+\index{Is\+Output@{Is\+Output}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Is\+Output}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Probe\+::\+Is\+Output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Probe_a93e07e319ac45653b129e627ff4f2174}
+
+
+Definition at line 44 of file Probe.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a93e07e319ac45653b129e627ff4f2174_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a83518ea7168658d8a9dd58f6a6ac1019}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Link\+Layer@{Link\+Layer}}
+\index{Link\+Layer@{Link\+Layer}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Link\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Link\+Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf Layer} $\ast$const}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_a83518ea7168658d8a9dd58f6a6ac1019}
+
+
+Definition at line 78 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a83518ea7168658d8a9dd58f6a6ac1019_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a83518ea7168658d8a9dd58f6a6ac1019_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_ab861ab7eb2377dda2c4f71f9d89de44c}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Set\+Engine@{Set\+Engine}}
+\index{Set\+Engine@{Set\+Engine}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Set\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Set\+Engine (
+\begin{DoxyParamCaption}
+\item[{{\bf Engine} $\ast$}]{engine}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_ab861ab7eb2377dda2c4f71f9d89de44c}
+
+
+Definition at line 42 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_ab861ab7eb2377dda2c4f71f9d89de44c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_ab861ab7eb2377dda2c4f71f9d89de44c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_ae686d6bf13bd20fb3d92a0adc95f11f7}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Set\+Input@{Set\+Input}}
+\index{Set\+Input@{Set\+Input}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Set\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Set\+Input (
+\begin{DoxyParamCaption}
+\item[{const bool}]{val}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_ae686d6bf13bd20fb3d92a0adc95f11f7}
+
+
+Definition at line 66 of file Probe.\+cc.
+
+\hypertarget{classfractal_1_1Probe_aef282d33b0695e0b813fe6e2cd4c50ce}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Set\+Output@{Set\+Output}}
+\index{Set\+Output@{Set\+Output}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Set\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Set\+Output (
+\begin{DoxyParamCaption}
+\item[{const bool}]{val}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_aef282d33b0695e0b813fe6e2cd4c50ce}
+
+
+Definition at line 72 of file Probe.\+cc.
+
+\hypertarget{classfractal_1_1Probe_a4348ca6db3c7a6ac3145d33a9d4bfcd3}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Stream\+Wait\+Event@{Stream\+Wait\+Event}}
+\index{Stream\+Wait\+Event@{Stream\+Wait\+Event}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Stream\+Wait\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Stream\+Wait\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_a4348ca6db3c7a6ac3145d33a9d4bfcd3}
+
+
+Definition at line 157 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a4348ca6db3c7a6ac3145d33a9d4bfcd3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a4348ca6db3c7a6ac3145d33a9d4bfcd3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a6919b6dea4da1b6945dfca5194adaa3d}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Unlink\+Layer@{Unlink\+Layer}}
+\index{Unlink\+Layer@{Unlink\+Layer}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Unlink\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Unlink\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_a6919b6dea4da1b6945dfca5194adaa3d}
+
+
+Definition at line 89 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a6919b6dea4da1b6945dfca5194adaa3d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a6919b6dea4da1b6945dfca5194adaa3d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Probe_a999335e1857d0d21155c5316eaf74f3e}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!Wait@{Wait}}
+\index{Wait@{Wait}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{Wait}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Probe\+::\+Wait (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Probe_a999335e1857d0d21155c5316eaf74f3e}
+
+
+Definition at line 164 of file Probe.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a999335e1857d0d21155c5316eaf74f3e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/db1/classfractal_1_1Probe_a999335e1857d0d21155c5316eaf74f3e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Probe_ae30770576d97d498d261568425194dc7}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!\+\_\+input@{\+\_\+input}}
+\index{\+\_\+input@{\+\_\+input}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{\+\_\+input}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Probe\+::\+\_\+input\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Probe_ae30770576d97d498d261568425194dc7}
+
+
+Definition at line 65 of file Probe.\+h.
+
+\hypertarget{classfractal_1_1Probe_acbc689a83084b63d5d774a139e7f99b3}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!\+\_\+output@{\+\_\+output}}
+\index{\+\_\+output@{\+\_\+output}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Probe\+::\+\_\+output\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Probe_acbc689a83084b63d5d774a139e7f99b3}
+
+
+Definition at line 65 of file Probe.\+h.
+
+\hypertarget{classfractal_1_1Probe_a20487048a2d0f3e33eb4a53dac23dd22}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!engine@{engine}}
+\index{engine@{engine}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Engine}$\ast$ fractal\+::\+Probe\+::engine\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Probe_a20487048a2d0f3e33eb4a53dac23dd22}
+
+
+Definition at line 66 of file Probe.\+h.
+
+\hypertarget{classfractal_1_1Probe_a09b0d12f41483fd93c6449040ba1f540}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!event@{event}}
+\index{event@{event}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Probe\+::event\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Probe_a09b0d12f41483fd93c6449040ba1f540}
+
+
+Definition at line 68 of file Probe.\+h.
+
+\hypertarget{classfractal_1_1Probe_a121e11df32602fb8b1864845aa93c3aa}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!linked\+Layer@{linked\+Layer}}
+\index{linked\+Layer@{linked\+Layer}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{linked\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer}$\ast$ fractal\+::\+Probe\+::linked\+Layer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Probe_a121e11df32602fb8b1864845aa93c3aa}
+
+
+Definition at line 69 of file Probe.\+h.
+
+\hypertarget{classfractal_1_1Probe_ae26569f9d3f272e044e62839fce87174}{\index{fractal\+::\+Probe@{fractal\+::\+Probe}!stream@{stream}}
+\index{stream@{stream}!fractal\+::\+Probe@{fractal\+::\+Probe}}
+\subsubsection[{stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} fractal\+::\+Probe\+::stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Probe_ae26569f9d3f272e044e62839fce87174}
+
+
+Definition at line 67 of file Probe.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\hyperlink{Probe_8h}{Probe.\+h}\item 
+src/core/\hyperlink{Probe_8cc}{Probe.\+cc}\end{DoxyCompactItemize}

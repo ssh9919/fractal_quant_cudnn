@@ -1,0 +1,5 @@
+<map id="fractal::Rnn::InitBackward" name="fractal::Rnn::InitBackward">
+<area shape="rect" id="node2" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="228,5,351,47"/>
+<area shape="rect" id="node3" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="399,5,521,47"/>
+<area shape="rect" id="node4" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="569,5,719,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="fractal::Evaluator::EvaluatePipe6" name="fractal::Evaluator::EvaluatePipe6">
+<area shape="rect" id="node2" href="$de/dca/classfractal_1_1Rnn.html#a8bdfcdaeda6fbd1b02ab77f720140e65" title="Get the computation engine. " alt="" coords="209,5,368,32"/>
+<area shape="rect" id="node3" href="$db/d22/classfractal_1_1Pipe.html#affd60158440ecf977873621f7efe769d" title="fractal::Pipe::Wait" alt="" coords="225,56,352,83"/>
+<area shape="rect" id="node4" href="$d0/d81/classfractal_1_1Engine.html#ad2269e3394f4270d5611234702029bc9" title="fractal::Engine::StreamSynchronize" alt="" coords="175,107,403,133"/>
+<area shape="rect" id="node5" href="$d2/d13/classfractal_1_1Evaluator.html#a9bb323a73e59475ce155bb593911b0f7" title="fractal::Evaluator\l::EvaluateFrames" alt="" coords="226,158,351,199"/>
+<area shape="rect" id="node6" href="$db/d22/classfractal_1_1Pipe.html#a362e71ce0faa900ad7f2fcc2a1565920" title="fractal::Pipe::SendSignal" alt="" coords="205,224,372,251"/>
+</map>

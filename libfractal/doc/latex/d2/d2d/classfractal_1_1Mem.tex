@@ -1,0 +1,592 @@
+\hypertarget{classfractal_1_1Mem}{\section{fractal\+:\+:Mem Class Reference}
+\label{classfractal_1_1Mem}\index{fractal\+::\+Mem@{fractal\+::\+Mem}}
+}
+
+
+{\ttfamily \#include $<$Mem.\+h$>$}
+
+
+
+Collaboration diagram for fractal\+:\+:Mem\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{d4/d05/classfractal_1_1Mem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Mem_a4b62d6cdc99c862d4d0aeca2bd1f67d4}{Mem} (\hyperlink{classfractal_1_1Engine}{Engine} $\ast$const \hyperlink{classfractal_1_1Mem_a36371a8e475f1aad6df2fc0243c0db58}{engine}, size\+\_\+t \hyperlink{classfractal_1_1Mem_a4bddc66ce0aa9b7a58418645f840f537}{size})
+\item 
+virtual \hyperlink{classfractal_1_1Mem_aa2fd1f08e88a38a2ec92d882e23a05ac}{$\sim$\+Mem} ()
+\item 
+const \hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Mem_ac8e506d4c690fed4e7247a8c1cf2e024}{Get\+Engine} () const 
+\item 
+void $\ast$const \hyperlink{classfractal_1_1Mem_a978e450c0bba7860c86f7b850aca0a8c}{Get\+Ptr} (const unsigned long loc) const 
+\item 
+void $\ast$$\ast$const \hyperlink{classfractal_1_1Mem_a9c3533baf2dcbdc104da53029e687710}{Get\+Ptrs} ()
+\item 
+const bool \hyperlink{classfractal_1_1Mem_ae1b9d2868628f25a489cebee833e9ae2}{Is\+Real\+Valid} (const unsigned long loc)
+\item 
+const bool \hyperlink{classfractal_1_1Mem_aff8487ed33c6a9130f04c913901ee074}{Is\+Valid} (const unsigned long loc) const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1Mem_af6c5ae15ba7a93fbe8c817ac5795aac6}{Get\+Recent\+Loc} () const 
+\item 
+const size\+\_\+t \hyperlink{classfractal_1_1Mem_ad43670c786097e153ce1348e57ca615c}{Get\+Size} () const 
+\item 
+void \hyperlink{classfractal_1_1Mem_a5d69c5fadf2b5e28f1876bec6e01d92c}{Set\+Size} (size\+\_\+t \hyperlink{classfractal_1_1Mem_a4bddc66ce0aa9b7a58418645f840f537}{size})
+\item 
+void \hyperlink{classfractal_1_1Mem_a53625eca9f0dbaf09a39d175962c6f4b}{Copy\+From\+Host} (const size\+\_\+t offset\+Dst, const void $\ast$ptr\+Src, const size\+\_\+t \hyperlink{classfractal_1_1Mem_a4bddc66ce0aa9b7a58418645f840f537}{size}, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Mem_a5acd986b3c170d6800fa85f605466068}{Copy\+To\+Host} (const size\+\_\+t offset\+Src, void $\ast$ptr\+Dst, const size\+\_\+t \hyperlink{classfractal_1_1Mem_a4bddc66ce0aa9b7a58418645f840f537}{size}, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream) const 
+\item 
+void \hyperlink{classfractal_1_1Mem_a81f0764f0de4a0f4ac82f298295ae6b5}{Validate} (const unsigned long loc)
+\item 
+void \hyperlink{classfractal_1_1Mem_a08238f277dd7d2022fb4a60e33a402d6}{Invalidate} ()
+\item 
+void \hyperlink{classfractal_1_1Mem_ac519f15876ce1fbb5bae620524b84ddf}{Pull} (const unsigned long loc, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Mem_a25560a7b7449ea9dd5362c0174281e66}{Push} (const unsigned long loc)
+\item 
+void \hyperlink{classfractal_1_1Mem_a0e59780ee2946da2b5747b80265adee6}{Lock} ()
+\item 
+void \hyperlink{classfractal_1_1Mem_ab247f522279cc0de74a9d21256026b95}{Unlock} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Mem_a08cbccf1b08c274c0e8e159591f2dd6b}{Mem} (const \hyperlink{classfractal_1_1Mem}{Mem} \&mem)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{classfractal_1_1Mem_af439baa77e71a82ed3af0c4008a2acab}{num\+Loc}
+\item 
+unsigned long \hyperlink{classfractal_1_1Mem_a88ed47770d54303686603e4c16e959bb}{recent\+Loc}
+\item 
+size\+\_\+t \hyperlink{classfractal_1_1Mem_a4bddc66ce0aa9b7a58418645f840f537}{size}
+\item 
+void $\ast$$\ast$ \hyperlink{classfractal_1_1Mem_ae58554129a5f44942fe556518d97251e}{ptr}
+\item 
+bool $\ast$ \hyperlink{classfractal_1_1Mem_a1042b8d79e8e6e141aac6c0ddf6677d3}{valid}
+\item 
+std\+::recursive\+\_\+mutex \hyperlink{classfractal_1_1Mem_aa30c383915eb0b8987746c11b45fa807}{mtx}
+\item 
+\hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Mem_a36371a8e475f1aad6df2fc0243c0db58}{engine}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 33 of file Mem.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Mem_a4b62d6cdc99c862d4d0aeca2bd1f67d4}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Mem@{Mem}}
+\index{Mem@{Mem}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Mem}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Mem\+::\+Mem (
+\begin{DoxyParamCaption}
+\item[{{\bf Engine} $\ast$const}]{engine, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Mem_a4b62d6cdc99c862d4d0aeca2bd1f67d4}
+
+
+Definition at line 25 of file Mem.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a4b62d6cdc99c862d4d0aeca2bd1f67d4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_aa2fd1f08e88a38a2ec92d882e23a05ac}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!````~Mem@{$\sim$\+Mem}}
+\index{````~Mem@{$\sim$\+Mem}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{$\sim$\+Mem}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Mem\+::$\sim$\+Mem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1Mem_aa2fd1f08e88a38a2ec92d882e23a05ac}
+
+
+Definition at line 45 of file Mem.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_aa2fd1f08e88a38a2ec92d882e23a05ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a08cbccf1b08c274c0e8e159591f2dd6b}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Mem@{Mem}}
+\index{Mem@{Mem}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Mem}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Mem\+::\+Mem (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mem} \&}]{mem}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Mem_a08cbccf1b08c274c0e8e159591f2dd6b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Mem_a53625eca9f0dbaf09a39d175962c6f4b}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Copy\+From\+Host@{Copy\+From\+Host}}
+\index{Copy\+From\+Host@{Copy\+From\+Host}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Copy\+From\+Host}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Copy\+From\+Host (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{offset\+Dst, }
+\item[{const void $\ast$}]{ptr\+Src, }
+\item[{const size\+\_\+t}]{size, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Mem_a53625eca9f0dbaf09a39d175962c6f4b}
+
+
+Definition at line 55 of file Mem.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a53625eca9f0dbaf09a39d175962c6f4b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a5acd986b3c170d6800fa85f605466068}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Copy\+To\+Host@{Copy\+To\+Host}}
+\index{Copy\+To\+Host@{Copy\+To\+Host}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Copy\+To\+Host}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Copy\+To\+Host (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t}]{offset\+Src, }
+\item[{void $\ast$}]{ptr\+Dst, }
+\item[{const size\+\_\+t}]{size, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Mem_a5acd986b3c170d6800fa85f605466068}
+
+
+Definition at line 63 of file Mem.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a5acd986b3c170d6800fa85f605466068_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_ac8e506d4c690fed4e7247a8c1cf2e024}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Get\+Engine@{Get\+Engine}}
+\index{Get\+Engine@{Get\+Engine}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Get\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Engine}$\ast$ fractal\+::\+Mem\+::\+Get\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_ac8e506d4c690fed4e7247a8c1cf2e024}
+
+
+Definition at line 39 of file Mem.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_ac8e506d4c690fed4e7247a8c1cf2e024_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a978e450c0bba7860c86f7b850aca0a8c}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Get\+Ptr@{Get\+Ptr}}
+\index{Get\+Ptr@{Get\+Ptr}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Get\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ const fractal\+::\+Mem\+::\+Get\+Ptr (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_a978e450c0bba7860c86f7b850aca0a8c}
+
+
+Definition at line 40 of file Mem.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a978e450c0bba7860c86f7b850aca0a8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a9c3533baf2dcbdc104da53029e687710}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Get\+Ptrs@{Get\+Ptrs}}
+\index{Get\+Ptrs@{Get\+Ptrs}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Get\+Ptrs}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$$\ast$ const fractal\+::\+Mem\+::\+Get\+Ptrs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_a9c3533baf2dcbdc104da53029e687710}
+
+
+Definition at line 41 of file Mem.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a9c3533baf2dcbdc104da53029e687710_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_af6c5ae15ba7a93fbe8c817ac5795aac6}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Get\+Recent\+Loc@{Get\+Recent\+Loc}}
+\index{Get\+Recent\+Loc@{Get\+Recent\+Loc}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Get\+Recent\+Loc}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Mem\+::\+Get\+Recent\+Loc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_af6c5ae15ba7a93fbe8c817ac5795aac6}
+
+
+Definition at line 44 of file Mem.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_af6c5ae15ba7a93fbe8c817ac5795aac6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_ad43670c786097e153ce1348e57ca615c}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t fractal\+::\+Mem\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_ad43670c786097e153ce1348e57ca615c}
+
+
+Definition at line 45 of file Mem.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_ad43670c786097e153ce1348e57ca615c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a08238f277dd7d2022fb4a60e33a402d6}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Invalidate@{Invalidate}}
+\index{Invalidate@{Invalidate}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Invalidate}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Invalidate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Mem_a08238f277dd7d2022fb4a60e33a402d6}
+
+
+Definition at line 82 of file Mem.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{d2/d2d/classfractal_1_1Mem_a08238f277dd7d2022fb4a60e33a402d6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a08238f277dd7d2022fb4a60e33a402d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_ae1b9d2868628f25a489cebee833e9ae2}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Is\+Real\+Valid@{Is\+Real\+Valid}}
+\index{Is\+Real\+Valid@{Is\+Real\+Valid}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Is\+Real\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Mem\+::\+Is\+Real\+Valid (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_ae1b9d2868628f25a489cebee833e9ae2}
+
+
+Definition at line 42 of file Mem.\+h.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_ae1b9d2868628f25a489cebee833e9ae2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_aff8487ed33c6a9130f04c913901ee074}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Mem\+::\+Is\+Valid (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_aff8487ed33c6a9130f04c913901ee074}
+
+
+Definition at line 43 of file Mem.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_aff8487ed33c6a9130f04c913901ee074_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a0e59780ee2946da2b5747b80265adee6}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Lock@{Lock}}
+\index{Lock@{Lock}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Lock}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_a0e59780ee2946da2b5747b80265adee6}
+
+
+Definition at line 57 of file Mem.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a0e59780ee2946da2b5747b80265adee6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_ac519f15876ce1fbb5bae620524b84ddf}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Pull@{Pull}}
+\index{Pull@{Pull}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Pull}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Pull (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{loc, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Mem_ac519f15876ce1fbb5bae620524b84ddf}
+
+
+Definition at line 95 of file Mem.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_ac519f15876ce1fbb5bae620524b84ddf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_ac519f15876ce1fbb5bae620524b84ddf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a25560a7b7449ea9dd5362c0174281e66}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Push@{Push}}
+\index{Push@{Push}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Push}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Push (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Mem_a25560a7b7449ea9dd5362c0174281e66}
+
+
+Definition at line 101 of file Mem.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d2/d2d/classfractal_1_1Mem_a25560a7b7449ea9dd5362c0174281e66_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a25560a7b7449ea9dd5362c0174281e66_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a5d69c5fadf2b5e28f1876bec6e01d92c}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_a5d69c5fadf2b5e28f1876bec6e01d92c}
+
+
+Definition at line 46 of file Mem.\+h.
+
+\hypertarget{classfractal_1_1Mem_ab247f522279cc0de74a9d21256026b95}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Unlock}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Unlock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Mem_ab247f522279cc0de74a9d21256026b95}
+
+
+Definition at line 58 of file Mem.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_ab247f522279cc0de74a9d21256026b95_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Mem_a81f0764f0de4a0f4ac82f298295ae6b5}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!Validate@{Validate}}
+\index{Validate@{Validate}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{Validate}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Mem\+::\+Validate (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Mem_a81f0764f0de4a0f4ac82f298295ae6b5}
+
+
+Definition at line 71 of file Mem.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{d2/d2d/classfractal_1_1Mem_a81f0764f0de4a0f4ac82f298295ae6b5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2d/classfractal_1_1Mem_a81f0764f0de4a0f4ac82f298295ae6b5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Mem_a36371a8e475f1aad6df2fc0243c0db58}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!engine@{engine}}
+\index{engine@{engine}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Engine}$\ast$ fractal\+::\+Mem\+::engine\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Mem_a36371a8e475f1aad6df2fc0243c0db58}
+
+
+Definition at line 71 of file Mem.\+h.
+
+\hypertarget{classfractal_1_1Mem_aa30c383915eb0b8987746c11b45fa807}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!mtx@{mtx}}
+\index{mtx@{mtx}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{mtx}]{\setlength{\rightskip}{0pt plus 5cm}std\+::recursive\+\_\+mutex fractal\+::\+Mem\+::mtx\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Mem_aa30c383915eb0b8987746c11b45fa807}
+
+
+Definition at line 69 of file Mem.\+h.
+
+\hypertarget{classfractal_1_1Mem_af439baa77e71a82ed3af0c4008a2acab}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!num\+Loc@{num\+Loc}}
+\index{num\+Loc@{num\+Loc}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{num\+Loc}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Mem\+::num\+Loc\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Mem_af439baa77e71a82ed3af0c4008a2acab}
+
+
+Definition at line 63 of file Mem.\+h.
+
+\hypertarget{classfractal_1_1Mem_ae58554129a5f44942fe556518d97251e}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!ptr@{ptr}}
+\index{ptr@{ptr}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{ptr}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$$\ast$ fractal\+::\+Mem\+::ptr\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Mem_ae58554129a5f44942fe556518d97251e}
+
+
+Definition at line 66 of file Mem.\+h.
+
+\hypertarget{classfractal_1_1Mem_a88ed47770d54303686603e4c16e959bb}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!recent\+Loc@{recent\+Loc}}
+\index{recent\+Loc@{recent\+Loc}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{recent\+Loc}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Mem\+::recent\+Loc\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Mem_a88ed47770d54303686603e4c16e959bb}
+
+
+Definition at line 64 of file Mem.\+h.
+
+\hypertarget{classfractal_1_1Mem_a4bddc66ce0aa9b7a58418645f840f537}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!size@{size}}
+\index{size@{size}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t fractal\+::\+Mem\+::size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Mem_a4bddc66ce0aa9b7a58418645f840f537}
+
+
+Definition at line 65 of file Mem.\+h.
+
+\hypertarget{classfractal_1_1Mem_a1042b8d79e8e6e141aac6c0ddf6677d3}{\index{fractal\+::\+Mem@{fractal\+::\+Mem}!valid@{valid}}
+\index{valid@{valid}!fractal\+::\+Mem@{fractal\+::\+Mem}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ fractal\+::\+Mem\+::valid\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Mem_a1042b8d79e8e6e141aac6c0ddf6677d3}
+
+
+Definition at line 67 of file Mem.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\hyperlink{Mem_8h}{Mem.\+h}\item 
+src/core/\hyperlink{Mem_8cc}{Mem.\+cc}\end{DoxyCompactItemize}

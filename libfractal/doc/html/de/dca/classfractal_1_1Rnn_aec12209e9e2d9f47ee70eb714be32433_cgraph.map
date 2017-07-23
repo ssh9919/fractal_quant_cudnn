@@ -1,0 +1,51 @@
+<map id="fractal::Rnn::Forward" name="fractal::Rnn::Forward">
+<area shape="rect" id="node2" href="$de/dca/classfractal_1_1Rnn.html#a907f94c280782ef96ee7041d5711db61" title="Get ready to perform forward and backward propagation. " alt="" coords="222,648,358,675"/>
+<area shape="rect" id="node8" href="$dc/d55/classfractal_1_1Layer.html#a345e1871562625f4f230f66a2953efa8" title="fractal::Layer::GetSrcConnections" alt="" coords="923,379,1143,405"/>
+<area shape="rect" id="node10" href="$dc/d55/classfractal_1_1Layer.html#a540bed9ed5f273403b4ed3131b4da72d" title="fractal::Layer::GetGroup" alt="" coords="692,455,855,481"/>
+<area shape="rect" id="node17" href="$da/dbf/classfractal_1_1Connection.html#a7ee554da75a227b017217121e9c0d70e" title="fractal::Connection\l::GetSrcLayer" alt="" coords="707,725,839,766"/>
+<area shape="rect" id="node21" href="$da/dbf/classfractal_1_1Connection.html#a55a98b43749d2af37c492046bdabae30" title="fractal::Connection\l::IsDelayed" alt="" coords="461,953,593,994"/>
+<area shape="rect" id="node22" href="$da/dbf/classfractal_1_1Connection.html#a4ccde8145227156ce639a1c050ddb2a4" title="fractal::Connection\l::ForwardWait" alt="" coords="224,1562,356,1603"/>
+<area shape="rect" id="node25" href="$da/dbf/classfractal_1_1Connection.html#af95b3556c57e92edb06a4d33364dc0c2" title="fractal::Connection\l::Forward" alt="" coords="224,1094,356,1135"/>
+<area shape="rect" id="node41" href="$da/dbf/classfractal_1_1Connection.html#a54577602a6deab30026078ce5a44f5cd" title="fractal::Connection\l::EventRecord" alt="" coords="224,1722,356,1763"/>
+<area shape="rect" id="node43" href="$dc/d55/classfractal_1_1Layer.html#aebbc3e3f785b1761b50aa4d4607629e5" title="fractal::Layer::ForwardWait" alt="" coords="200,1504,380,1531"/>
+<area shape="rect" id="node47" href="$dc/d55/classfractal_1_1Layer.html#a242176b7a427ac0f4e522ca43f311878" title="fractal::Layer::Forward" alt="" coords="213,1424,367,1451"/>
+<area shape="rect" id="node50" href="$dc/d55/classfractal_1_1Layer.html#af559422de96bff34f588f55fbf7be1ef" title="fractal::Layer::EventRecord" alt="" coords="199,1643,381,1669"/>
+<area shape="rect" id="node3" href="$de/dca/classfractal_1_1Rnn.html#aff5d760fe57f949ad69a913757deb874" title="Perform Tarjan&#39;s strongly connected component (SCC) algorithm. " alt="" coords="459,227,594,253"/>
+<area shape="rect" id="node14" href="$de/dca/classfractal_1_1Rnn.html#a1a94073d8b65fbb0d9a1fa262f60bc3f" title="Clear all PStreams. " alt="" coords="433,788,620,815"/>
+<area shape="rect" id="node16" href="$de/dca/classfractal_1_1Rnn.html#adaf84bde48406ad0c51bfbba084c5516" title="Create a PStream object with the location loc. " alt="" coords="429,615,624,641"/>
+<area shape="rect" id="node4" href="$de/dca/classfractal_1_1Rnn.html#a6bb983dfd300fc9d906ed05bc481d2e8" title="Clear all SCCs. " alt="" coords="687,151,860,177"/>
+<area shape="rect" id="node5" href="$dc/d55/classfractal_1_1Layer.html#a0417ae6bb056b22b11028d2d3999b710" title="fractal::Layer::GetIndex" alt="" coords="953,68,1112,95"/>
+<area shape="rect" id="node6" href="$dc/d55/classfractal_1_1Layer.html#a21bda82f81853060af6b2b9482fae28f" title="fractal::Layer::SetIndex" alt="" coords="953,144,1112,171"/>
+<area shape="rect" id="node7" href="$dc/d55/classfractal_1_1Layer.html#a28468f7fe1c049a6575a97dd4b2b567a" title="fractal::Layer::SetGroup" alt="" coords="952,245,1113,272"/>
+<area shape="rect" id="node9" href="$dc/d55/classfractal_1_1Layer.html#a2306748e27c9a06e8b30b66e8ad73b05" title="fractal::Layer::GetVisited" alt="" coords="949,300,1116,327"/>
+<area shape="rect" id="node11" href="$de/dca/classfractal_1_1Rnn.html#a76287a6b58925f1a7b40ace3ed261e9f" title="Create an SCC and perform topological sort. " alt="" coords="693,252,853,279"/>
+<area shape="rect" id="node12" href="$dc/d55/classfractal_1_1Layer.html#abe9143e5f9015b11b2b189cff34f19c1" title="fractal::Layer::SetVisited" alt="" coords="949,5,1116,32"/>
+<area shape="rect" id="node13" href="$dc/d55/classfractal_1_1Layer.html#a2759b1e5c36b3e0c9bc904f8648f5ca1" title="fractal::Layer::GetName" alt="" coords="951,1297,1114,1324"/>
+<area shape="rect" id="node15" href="$d0/d81/classfractal_1_1Engine.html#a5e0a97f06aa994afa0db976d93ed67e7" title="fractal::Engine::StreamDestroy" alt="" coords="672,791,875,817"/>
+<area shape="rect" id="node18" href="$d0/d81/classfractal_1_1Engine.html#a780e465320bee254134a304ac30d5085" title="fractal::Engine::StreamCreate" alt="" coords="676,673,871,700"/>
+<area shape="rect" id="node19" href="$dc/d55/classfractal_1_1Layer.html#a41741a12021eb7b3e700c1e5e7938ccb" title="fractal::Layer::SetPStream" alt="" coords="685,556,862,583"/>
+<area shape="rect" id="node20" href="$da/dbf/classfractal_1_1Connection.html#adf2811ab3189c8e4733b157486b26eb6" title="fractal::Connection\l::SetPStream" alt="" coords="707,607,839,649"/>
+<area shape="rect" id="node23" href="$dc/d55/classfractal_1_1Layer.html#a9d4506c25955a82e09f0c35d43e953d6" title="fractal::Layer::StreamWait\lEvent" alt="" coords="439,1667,614,1709"/>
+<area shape="rect" id="node24" href="$d0/d81/classfractal_1_1Engine.html#adacb8057e763bf56883945cce3994814" title="fractal::Engine::StreamWait\lEvent" alt="" coords="682,1634,865,1675"/>
+<area shape="rect" id="node26" href="$d0/d81/classfractal_1_1Engine.html#aa15f5b72bd80d305036151bc1fafe848" title="fractal::Engine::MatCopy" alt="" coords="443,1019,610,1045"/>
+<area shape="rect" id="node34" href="$da/db4/classfractal_1_1Matrix.html#aab75a76f7b7f9c91b76ce4c9adc076ed" title="fractal::Matrix::Link" alt="" coords="706,1399,841,1425"/>
+<area shape="rect" id="node37" href="$da/dbf/classfractal_1_1Connection.html#a88b1bd4a69a9c1533ce0d2b261ad0825" title="fractal::Connection\l::IsIdentity" alt="" coords="461,1121,593,1162"/>
+<area shape="rect" id="node38" href="$d0/d81/classfractal_1_1Engine.html#a8c5528c801c14c37268ec3dad8596ab6" title="fractal::Engine::MatMult" alt="" coords="446,1069,607,1096"/>
+<area shape="rect" id="node27" href="$da/db4/classfractal_1_1Matrix.html#a93c7ba34d553149900a652dcc8ece6c0" title="fractal::Matrix::GetEngine" alt="" coords="688,943,859,969"/>
+<area shape="rect" id="node28" href="$da/db4/classfractal_1_1Matrix.html#ab2b62fd6991c32429b80c5e8d7b1b7d3" title="fractal::Matrix::GetNumRows" alt="" coords="677,993,870,1020"/>
+<area shape="rect" id="node29" href="$da/db4/classfractal_1_1Matrix.html#a1877f1a0488da6737672fde4a1612718" title="fractal::Matrix::GetNumCols" alt="" coords="680,1095,867,1121"/>
+<area shape="rect" id="node30" href="$da/db4/classfractal_1_1Matrix.html#a09197b1241a2a0dab1454beca8c0e759" title="fractal::Matrix::GetMem" alt="" coords="693,841,853,868"/>
+<area shape="rect" id="node31" href="$d0/d81/classfractal_1_1Engine.html#a17bcae32ab712a4b5e6a80fbaf229596" title="fractal::Engine::MemAlloc" alt="" coords="687,1044,859,1071"/>
+<area shape="rect" id="node33" href="$da/db4/classfractal_1_1Matrix.html#ad88d611ddf1f811d189229a80904b607" title="fractal::Matrix::GetOffset" alt="" coords="690,892,857,919"/>
+<area shape="rect" id="node32" href="$d2/d2d/classfractal_1_1Mem.html#ad43670c786097e153ce1348e57ca615c" title="fractal::Mem::GetSize" alt="" coords="957,1095,1108,1121"/>
+<area shape="rect" id="node35" href="$da/db4/classfractal_1_1Matrix.html#ad50c4aba6a3ea0496ffb863ad23e494f" title="fractal::Matrix::Lock" alt="" coords="963,1373,1102,1400"/>
+<area shape="rect" id="node36" href="$da/db4/classfractal_1_1Matrix.html#a701c094fe728e9f83aaafe109e9e921f" title="fractal::Matrix::Unlock" alt="" coords="957,1424,1108,1451"/>
+<area shape="rect" id="node39" href="$d2/d2d/classfractal_1_1Mem.html#ac519f15876ce1fbb5bae620524b84ddf" title="fractal::Mem::Pull" alt="" coords="711,1247,836,1273"/>
+<area shape="rect" id="node40" href="$d2/d2d/classfractal_1_1Mem.html#a978e450c0bba7860c86f7b850aca0a8c" title="fractal::Mem::GetPtr" alt="" coords="703,1196,844,1223"/>
+<area shape="rect" id="node42" href="$d0/d81/classfractal_1_1Engine.html#a16d23d2844a3bb63df695b2455361a67" title="fractal::Engine::EventRecord" alt="" coords="431,1733,622,1760"/>
+<area shape="rect" id="node44" href="$dc/d55/classfractal_1_1Layer.html#a0582631c535238fac0448fad1b248323" title="fractal::Layer::IsLinked" alt="" coords="449,1551,604,1577"/>
+<area shape="rect" id="node45" href="$de/db1/classfractal_1_1Probe.html#a3e7f32bf6372d20f9235c9094fa82ab5" title="fractal::Probe::IsInput" alt="" coords="453,1500,601,1527"/>
+<area shape="rect" id="node46" href="$de/db1/classfractal_1_1Probe.html#a4348ca6db3c7a6ac3145d33a9d4bfcd3" title="fractal::Probe::StreamWait\lEvent" alt="" coords="438,1602,615,1643"/>
+<area shape="rect" id="node48" href="$dc/d55/classfractal_1_1Layer.html#a85bedac6dd991b7a01a3332f469e2675" title="fractal::Layer::UpdateState" alt="" coords="437,1449,616,1476"/>
+<area shape="rect" id="node49" href="$dc/d55/classfractal_1_1Layer.html#a15ae052db7f8840740bb8f0eb61ac495" title="fractal::Layer::Activation" alt="" coords="445,1399,609,1425"/>
+</map>

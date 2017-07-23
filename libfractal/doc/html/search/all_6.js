@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['basiclayers',['basicLayers',['../d9/d1c/namespacefractal_1_1basicLayers.html',1,'fractal']]],
+  ['cudakernels',['cudaKernels',['../d3/d5d/namespacefractal_1_1cudaKernels.html',1,'fractal']]],
+  ['findlayer',['FindLayer',['../de/dca/classfractal_1_1Rnn.html#a5b97c7b0db5b405e8e2721155ed0514e',1,'fractal::Rnn']]],
+  ['float',['FLOAT',['../d5/d2b/namespacefractal.html#a1c2d2530689575d5ccb56bae52af70d3',1,'fractal']]],
+  ['forward',['Forward',['../da/dbf/classfractal_1_1Connection.html#af95b3556c57e92edb06a4d33364dc0c2',1,'fractal::Connection::Forward()'],['../dc/d55/classfractal_1_1Layer.html#a242176b7a427ac0f4e522ca43f311878',1,'fractal::Layer::Forward()'],['../de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433',1,'fractal::Rnn::Forward()']]],
+  ['forwardwait',['ForwardWait',['../da/dbf/classfractal_1_1Connection.html#a4ccde8145227156ce639a1c050ddb2a4',1,'fractal::Connection::ForwardWait()'],['../dc/d55/classfractal_1_1Layer.html#aebbc3e3f785b1761b50aa4d4607629e5',1,'fractal::Layer::ForwardWait()']]],
+  ['fractal',['fractal',['../d5/d2b/namespacefractal.html',1,'']]],
+  ['fractal_2eh',['fractal.h',['../d6/d3a/fractal_8h.html',1,'']]],
+  ['fractal_5fsingle_5fprecision',['FRACTAL_SINGLE_PRECISION',['../d1/dff/FractalCommon_8h.html#aa35cad40e87e3160f06cc6a4ffecfc6c',1,'FractalCommon.h']]],
+  ['fractal_5fuse_5fcuda',['FRACTAL_USE_CUDA',['../d1/dd4/Engine_8h.html#a7ed0e2cea8e882c24b0879fd811e117d',1,'Engine.h']]],
+  ['fractalcommon_2eh',['FractalCommon.h',['../d1/dff/FractalCommon_8h.html',1,'']]],
+  ['frameidx',['frameIdx',['../de/d67/classfractal_1_1DataStream.html#a9e9a2c8d0f4aa79b44b78eda8ad9e58e',1,'fractal::DataStream']]],
+  ['framestep',['frameStep',['../dc/d5f/classfractal_1_1EvaluateArgs.html#ad1a758b48f7b8980d205cc0d2184aca7',1,'fractal::EvaluateArgs::frameStep()'],['../de/d3f/classfractal_1_1BackpropArgs.html#ae78c53109f97e43a3f4b167e6b562653',1,'fractal::BackpropArgs::frameStep()']]],
+  ['funcboundrange',['FuncBoundRange',['../d0/d81/classfractal_1_1Engine.html#aa40050d410d71f97873bc98fb5086a82',1,'fractal::Engine::FuncBoundRange()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#a6feb31a8214d6d93c06164645f3f67ae',1,'fractal::cudaKernels::FuncBoundRange()']]],
+  ['funcrectlinear',['FuncRectLinear',['../d0/d81/classfractal_1_1Engine.html#ab47e0aa39c3aa8733a55aaee6adb9171',1,'fractal::Engine::FuncRectLinear()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#a1214ead9e6a1af20689767f797e21ad7',1,'fractal::cudaKernels::FuncRectLinear()']]],
+  ['funcrectlinearderiv',['FuncRectLinearDeriv',['../d0/d81/classfractal_1_1Engine.html#ac9a626dc3b4801eb971dfe3b8d83bdeb',1,'fractal::Engine::FuncRectLinearDeriv()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#ae718cea5137940efd2fc610705cb06b2',1,'fractal::cudaKernels::FuncRectLinearDeriv()']]],
+  ['funcsigmoid',['FuncSigmoid',['../d0/d81/classfractal_1_1Engine.html#a02808643a0a582b6b357d077e8355cd4',1,'fractal::Engine::FuncSigmoid()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#a0253e39cf1f3905c6aaa5f8fc875206a',1,'fractal::cudaKernels::FuncSigmoid()']]],
+  ['funcsigmoidderiv',['FuncSigmoidDeriv',['../d0/d81/classfractal_1_1Engine.html#a0b83e5e468d5cebe5dbe101d3105e5c3',1,'fractal::Engine::FuncSigmoidDeriv()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#a694c2d619f8a1707e7ed0c74e9e5e952',1,'fractal::cudaKernels::FuncSigmoidDeriv()']]],
+  ['funcsoftmax',['FuncSoftmax',['../d0/d81/classfractal_1_1Engine.html#a36831f905f730fe773ecf64bc668507e',1,'fractal::Engine::FuncSoftmax()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#a715361cdca467605d0e1f1c617b3ab24',1,'fractal::cudaKernels::FuncSoftmax()']]],
+  ['funcsoftplus',['FuncSoftplus',['../d0/d81/classfractal_1_1Engine.html#a718512834ed660d461fea57dc89a9e75',1,'fractal::Engine::FuncSoftplus()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#a302c1507d587dd97bb1b0c0b4e5e6378',1,'fractal::cudaKernels::FuncSoftplus()']]],
+  ['funcsoftplusderiv',['FuncSoftplusDeriv',['../d0/d81/classfractal_1_1Engine.html#a326b78899fdc906948a157167af5bb2c',1,'fractal::Engine::FuncSoftplusDeriv()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#aba4be7ae2ab58b610d51df2fa9e7af73',1,'fractal::cudaKernels::FuncSoftplusDeriv()']]],
+  ['functanh',['FuncTanh',['../d0/d81/classfractal_1_1Engine.html#a62e164f627f2290f13762c4f0b8df066',1,'fractal::Engine::FuncTanh()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#aab7275ddaf88bbdc0a340e1f6d1010a5',1,'fractal::cudaKernels::FuncTanh()']]],
+  ['functanhderiv',['FuncTanhDeriv',['../d0/d81/classfractal_1_1Engine.html#a2274e6852df59b22f222c32fe8849591',1,'fractal::Engine::FuncTanhDeriv()'],['../d3/d5d/namespacefractal_1_1cudaKernels.html#a68955cd20f3f388efca2144a0ed07925',1,'fractal::cudaKernels::FuncTanhDeriv()']]]
+];

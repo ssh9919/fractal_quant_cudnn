@@ -1,0 +1,244 @@
+\hypertarget{classfractal_1_1RegressionEvaluator}{\section{fractal\+:\+:Regression\+Evaluator Class Reference}
+\label{classfractal_1_1RegressionEvaluator}\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+}
+
+
+{\ttfamily \#include $<$Regression\+Evaluator.\+h$>$}
+
+
+
+Inheritance diagram for fractal\+:\+:Regression\+Evaluator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d0/d94/classfractal_1_1RegressionEvaluator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for fractal\+:\+:Regression\+Evaluator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d79/classfractal_1_1RegressionEvaluator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1RegressionEvaluator_a52a29990f3eee02f9792c38b4f765e95}{Regression\+Evaluator} ()
+\item 
+virtual const double \hyperlink{classfractal_1_1RegressionEvaluator_ab1b2e523dfb7a9886f9637541670b3e7}{Get\+Loss} (const unsigned long output\+Idx) const 
+\item 
+const double \hyperlink{classfractal_1_1RegressionEvaluator_a2833c1db6df6a332ab9fa62f62269c42}{Get\+Mean\+Squared\+Error} (const unsigned long output\+Idx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classfractal_1_1RegressionEvaluator_a3e7c99c111583353ae5a1ccb76cb86db}{Reset} ()
+\item 
+virtual void \hyperlink{classfractal_1_1RegressionEvaluator_ade117e7b38544fcee8c8a6518c7308b4}{Evaluate\+Frames} (const unsigned long output\+Idx, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&target, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&output, const unsigned long n\+Stream, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+virtual void \hyperlink{classfractal_1_1RegressionEvaluator_ac2c59ad7a08a7a86b2d1b5585dd725c2}{Mem\+Alloc} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ unsigned long $>$ \hyperlink{classfractal_1_1RegressionEvaluator_aee654f8276188da1e182e7fc73c491d2}{n\+Sample}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classfractal_1_1RegressionEvaluator_a5a0d13a04c2e3b8d82a85a6fa59a4abf}{se\+Sum}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file Regression\+Evaluator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1RegressionEvaluator_a52a29990f3eee02f9792c38b4f765e95}{\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}!Regression\+Evaluator@{Regression\+Evaluator}}
+\index{Regression\+Evaluator@{Regression\+Evaluator}!fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+\subsubsection[{Regression\+Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Regression\+Evaluator\+::\+Regression\+Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1RegressionEvaluator_a52a29990f3eee02f9792c38b4f765e95}
+
+
+Definition at line 31 of file Regression\+Evaluator.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1RegressionEvaluator_ade117e7b38544fcee8c8a6518c7308b4}{\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}!Evaluate\+Frames@{Evaluate\+Frames}}
+\index{Evaluate\+Frames@{Evaluate\+Frames}!fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+\subsubsection[{Evaluate\+Frames}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Regression\+Evaluator\+::\+Evaluate\+Frames (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{target, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{output, }
+\item[{const unsigned long}]{n\+Stream, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classfractal_1_1RegressionEvaluator_ade117e7b38544fcee8c8a6518c7308b4}
+
+
+Implements \hyperlink{classfractal_1_1Evaluator_a9bb323a73e59475ce155bb593911b0f7}{fractal\+::\+Evaluator}.
+
+
+
+Reimplemented in \hyperlink{classfractal_1_1ClassificationEvaluator_a75e22cc1abbbeb16aa4d3e700fbe182c}{fractal\+::\+Classification\+Evaluator}.
+
+
+
+Definition at line 48 of file Regression\+Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/da8/classfractal_1_1RegressionEvaluator_ade117e7b38544fcee8c8a6518c7308b4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1RegressionEvaluator_ab1b2e523dfb7a9886f9637541670b3e7}{\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}!Get\+Loss@{Get\+Loss}}
+\index{Get\+Loss@{Get\+Loss}!fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+\subsubsection[{Get\+Loss}]{\setlength{\rightskip}{0pt plus 5cm}const double fractal\+::\+Regression\+Evaluator\+::\+Get\+Loss (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1RegressionEvaluator_ab1b2e523dfb7a9886f9637541670b3e7}
+
+
+Implements \hyperlink{classfractal_1_1Evaluator_adefc2a02527a14868fed601bd6827525}{fractal\+::\+Evaluator}.
+
+
+
+Reimplemented in \hyperlink{classfractal_1_1ClassificationEvaluator_a15e9ad1d3e4c180729dd5bd07d4a6b78}{fractal\+::\+Classification\+Evaluator}.
+
+
+
+Definition at line 23 of file Regression\+Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/da8/classfractal_1_1RegressionEvaluator_ab1b2e523dfb7a9886f9637541670b3e7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1RegressionEvaluator_a2833c1db6df6a332ab9fa62f62269c42}{\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}!Get\+Mean\+Squared\+Error@{Get\+Mean\+Squared\+Error}}
+\index{Get\+Mean\+Squared\+Error@{Get\+Mean\+Squared\+Error}!fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+\subsubsection[{Get\+Mean\+Squared\+Error}]{\setlength{\rightskip}{0pt plus 5cm}const double fractal\+::\+Regression\+Evaluator\+::\+Get\+Mean\+Squared\+Error (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1RegressionEvaluator_a2833c1db6df6a332ab9fa62f62269c42}
+
+
+Definition at line 28 of file Regression\+Evaluator.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/da8/classfractal_1_1RegressionEvaluator_a2833c1db6df6a332ab9fa62f62269c42_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1RegressionEvaluator_ac2c59ad7a08a7a86b2d1b5585dd725c2}{\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}!Mem\+Alloc@{Mem\+Alloc}}
+\index{Mem\+Alloc@{Mem\+Alloc}!fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+\subsubsection[{Mem\+Alloc}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Regression\+Evaluator\+::\+Mem\+Alloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classfractal_1_1RegressionEvaluator_ac2c59ad7a08a7a86b2d1b5585dd725c2}
+
+
+Implements \hyperlink{classfractal_1_1Evaluator_a52a8eb1bb6fd4d1194050479ecb31c65}{fractal\+::\+Evaluator}.
+
+
+
+Reimplemented in \hyperlink{classfractal_1_1ClassificationEvaluator_aed4e92ea92c89ba01dd12cdde7215e70}{fractal\+::\+Classification\+Evaluator}.
+
+
+
+Definition at line 89 of file Regression\+Evaluator.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/da8/classfractal_1_1RegressionEvaluator_ac2c59ad7a08a7a86b2d1b5585dd725c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1RegressionEvaluator_a3e7c99c111583353ae5a1ccb76cb86db}{\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}!Reset@{Reset}}
+\index{Reset@{Reset}!fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Regression\+Evaluator\+::\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classfractal_1_1RegressionEvaluator_a3e7c99c111583353ae5a1ccb76cb86db}
+
+
+Implements \hyperlink{classfractal_1_1Evaluator_a53ebcfd31f9742a6f0e8eec5556c6cd2}{fractal\+::\+Evaluator}.
+
+
+
+Reimplemented in \hyperlink{classfractal_1_1ClassificationEvaluator_a5bb2747a1915e12e6e0eec31fd857b84}{fractal\+::\+Classification\+Evaluator}.
+
+
+
+Definition at line 36 of file Regression\+Evaluator.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/da8/classfractal_1_1RegressionEvaluator_a3e7c99c111583353ae5a1ccb76cb86db_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1RegressionEvaluator_aee654f8276188da1e182e7fc73c491d2}{\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}!n\+Sample@{n\+Sample}}
+\index{n\+Sample@{n\+Sample}!fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+\subsubsection[{n\+Sample}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned long$>$ fractal\+::\+Regression\+Evaluator\+::n\+Sample\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1RegressionEvaluator_aee654f8276188da1e182e7fc73c491d2}
+
+
+Definition at line 43 of file Regression\+Evaluator.\+h.
+
+\hypertarget{classfractal_1_1RegressionEvaluator_a5a0d13a04c2e3b8d82a85a6fa59a4abf}{\index{fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}!se\+Sum@{se\+Sum}}
+\index{se\+Sum@{se\+Sum}!fractal\+::\+Regression\+Evaluator@{fractal\+::\+Regression\+Evaluator}}
+\subsubsection[{se\+Sum}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ fractal\+::\+Regression\+Evaluator\+::se\+Sum\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1RegressionEvaluator_a5a0d13a04c2e3b8d82a85a6fa59a4abf}
+
+
+Definition at line 44 of file Regression\+Evaluator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\hyperlink{RegressionEvaluator_8h}{Regression\+Evaluator.\+h}\item 
+src/util/\hyperlink{RegressionEvaluator_8cc}{Regression\+Evaluator.\+cc}\end{DoxyCompactItemize}

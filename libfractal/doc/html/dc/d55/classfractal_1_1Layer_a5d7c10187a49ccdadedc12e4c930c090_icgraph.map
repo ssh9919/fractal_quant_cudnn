@@ -1,0 +1,9 @@
+<map id="fractal::Layer::GetSize" name="fractal::Layer::GetSize">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#a2e77dd8f37c2021d7b08fc012bdcd30c" title="fractal::Connection\l::Connection" alt="" coords="234,5,366,47"/>
+<area shape="rect" id="node3" href="$da/dbf/classfractal_1_1Connection.html#a09020f3027a886b7971baba901d8bf41" title="fractal::Connection\l::SetBatchSize" alt="" coords="234,71,366,112"/>
+<area shape="rect" id="node5" href="$da/dbf/classfractal_1_1Connection.html#a6beb3752a66f62f60238c22430486593" title="fractal::Connection\l::InitAdadelta" alt="" coords="234,136,366,177"/>
+<area shape="rect" id="node6" href="$da/dbf/classfractal_1_1Connection.html#a74c18a8efe61e4890c69b26063f74175" title="fractal::Connection\l::InitRmsprop" alt="" coords="234,201,366,243"/>
+<area shape="rect" id="node7" href="$da/dbf/classfractal_1_1Connection.html#a8da7f0061214ed460eef30d18be2966d" title="fractal::Connection\l::GetNumWeights" alt="" coords="234,267,366,308"/>
+<area shape="rect" id="node8" href="$de/db1/classfractal_1_1Probe.html#a015e5e7f7535d4f67b3e191bea7cb42f" title="fractal::Probe::GetLayerSize" alt="" coords="207,333,393,359"/>
+<area shape="rect" id="node4" href="$de/dca/classfractal_1_1Rnn.html#aab6852a5cb264078d3ea17c264bdd569" title="Add a connection. " alt="" coords="441,78,628,105"/>
+</map>

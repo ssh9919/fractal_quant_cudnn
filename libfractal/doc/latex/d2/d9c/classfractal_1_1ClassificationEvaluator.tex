@@ -1,0 +1,254 @@
+\hypertarget{classfractal_1_1ClassificationEvaluator}{\section{fractal\+:\+:Classification\+Evaluator Class Reference}
+\label{classfractal_1_1ClassificationEvaluator}\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+}
+
+
+{\ttfamily \#include $<$Classification\+Evaluator.\+h$>$}
+
+
+
+Inheritance diagram for fractal\+:\+:Classification\+Evaluator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{d6/ddb/classfractal_1_1ClassificationEvaluator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for fractal\+:\+:Classification\+Evaluator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d5d/classfractal_1_1ClassificationEvaluator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1ClassificationEvaluator_a6e0d5eac68626e054431dfc84cedf233}{Classification\+Evaluator} ()
+\item 
+virtual const double \hyperlink{classfractal_1_1ClassificationEvaluator_a15e9ad1d3e4c180729dd5bd07d4a6b78}{Get\+Loss} (const unsigned long output\+Idx) const 
+\item 
+const double \hyperlink{classfractal_1_1ClassificationEvaluator_ae0a157cb226de16be62a90491a3986c4}{Get\+Average\+Cross\+Entropy} (const unsigned long output\+Idx) const 
+\item 
+const double \hyperlink{classfractal_1_1ClassificationEvaluator_a07b4148d558449577463703022c4959a}{Get\+Frame\+Error\+Rate} (const unsigned long output\+Idx) const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1ClassificationEvaluator_a4345f14ad53a36abe05627cb83c1a367}{Get\+Frame\+Error\+Count} (const unsigned long output\+Idx) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classfractal_1_1ClassificationEvaluator_a5bb2747a1915e12e6e0eec31fd857b84}{Reset} ()
+\item 
+virtual void \hyperlink{classfractal_1_1ClassificationEvaluator_a75e22cc1abbbeb16aa4d3e700fbe182c}{Evaluate\+Frames} (const unsigned long output\+Idx, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&target, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&output, const unsigned long n\+Stream, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+virtual void \hyperlink{classfractal_1_1ClassificationEvaluator_aed4e92ea92c89ba01dd12cdde7215e70}{Mem\+Alloc} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ unsigned long $>$ \hyperlink{classfractal_1_1ClassificationEvaluator_a3881e87f040fa426adb3f6e26d167b8b}{n\+Error}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classfractal_1_1ClassificationEvaluator_abea071ea947237bc9db18378509a1094}{ce\+Sum}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file Classification\+Evaluator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1ClassificationEvaluator_a6e0d5eac68626e054431dfc84cedf233}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!Classification\+Evaluator@{Classification\+Evaluator}}
+\index{Classification\+Evaluator@{Classification\+Evaluator}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{Classification\+Evaluator}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Classification\+Evaluator\+::\+Classification\+Evaluator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1ClassificationEvaluator_a6e0d5eac68626e054431dfc84cedf233}
+
+
+Definition at line 31 of file Classification\+Evaluator.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1ClassificationEvaluator_a75e22cc1abbbeb16aa4d3e700fbe182c}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!Evaluate\+Frames@{Evaluate\+Frames}}
+\index{Evaluate\+Frames@{Evaluate\+Frames}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{Evaluate\+Frames}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Classification\+Evaluator\+::\+Evaluate\+Frames (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{target, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{output, }
+\item[{const unsigned long}]{n\+Stream, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classfractal_1_1ClassificationEvaluator_a75e22cc1abbbeb16aa4d3e700fbe182c}
+
+
+Reimplemented from \hyperlink{classfractal_1_1RegressionEvaluator_ade117e7b38544fcee8c8a6518c7308b4}{fractal\+::\+Regression\+Evaluator}.
+
+
+
+Definition at line 70 of file Classification\+Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9c/classfractal_1_1ClassificationEvaluator_a75e22cc1abbbeb16aa4d3e700fbe182c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1ClassificationEvaluator_ae0a157cb226de16be62a90491a3986c4}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!Get\+Average\+Cross\+Entropy@{Get\+Average\+Cross\+Entropy}}
+\index{Get\+Average\+Cross\+Entropy@{Get\+Average\+Cross\+Entropy}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{Get\+Average\+Cross\+Entropy}]{\setlength{\rightskip}{0pt plus 5cm}const double fractal\+::\+Classification\+Evaluator\+::\+Get\+Average\+Cross\+Entropy (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1ClassificationEvaluator_ae0a157cb226de16be62a90491a3986c4}
+
+
+Definition at line 32 of file Classification\+Evaluator.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9c/classfractal_1_1ClassificationEvaluator_ae0a157cb226de16be62a90491a3986c4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1ClassificationEvaluator_a4345f14ad53a36abe05627cb83c1a367}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!Get\+Frame\+Error\+Count@{Get\+Frame\+Error\+Count}}
+\index{Get\+Frame\+Error\+Count@{Get\+Frame\+Error\+Count}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{Get\+Frame\+Error\+Count}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Classification\+Evaluator\+::\+Get\+Frame\+Error\+Count (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1ClassificationEvaluator_a4345f14ad53a36abe05627cb83c1a367}
+
+
+Definition at line 48 of file Classification\+Evaluator.\+cc.
+
+\hypertarget{classfractal_1_1ClassificationEvaluator_a07b4148d558449577463703022c4959a}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!Get\+Frame\+Error\+Rate@{Get\+Frame\+Error\+Rate}}
+\index{Get\+Frame\+Error\+Rate@{Get\+Frame\+Error\+Rate}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{Get\+Frame\+Error\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}const double fractal\+::\+Classification\+Evaluator\+::\+Get\+Frame\+Error\+Rate (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1ClassificationEvaluator_a07b4148d558449577463703022c4959a}
+
+
+Definition at line 40 of file Classification\+Evaluator.\+cc.
+
+\hypertarget{classfractal_1_1ClassificationEvaluator_a15e9ad1d3e4c180729dd5bd07d4a6b78}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!Get\+Loss@{Get\+Loss}}
+\index{Get\+Loss@{Get\+Loss}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{Get\+Loss}]{\setlength{\rightskip}{0pt plus 5cm}const double fractal\+::\+Classification\+Evaluator\+::\+Get\+Loss (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{output\+Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1ClassificationEvaluator_a15e9ad1d3e4c180729dd5bd07d4a6b78}
+
+
+Reimplemented from \hyperlink{classfractal_1_1RegressionEvaluator_ab1b2e523dfb7a9886f9637541670b3e7}{fractal\+::\+Regression\+Evaluator}.
+
+
+
+Definition at line 26 of file Classification\+Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9c/classfractal_1_1ClassificationEvaluator_a15e9ad1d3e4c180729dd5bd07d4a6b78_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1ClassificationEvaluator_aed4e92ea92c89ba01dd12cdde7215e70}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!Mem\+Alloc@{Mem\+Alloc}}
+\index{Mem\+Alloc@{Mem\+Alloc}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{Mem\+Alloc}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Classification\+Evaluator\+::\+Mem\+Alloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classfractal_1_1ClassificationEvaluator_aed4e92ea92c89ba01dd12cdde7215e70}
+
+
+Reimplemented from \hyperlink{classfractal_1_1RegressionEvaluator_ac2c59ad7a08a7a86b2d1b5585dd725c2}{fractal\+::\+Regression\+Evaluator}.
+
+
+
+Definition at line 148 of file Classification\+Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9c/classfractal_1_1ClassificationEvaluator_aed4e92ea92c89ba01dd12cdde7215e70_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1ClassificationEvaluator_a5bb2747a1915e12e6e0eec31fd857b84}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!Reset@{Reset}}
+\index{Reset@{Reset}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Classification\+Evaluator\+::\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classfractal_1_1ClassificationEvaluator_a5bb2747a1915e12e6e0eec31fd857b84}
+
+
+Reimplemented from \hyperlink{classfractal_1_1RegressionEvaluator_a3e7c99c111583353ae5a1ccb76cb86db}{fractal\+::\+Regression\+Evaluator}.
+
+
+
+Definition at line 56 of file Classification\+Evaluator.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d9c/classfractal_1_1ClassificationEvaluator_a5bb2747a1915e12e6e0eec31fd857b84_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1ClassificationEvaluator_abea071ea947237bc9db18378509a1094}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!ce\+Sum@{ce\+Sum}}
+\index{ce\+Sum@{ce\+Sum}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{ce\+Sum}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ fractal\+::\+Classification\+Evaluator\+::ce\+Sum\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1ClassificationEvaluator_abea071ea947237bc9db18378509a1094}
+
+
+Definition at line 46 of file Classification\+Evaluator.\+h.
+
+\hypertarget{classfractal_1_1ClassificationEvaluator_a3881e87f040fa426adb3f6e26d167b8b}{\index{fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}!n\+Error@{n\+Error}}
+\index{n\+Error@{n\+Error}!fractal\+::\+Classification\+Evaluator@{fractal\+::\+Classification\+Evaluator}}
+\subsubsection[{n\+Error}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned long$>$ fractal\+::\+Classification\+Evaluator\+::n\+Error\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1ClassificationEvaluator_a3881e87f040fa426adb3f6e26d167b8b}
+
+
+Definition at line 45 of file Classification\+Evaluator.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\hyperlink{ClassificationEvaluator_8h}{Classification\+Evaluator.\+h}\item 
+src/util/\hyperlink{ClassificationEvaluator_8cc}{Classification\+Evaluator.\+cc}\end{DoxyCompactItemize}

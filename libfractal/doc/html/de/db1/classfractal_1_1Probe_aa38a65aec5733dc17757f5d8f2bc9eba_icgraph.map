@@ -1,0 +1,6 @@
+<map id="fractal::Probe::GetError" name="fractal::Probe::GetError">
+<area shape="rect" id="node2" href="$d8/ddf/classfractal_1_1Optimizer.html#a38d36c5b2dd0d4d2d971d6d8a7d2631e" title="fractal::Optimizer\l::BackpropPipe2" alt="" coords="211,5,333,47"/>
+<area shape="rect" id="node5" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="211,71,333,112"/>
+<area shape="rect" id="node3" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="381,39,504,80"/>
+<area shape="rect" id="node4" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="552,39,701,80"/>
+</map>

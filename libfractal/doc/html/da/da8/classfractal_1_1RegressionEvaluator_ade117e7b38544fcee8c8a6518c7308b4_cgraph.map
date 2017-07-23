@@ -1,0 +1,7 @@
+<map id="fractal::RegressionEvaluator::EvaluateFrames" name="fractal::RegressionEvaluator::EvaluateFrames">
+<area shape="rect" id="node2" href="$da/db4/classfractal_1_1Matrix.html#ab2b62fd6991c32429b80c5e8d7b1b7d3" title="fractal::Matrix::GetNumRows" alt="" coords="257,5,451,32"/>
+<area shape="rect" id="node3" href="$da/db4/classfractal_1_1Matrix.html#a1877f1a0488da6737672fde4a1612718" title="fractal::Matrix::GetNumCols" alt="" coords="261,56,447,83"/>
+<area shape="rect" id="node4" href="$da/db4/classfractal_1_1Matrix.html#a57b3a183709d354fc83020a8ef87d1b2" title="fractal::Matrix::HostPull" alt="" coords="274,107,434,133"/>
+<area shape="rect" id="node5" href="$d0/d81/classfractal_1_1Engine.html#ad2269e3394f4270d5611234702029bc9" title="fractal::Engine::StreamSynchronize" alt="" coords="240,157,468,184"/>
+<area shape="rect" id="node6" href="$da/db4/classfractal_1_1Matrix.html#a30d2a69f1bbb44f10f430e56481b818c" title="fractal::Matrix::GetHostData" alt="" coords="261,208,447,235"/>
+</map>

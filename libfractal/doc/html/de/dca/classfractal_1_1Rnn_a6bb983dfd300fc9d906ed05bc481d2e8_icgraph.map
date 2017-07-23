@@ -1,0 +1,13 @@
+<map id="fractal::Rnn::ClearSccList" name="fractal::Rnn::ClearSccList">
+<area shape="rect" id="node2" href="$de/dca/classfractal_1_1Rnn.html#aff5d760fe57f949ad69a913757deb874" title="Perform Tarjan&#39;s strongly connected component (SCC) algorithm. " alt="" coords="227,82,361,109"/>
+<area shape="rect" id="node11" href="$de/dca/classfractal_1_1Rnn.html#adfde0d83db888e47db7ed9e71369fab1" title="Free resources. " alt="" coords="229,133,359,159"/>
+<area shape="rect" id="node3" href="$de/dca/classfractal_1_1Rnn.html#a907f94c280782ef96ee7041d5711db61" title="Get ready to perform forward and backward propagation. " alt="" coords="409,82,545,109"/>
+<area shape="rect" id="node4" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="599,31,744,58"/>
+<area shape="rect" id="node7" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="1139,71,1288,112"/>
+<area shape="rect" id="node10" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="593,82,749,109"/>
+<area shape="rect" id="node5" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="798,5,919,47"/>
+<area shape="rect" id="node8" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="797,71,920,112"/>
+<area shape="rect" id="node6" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="969,5,1090,47"/>
+<area shape="rect" id="node9" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="968,71,1091,112"/>
+<area shape="rect" id="node12" href="$de/dca/classfractal_1_1Rnn.html#a7c31fea1e6eecb80d0f3139b2ea12206" title="The destructor. " alt="" coords="412,133,543,159"/>
+</map>

@@ -1,0 +1,504 @@
+\hypertarget{classfractal_1_1DataStream}{\section{fractal\+:\+:Data\+Stream Class Reference}
+\label{classfractal_1_1DataStream}\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+}
+
+
+{\ttfamily \#include $<$Data\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for fractal\+:\+:Data\+Stream\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{d3/d5d/classfractal_1_1DataStream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for fractal\+:\+:Data\+Stream\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{d9/d64/classfractal_1_1DataStream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1DataStream_a5e0b49784823158039230c7e2f24dc38}{Data\+Stream} ()
+\item 
+void \hyperlink{classfractal_1_1DataStream_a9959a6264209e2bace1e27b942e40544}{Set\+Num\+Stream} (const unsigned long \hyperlink{classfractal_1_1DataStream_aad7f2cba4a0f2fde83daa29465f81d13}{n\+Stream})
+\item 
+const unsigned long \hyperlink{classfractal_1_1DataStream_a6a32912602f4fe4646c5a07b640ebfcf}{Get\+Num\+Stream} () const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1DataStream_a17be66ba8094b0bf807938db2d4de684}{Get\+Num\+Channel} () const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1DataStream_a65660493a4a750cc56d7521f48f76905}{Get\+Dimension} (const unsigned long channel\+Idx) const 
+\item 
+void \hyperlink{classfractal_1_1DataStream_aff176d1279fbd908dd4e5053877c8431}{Reset} ()
+\item 
+void \hyperlink{classfractal_1_1DataStream_afcd71486c0963a0b5bc3be09e9086ace}{Next} (const unsigned long stream\+Idx)
+\item 
+void \hyperlink{classfractal_1_1DataStream_ab77fa64192765973459f6d5602dbfd3a}{Generate\+Frame} (const unsigned long stream\+Idx, const unsigned long channel\+Idx, \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $\ast$const frame)
+\item 
+void \hyperlink{classfractal_1_1DataStream_a60b12892a760220814b78daade8375d1}{Set\+Delay} (const unsigned long channel\+Idx, const unsigned long \hyperlink{classfractal_1_1DataStream_aee0c7dd8635f71a1e1de54a420894b59}{delay})
+\item 
+void \hyperlink{classfractal_1_1DataStream_a8f0c3f1ba2567478f8b1ebdfe16592fd}{Link\+Data\+Set} (\hyperlink{classfractal_1_1DataSet}{Data\+Set} $\ast$\hyperlink{classfractal_1_1DataStream_a839fc0232b60bc2f7c156370d0e6f9db}{data\+Set})
+\item 
+void \hyperlink{classfractal_1_1DataStream_abe96c80dcab04602d4b9139ecc4f70c0}{Unlink\+Data\+Set} ()
+\item 
+void \hyperlink{classfractal_1_1DataStream_a26e50076d103ed6fb67697c78ea39f8c}{Set\+Random\+Seed} (unsigned long long seed)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfractal_1_1DataStream_adce5798d1aee0a41699ab115f9637bd4}{Alloc} ()
+\item 
+void \hyperlink{classfractal_1_1DataStream_aedc5d6e1ac88b56eb720ed6fa3c2cd88}{New\+Seq} (const unsigned long stream\+Idx)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{classfractal_1_1DataStream_aad7f2cba4a0f2fde83daa29465f81d13}{n\+Stream}
+\item 
+unsigned long \hyperlink{classfractal_1_1DataStream_a5af9425ea6fd0951e8354bba788c0b44}{n\+Channel}
+\item 
+std\+::vector$<$ unsigned long $>$ \hyperlink{classfractal_1_1DataStream_a067bd83ca8fc147bc86c925fc8251a07}{dim}
+\item 
+std\+::vector$<$ unsigned long $>$ \hyperlink{classfractal_1_1DataStream_aee0c7dd8635f71a1e1de54a420894b59}{delay}
+\item 
+std\+::vector$<$ unsigned long $>$ \hyperlink{classfractal_1_1DataStream_acecf5629e8c466ef8dc7b4570decb247}{seq\+Idx}
+\item 
+std\+::vector$<$ unsigned long $>$ \hyperlink{classfractal_1_1DataStream_a9e9a2c8d0f4aa79b44b78eda8ad9e58e}{frame\+Idx}
+\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ unsigned long $>$ $>$ \hyperlink{classfractal_1_1DataStream_aee8dc86b4b1f78b3ff93e3fb5bb7d009}{buf\+Idx}
+\item 
+std\+::vector$<$ std\+::vector\\*
+$<$ std\+::vector$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ $>$ $>$ \hyperlink{classfractal_1_1DataStream_aa606d09cd8ee4dc947ee5422b1d69921}{buf}
+\item 
+\hyperlink{classfractal_1_1DataSet}{Data\+Set} $\ast$ \hyperlink{classfractal_1_1DataStream_a839fc0232b60bc2f7c156370d0e6f9db}{data\+Set}
+\item 
+std\+::mt19937\+\_\+64 \hyperlink{classfractal_1_1DataStream_a31caefa3fd9d99bbe0b8a19191687b53}{rand\+Gen}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file Data\+Stream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1DataStream_a5e0b49784823158039230c7e2f24dc38}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Data\+Stream@{Data\+Stream}}
+\index{Data\+Stream@{Data\+Stream}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Data\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Data\+Stream\+::\+Data\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1DataStream_a5e0b49784823158039230c7e2f24dc38}
+
+
+Definition at line 28 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{de/d67/classfractal_1_1DataStream_a5e0b49784823158039230c7e2f24dc38_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1DataStream_adce5798d1aee0a41699ab115f9637bd4}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Alloc}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Alloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_adce5798d1aee0a41699ab115f9637bd4}
+
+
+Definition at line 75 of file Data\+Stream.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{de/d67/classfractal_1_1DataStream_adce5798d1aee0a41699ab115f9637bd4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1DataStream_ab77fa64192765973459f6d5602dbfd3a}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Generate\+Frame@{Generate\+Frame}}
+\index{Generate\+Frame@{Generate\+Frame}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Generate\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Generate\+Frame (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{stream\+Idx, }
+\item[{const unsigned long}]{channel\+Idx, }
+\item[{{\bf F\+L\+O\+A\+T} $\ast$const}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1DataStream_ab77fa64192765973459f6d5602dbfd3a}
+
+
+Implements \hyperlink{classfractal_1_1Stream_abd510f6e3f432c3af530f94bf509a177}{fractal\+::\+Stream}.
+
+
+
+Definition at line 204 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_ab77fa64192765973459f6d5602dbfd3a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1DataStream_a65660493a4a750cc56d7521f48f76905}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Get\+Dimension@{Get\+Dimension}}
+\index{Get\+Dimension@{Get\+Dimension}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Get\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Data\+Stream\+::\+Get\+Dimension (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{channel\+Idx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1DataStream_a65660493a4a750cc56d7521f48f76905}
+
+
+Implements \hyperlink{classfractal_1_1Stream_a8159e43996cb2ab25f48c02492028544}{fractal\+::\+Stream}.
+
+
+
+Definition at line 130 of file Data\+Stream.\+cc.
+
+\hypertarget{classfractal_1_1DataStream_a17be66ba8094b0bf807938db2d4de684}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Get\+Num\+Channel@{Get\+Num\+Channel}}
+\index{Get\+Num\+Channel@{Get\+Num\+Channel}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Get\+Num\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Data\+Stream\+::\+Get\+Num\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1DataStream_a17be66ba8094b0bf807938db2d4de684}
+
+
+Implements \hyperlink{classfractal_1_1Stream_a599bdaf1050788a560802d1e7abfd5b9}{fractal\+::\+Stream}.
+
+
+
+Definition at line 124 of file Data\+Stream.\+cc.
+
+\hypertarget{classfractal_1_1DataStream_a6a32912602f4fe4646c5a07b640ebfcf}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Get\+Num\+Stream@{Get\+Num\+Stream}}
+\index{Get\+Num\+Stream@{Get\+Num\+Stream}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Get\+Num\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Data\+Stream\+::\+Get\+Num\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1DataStream_a6a32912602f4fe4646c5a07b640ebfcf}
+
+
+Implements \hyperlink{classfractal_1_1Stream_aebff003544eb56f37de1b82a7b7d9fe0}{fractal\+::\+Stream}.
+
+
+
+Definition at line 118 of file Data\+Stream.\+cc.
+
+\hypertarget{classfractal_1_1DataStream_a8f0c3f1ba2567478f8b1ebdfe16592fd}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Link\+Data\+Set@{Link\+Data\+Set}}
+\index{Link\+Data\+Set@{Link\+Data\+Set}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Link\+Data\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Link\+Data\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Set} $\ast$}]{data\+Set}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1DataStream_a8f0c3f1ba2567478f8b1ebdfe16592fd}
+
+
+Definition at line 38 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_a8f0c3f1ba2567478f8b1ebdfe16592fd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1DataStream_aedc5d6e1ac88b56eb720ed6fa3c2cd88}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!New\+Seq@{New\+Seq}}
+\index{New\+Seq@{New\+Seq}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{New\+Seq}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+New\+Seq (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{stream\+Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_aedc5d6e1ac88b56eb720ed6fa3c2cd88}
+
+
+Definition at line 241 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_aedc5d6e1ac88b56eb720ed6fa3c2cd88_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_aedc5d6e1ac88b56eb720ed6fa3c2cd88_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1DataStream_afcd71486c0963a0b5bc3be09e9086ace}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Next@{Next}}
+\index{Next@{Next}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Next}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Next (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{stream\+Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1DataStream_afcd71486c0963a0b5bc3be09e9086ace}
+
+
+Implements \hyperlink{classfractal_1_1Stream_a059cd85c6b775acb36b273bfab57e6a1}{fractal\+::\+Stream}.
+
+
+
+Definition at line 169 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_afcd71486c0963a0b5bc3be09e9086ace_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_afcd71486c0963a0b5bc3be09e9086ace_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1DataStream_aff176d1279fbd908dd4e5053877c8431}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Reset@{Reset}}
+\index{Reset@{Reset}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1DataStream_aff176d1279fbd908dd4e5053877c8431}
+
+
+Implements \hyperlink{classfractal_1_1Stream_a0d31428cf827092ade973edf9c7fe340}{fractal\+::\+Stream}.
+
+
+
+Definition at line 138 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_aff176d1279fbd908dd4e5053877c8431_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{de/d67/classfractal_1_1DataStream_aff176d1279fbd908dd4e5053877c8431_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1DataStream_a60b12892a760220814b78daade8375d1}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Set\+Delay@{Set\+Delay}}
+\index{Set\+Delay@{Set\+Delay}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Set\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Set\+Delay (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{channel\+Idx, }
+\item[{const unsigned long}]{delay}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1DataStream_a60b12892a760220814b78daade8375d1}
+
+
+Definition at line 230 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_a60b12892a760220814b78daade8375d1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1DataStream_a9959a6264209e2bace1e27b942e40544}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Set\+Num\+Stream@{Set\+Num\+Stream}}
+\index{Set\+Num\+Stream@{Set\+Num\+Stream}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Set\+Num\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Set\+Num\+Stream (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{n\+Stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1DataStream_a9959a6264209e2bace1e27b942e40544}
+
+
+Implements \hyperlink{classfractal_1_1Stream_a9e4e5f26db5d1342426d646ad1c98000}{fractal\+::\+Stream}.
+
+
+
+Definition at line 107 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d67/classfractal_1_1DataStream_a9959a6264209e2bace1e27b942e40544_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1DataStream_a26e50076d103ed6fb67697c78ea39f8c}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Set\+Random\+Seed@{Set\+Random\+Seed}}
+\index{Set\+Random\+Seed@{Set\+Random\+Seed}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Set\+Random\+Seed}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Set\+Random\+Seed (
+\begin{DoxyParamCaption}
+\item[{unsigned long long}]{seed}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1DataStream_a26e50076d103ed6fb67697c78ea39f8c}
+
+
+Definition at line 258 of file Data\+Stream.\+cc.
+
+\hypertarget{classfractal_1_1DataStream_abe96c80dcab04602d4b9139ecc4f70c0}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!Unlink\+Data\+Set@{Unlink\+Data\+Set}}
+\index{Unlink\+Data\+Set@{Unlink\+Data\+Set}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{Unlink\+Data\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Data\+Stream\+::\+Unlink\+Data\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1DataStream_abe96c80dcab04602d4b9139ecc4f70c0}
+
+
+Definition at line 66 of file Data\+Stream.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{de/d67/classfractal_1_1DataStream_abe96c80dcab04602d4b9139ecc4f70c0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1DataStream_aa606d09cd8ee4dc947ee5422b1d69921}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!buf@{buf}}
+\index{buf@{buf}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{buf}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<$std\+::vector$<${\bf F\+L\+O\+A\+T}$>$ $>$ $>$ fractal\+::\+Data\+Stream\+::buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_aa606d09cd8ee4dc947ee5422b1d69921}
+
+
+Definition at line 67 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_aee8dc86b4b1f78b3ff93e3fb5bb7d009}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!buf\+Idx@{buf\+Idx}}
+\index{buf\+Idx@{buf\+Idx}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{buf\+Idx}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<$unsigned long$>$ $>$ fractal\+::\+Data\+Stream\+::buf\+Idx\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_aee8dc86b4b1f78b3ff93e3fb5bb7d009}
+
+
+Definition at line 66 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_a839fc0232b60bc2f7c156370d0e6f9db}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!data\+Set@{data\+Set}}
+\index{data\+Set@{data\+Set}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{data\+Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Set}$\ast$ fractal\+::\+Data\+Stream\+::data\+Set\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_a839fc0232b60bc2f7c156370d0e6f9db}
+
+
+Definition at line 69 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_aee0c7dd8635f71a1e1de54a420894b59}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!delay@{delay}}
+\index{delay@{delay}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{delay}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned long$>$ fractal\+::\+Data\+Stream\+::delay\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_aee0c7dd8635f71a1e1de54a420894b59}
+
+
+Definition at line 64 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_a067bd83ca8fc147bc86c925fc8251a07}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!dim@{dim}}
+\index{dim@{dim}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{dim}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned long$>$ fractal\+::\+Data\+Stream\+::dim\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_a067bd83ca8fc147bc86c925fc8251a07}
+
+
+Definition at line 63 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_a9e9a2c8d0f4aa79b44b78eda8ad9e58e}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!frame\+Idx@{frame\+Idx}}
+\index{frame\+Idx@{frame\+Idx}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{frame\+Idx}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned long$>$ fractal\+::\+Data\+Stream\+::frame\+Idx\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_a9e9a2c8d0f4aa79b44b78eda8ad9e58e}
+
+
+Definition at line 65 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_a5af9425ea6fd0951e8354bba788c0b44}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!n\+Channel@{n\+Channel}}
+\index{n\+Channel@{n\+Channel}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{n\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Data\+Stream\+::n\+Channel\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_a5af9425ea6fd0951e8354bba788c0b44}
+
+
+Definition at line 61 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_aad7f2cba4a0f2fde83daa29465f81d13}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!n\+Stream@{n\+Stream}}
+\index{n\+Stream@{n\+Stream}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{n\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Data\+Stream\+::n\+Stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_aad7f2cba4a0f2fde83daa29465f81d13}
+
+
+Definition at line 60 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_a31caefa3fd9d99bbe0b8a19191687b53}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!rand\+Gen@{rand\+Gen}}
+\index{rand\+Gen@{rand\+Gen}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{rand\+Gen}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mt19937\+\_\+64 fractal\+::\+Data\+Stream\+::rand\+Gen\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_a31caefa3fd9d99bbe0b8a19191687b53}
+
+
+Definition at line 71 of file Data\+Stream.\+h.
+
+\hypertarget{classfractal_1_1DataStream_acecf5629e8c466ef8dc7b4570decb247}{\index{fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}!seq\+Idx@{seq\+Idx}}
+\index{seq\+Idx@{seq\+Idx}!fractal\+::\+Data\+Stream@{fractal\+::\+Data\+Stream}}
+\subsubsection[{seq\+Idx}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned long$>$ fractal\+::\+Data\+Stream\+::seq\+Idx\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1DataStream_acecf5629e8c466ef8dc7b4570decb247}
+
+
+Definition at line 65 of file Data\+Stream.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\hyperlink{DataStream_8h}{Data\+Stream.\+h}\item 
+src/util/\hyperlink{DataStream_8cc}{Data\+Stream.\+cc}\end{DoxyCompactItemize}

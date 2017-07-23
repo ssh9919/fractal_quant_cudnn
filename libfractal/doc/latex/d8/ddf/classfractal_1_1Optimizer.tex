@@ -1,0 +1,487 @@
+\hypertarget{classfractal_1_1Optimizer}{\section{fractal\+:\+:Optimizer Class Reference}
+\label{classfractal_1_1Optimizer}\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+}
+
+
+{\ttfamily \#include $<$Optimizer.\+h$>$}
+
+
+
+Collaboration diagram for fractal\+:\+:Optimizer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dba/classfractal_1_1Optimizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Optimizer_af23260ba20d8d818a0a0e4366ef9f0db}{Optimizer} ()
+\item 
+virtual \hyperlink{classfractal_1_1Optimizer_a48177000c5ae0bc136fad98d603bc13c}{$\sim$\+Optimizer} ()
+\item 
+void \hyperlink{classfractal_1_1Optimizer_a64b16b4d1cf533253a137a2bb6744b53}{Backprop} (\hyperlink{classfractal_1_1Rnn}{Rnn} \&rnn, \hyperlink{classfractal_1_1Stream}{Stream} \&stream, const \hyperlink{namespacefractal_a9697dee0746adccf37331470de749c2b}{Port\+Map\+List} \&input\+Ports, const \hyperlink{namespacefractal_a9697dee0746adccf37331470de749c2b}{Port\+Map\+List} \&output\+Ports, const unsigned long num\+Frame, const unsigned long window\+Size, const unsigned long step\+Size)
+\item 
+void \hyperlink{classfractal_1_1Optimizer_a60c57187720ea8f6af8ad18cc907701a}{Set\+Learning\+Rate} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1Optimizer_aa1cb73be3f71b75d1414517c34ed0a64}{Set\+Momentum} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1Optimizer_ad67cbee80ee6c2ec5fe1dd4b41f9afa1}{Set\+Adadelta} (const bool val)
+\item 
+void \hyperlink{classfractal_1_1Optimizer_a51246a85425060de9119af6696e391dc}{Set\+Rmsprop} (const bool val)
+\item 
+const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1Optimizer_a25e1255267cdf33453cfc723cda8dcd5}{Get\+Learning\+Rate} ()
+\item 
+const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1Optimizer_a807884a97e313edc918c3a386ea4b676}{Get\+Momentum} ()
+\item 
+const bool \hyperlink{classfractal_1_1Optimizer_adbedaa0d2cc9f2a9a288f420829f5fd8}{Get\+Adadelta} ()
+\item 
+const bool \hyperlink{classfractal_1_1Optimizer_a8c082e46d0383817425e809c79d659e7}{Get\+Rmsprop} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classfractal_1_1Optimizer_a37719e06ea61f1b0a6d77e8c75cc97d1}{Backprop\+Pipe0} (\hyperlink{classfractal_1_1Optimizer}{Optimizer} $\ast$optimizer, \hyperlink{classfractal_1_1BackpropArgs}{Backprop\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Optimizer_acb69ea9328efed040ef54b0150f96663}{Backprop\+Pipe1} (\hyperlink{classfractal_1_1Optimizer}{Optimizer} $\ast$optimizer, \hyperlink{classfractal_1_1BackpropArgs}{Backprop\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Optimizer_a38d36c5b2dd0d4d2d971d6d8a7d2631e}{Backprop\+Pipe2} (\hyperlink{classfractal_1_1Optimizer}{Optimizer} $\ast$optimizer, \hyperlink{classfractal_1_1BackpropArgs}{Backprop\+Args} \&args)
+\item 
+static void \hyperlink{classfractal_1_1Optimizer_a220eb53debdc9adc8462f993113da58d}{Backprop\+Pipe3} (\hyperlink{classfractal_1_1Optimizer}{Optimizer} $\ast$optimizer, \hyperlink{classfractal_1_1BackpropArgs}{Backprop\+Args} \&args)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1Optimizer_ab900db4006216b5dbf8ca9d8b8f91014}{learning\+Rate}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1Optimizer_aa315327874078b0221eaceeb744338fc}{momentum}
+\item 
+\hyperlink{classfractal_1_1Pipe}{Pipe} \hyperlink{classfractal_1_1Optimizer_ab10adad03dfda986596f93ce68ce8b9f}{pipe} \mbox{[}4\mbox{]}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \hyperlink{classfractal_1_1Optimizer_a9108d6e52cded35a910a643b868cb3d5}{p\+Stream\+Data\+Transfer\+To\+Buf}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \hyperlink{classfractal_1_1Optimizer_a8c8748626bbb8e1e304cc962f5b3697a}{p\+Stream\+Data\+Transfer\+To\+Rnn}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Optimizer_aff318edfab3e05da288fcf795918217b}{p\+Event\+Data\+Transfer\+To\+Buf}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Optimizer_aadca2e0d88dd1aad36653938b0376e0d}{p\+Event\+Data\+Transfer\+To\+Rnn}
+\item 
+bool \hyperlink{classfractal_1_1Optimizer_a1a823fe0fb44a4760516c76cd5686cb9}{adadelta}
+\item 
+bool \hyperlink{classfractal_1_1Optimizer_a8724cfada07f856e1d69d53cf380ad13}{rmsprop}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 55 of file Optimizer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Optimizer_af23260ba20d8d818a0a0e4366ef9f0db}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Optimizer@{Optimizer}}
+\index{Optimizer@{Optimizer}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Optimizer\+::\+Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Optimizer_af23260ba20d8d818a0a0e4366ef9f0db}
+
+
+Definition at line 35 of file Optimizer.\+cc.
+
+\hypertarget{classfractal_1_1Optimizer_a48177000c5ae0bc136fad98d603bc13c}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!````~Optimizer@{$\sim$\+Optimizer}}
+\index{````~Optimizer@{$\sim$\+Optimizer}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{$\sim$\+Optimizer}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Optimizer\+::$\sim$\+Optimizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1Optimizer_a48177000c5ae0bc136fad98d603bc13c}
+
+
+Definition at line 46 of file Optimizer.\+cc.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Optimizer_a64b16b4d1cf533253a137a2bb6744b53}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Backprop@{Backprop}}
+\index{Backprop@{Backprop}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Backprop}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Backprop (
+\begin{DoxyParamCaption}
+\item[{{\bf Rnn} \&}]{rnn, }
+\item[{{\bf Stream} \&}]{stream, }
+\item[{const {\bf Port\+Map\+List} \&}]{input\+Ports, }
+\item[{const {\bf Port\+Map\+List} \&}]{output\+Ports, }
+\item[{const unsigned long}]{num\+Frame, }
+\item[{const unsigned long}]{window\+Size, }
+\item[{const unsigned long}]{step\+Size}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Optimizer_a64b16b4d1cf533253a137a2bb6744b53}
+
+
+Definition at line 296 of file Optimizer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_a64b16b4d1cf533253a137a2bb6744b53_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{d8/ddf/classfractal_1_1Optimizer_a64b16b4d1cf533253a137a2bb6744b53_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Optimizer_a37719e06ea61f1b0a6d77e8c75cc97d1}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Backprop\+Pipe0@{Backprop\+Pipe0}}
+\index{Backprop\+Pipe0@{Backprop\+Pipe0}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Backprop\+Pipe0}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Backprop\+Pipe0 (
+\begin{DoxyParamCaption}
+\item[{{\bf Optimizer} $\ast$}]{optimizer, }
+\item[{{\bf Backprop\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_a37719e06ea61f1b0a6d77e8c75cc97d1}
+
+
+Definition at line 413 of file Optimizer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_a37719e06ea61f1b0a6d77e8c75cc97d1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_a37719e06ea61f1b0a6d77e8c75cc97d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Optimizer_acb69ea9328efed040ef54b0150f96663}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Backprop\+Pipe1@{Backprop\+Pipe1}}
+\index{Backprop\+Pipe1@{Backprop\+Pipe1}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Backprop\+Pipe1}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Backprop\+Pipe1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Optimizer} $\ast$}]{optimizer, }
+\item[{{\bf Backprop\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_acb69ea9328efed040ef54b0150f96663}
+
+
+Definition at line 460 of file Optimizer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_acb69ea9328efed040ef54b0150f96663_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_acb69ea9328efed040ef54b0150f96663_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Optimizer_a38d36c5b2dd0d4d2d971d6d8a7d2631e}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Backprop\+Pipe2@{Backprop\+Pipe2}}
+\index{Backprop\+Pipe2@{Backprop\+Pipe2}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Backprop\+Pipe2}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Backprop\+Pipe2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Optimizer} $\ast$}]{optimizer, }
+\item[{{\bf Backprop\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_a38d36c5b2dd0d4d2d971d6d8a7d2631e}
+
+
+Definition at line 494 of file Optimizer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_a38d36c5b2dd0d4d2d971d6d8a7d2631e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_a38d36c5b2dd0d4d2d971d6d8a7d2631e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Optimizer_a220eb53debdc9adc8462f993113da58d}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Backprop\+Pipe3@{Backprop\+Pipe3}}
+\index{Backprop\+Pipe3@{Backprop\+Pipe3}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Backprop\+Pipe3}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Backprop\+Pipe3 (
+\begin{DoxyParamCaption}
+\item[{{\bf Optimizer} $\ast$}]{optimizer, }
+\item[{{\bf Backprop\+Args} \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_a220eb53debdc9adc8462f993113da58d}
+
+
+Definition at line 545 of file Optimizer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_a220eb53debdc9adc8462f993113da58d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/ddf/classfractal_1_1Optimizer_a220eb53debdc9adc8462f993113da58d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Optimizer_adbedaa0d2cc9f2a9a288f420829f5fd8}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Get\+Adadelta@{Get\+Adadelta}}
+\index{Get\+Adadelta@{Get\+Adadelta}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Get\+Adadelta}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Optimizer\+::\+Get\+Adadelta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Optimizer_adbedaa0d2cc9f2a9a288f420829f5fd8}
+
+
+Definition at line 72 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_a25e1255267cdf33453cfc723cda8dcd5}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Get\+Learning\+Rate@{Get\+Learning\+Rate}}
+\index{Get\+Learning\+Rate@{Get\+Learning\+Rate}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Get\+Learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf F\+L\+O\+A\+T} fractal\+::\+Optimizer\+::\+Get\+Learning\+Rate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Optimizer_a25e1255267cdf33453cfc723cda8dcd5}
+
+
+Definition at line 70 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_a807884a97e313edc918c3a386ea4b676}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Get\+Momentum@{Get\+Momentum}}
+\index{Get\+Momentum@{Get\+Momentum}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Get\+Momentum}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf F\+L\+O\+A\+T} fractal\+::\+Optimizer\+::\+Get\+Momentum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Optimizer_a807884a97e313edc918c3a386ea4b676}
+
+
+Definition at line 71 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_a8c082e46d0383817425e809c79d659e7}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Get\+Rmsprop@{Get\+Rmsprop}}
+\index{Get\+Rmsprop@{Get\+Rmsprop}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Get\+Rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Optimizer\+::\+Get\+Rmsprop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Optimizer_a8c082e46d0383817425e809c79d659e7}
+
+
+Definition at line 73 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_ad67cbee80ee6c2ec5fe1dd4b41f9afa1}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Set\+Adadelta@{Set\+Adadelta}}
+\index{Set\+Adadelta@{Set\+Adadelta}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Set\+Adadelta}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Set\+Adadelta (
+\begin{DoxyParamCaption}
+\item[{const bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Optimizer_ad67cbee80ee6c2ec5fe1dd4b41f9afa1}
+
+
+Definition at line 67 of file Optimizer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{d8/ddf/classfractal_1_1Optimizer_ad67cbee80ee6c2ec5fe1dd4b41f9afa1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Optimizer_a60c57187720ea8f6af8ad18cc907701a}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Set\+Learning\+Rate@{Set\+Learning\+Rate}}
+\index{Set\+Learning\+Rate@{Set\+Learning\+Rate}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Set\+Learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Set\+Learning\+Rate (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Optimizer_a60c57187720ea8f6af8ad18cc907701a}
+
+
+Definition at line 65 of file Optimizer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{d8/ddf/classfractal_1_1Optimizer_a60c57187720ea8f6af8ad18cc907701a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Optimizer_aa1cb73be3f71b75d1414517c34ed0a64}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Set\+Momentum@{Set\+Momentum}}
+\index{Set\+Momentum@{Set\+Momentum}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Set\+Momentum}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Set\+Momentum (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Optimizer_aa1cb73be3f71b75d1414517c34ed0a64}
+
+
+Definition at line 66 of file Optimizer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{d8/ddf/classfractal_1_1Optimizer_aa1cb73be3f71b75d1414517c34ed0a64_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Optimizer_a51246a85425060de9119af6696e391dc}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!Set\+Rmsprop@{Set\+Rmsprop}}
+\index{Set\+Rmsprop@{Set\+Rmsprop}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{Set\+Rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Optimizer\+::\+Set\+Rmsprop (
+\begin{DoxyParamCaption}
+\item[{const bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Optimizer_a51246a85425060de9119af6696e391dc}
+
+
+Definition at line 68 of file Optimizer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{d8/ddf/classfractal_1_1Optimizer_a51246a85425060de9119af6696e391dc_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Optimizer_a1a823fe0fb44a4760516c76cd5686cb9}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!adadelta@{adadelta}}
+\index{adadelta@{adadelta}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{adadelta}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Optimizer\+::adadelta\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_a1a823fe0fb44a4760516c76cd5686cb9}
+
+
+Definition at line 90 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_ab900db4006216b5dbf8ca9d8b8f91014}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!learning\+Rate@{learning\+Rate}}
+\index{learning\+Rate@{learning\+Rate}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Optimizer\+::learning\+Rate\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_ab900db4006216b5dbf8ca9d8b8f91014}
+
+
+Definition at line 81 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_aa315327874078b0221eaceeb744338fc}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!momentum@{momentum}}
+\index{momentum@{momentum}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{momentum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Optimizer\+::momentum\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_aa315327874078b0221eaceeb744338fc}
+
+
+Definition at line 82 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_aff318edfab3e05da288fcf795918217b}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!p\+Event\+Data\+Transfer\+To\+Buf@{p\+Event\+Data\+Transfer\+To\+Buf}}
+\index{p\+Event\+Data\+Transfer\+To\+Buf@{p\+Event\+Data\+Transfer\+To\+Buf}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{p\+Event\+Data\+Transfer\+To\+Buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Optimizer\+::p\+Event\+Data\+Transfer\+To\+Buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_aff318edfab3e05da288fcf795918217b}
+
+
+Definition at line 87 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_aadca2e0d88dd1aad36653938b0376e0d}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!p\+Event\+Data\+Transfer\+To\+Rnn@{p\+Event\+Data\+Transfer\+To\+Rnn}}
+\index{p\+Event\+Data\+Transfer\+To\+Rnn@{p\+Event\+Data\+Transfer\+To\+Rnn}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{p\+Event\+Data\+Transfer\+To\+Rnn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Optimizer\+::p\+Event\+Data\+Transfer\+To\+Rnn\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_aadca2e0d88dd1aad36653938b0376e0d}
+
+
+Definition at line 88 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_ab10adad03dfda986596f93ce68ce8b9f}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!pipe@{pipe}}
+\index{pipe@{pipe}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{pipe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pipe} fractal\+::\+Optimizer\+::pipe\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_ab10adad03dfda986596f93ce68ce8b9f}
+
+
+Definition at line 84 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_a9108d6e52cded35a910a643b868cb3d5}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!p\+Stream\+Data\+Transfer\+To\+Buf@{p\+Stream\+Data\+Transfer\+To\+Buf}}
+\index{p\+Stream\+Data\+Transfer\+To\+Buf@{p\+Stream\+Data\+Transfer\+To\+Buf}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{p\+Stream\+Data\+Transfer\+To\+Buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} fractal\+::\+Optimizer\+::p\+Stream\+Data\+Transfer\+To\+Buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_a9108d6e52cded35a910a643b868cb3d5}
+
+
+Definition at line 85 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_a8c8748626bbb8e1e304cc962f5b3697a}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!p\+Stream\+Data\+Transfer\+To\+Rnn@{p\+Stream\+Data\+Transfer\+To\+Rnn}}
+\index{p\+Stream\+Data\+Transfer\+To\+Rnn@{p\+Stream\+Data\+Transfer\+To\+Rnn}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{p\+Stream\+Data\+Transfer\+To\+Rnn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} fractal\+::\+Optimizer\+::p\+Stream\+Data\+Transfer\+To\+Rnn\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_a8c8748626bbb8e1e304cc962f5b3697a}
+
+
+Definition at line 86 of file Optimizer.\+h.
+
+\hypertarget{classfractal_1_1Optimizer_a8724cfada07f856e1d69d53cf380ad13}{\index{fractal\+::\+Optimizer@{fractal\+::\+Optimizer}!rmsprop@{rmsprop}}
+\index{rmsprop@{rmsprop}!fractal\+::\+Optimizer@{fractal\+::\+Optimizer}}
+\subsubsection[{rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Optimizer\+::rmsprop\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Optimizer_a8724cfada07f856e1d69d53cf380ad13}
+
+
+Definition at line 91 of file Optimizer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\hyperlink{Optimizer_8h}{Optimizer.\+h}\item 
+src/util/\hyperlink{Optimizer_8cc}{Optimizer.\+cc}\end{DoxyCompactItemize}

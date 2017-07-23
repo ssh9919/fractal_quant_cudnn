@@ -1,0 +1,216 @@
+\hypertarget{namespacefractal}{\section{fractal Namespace Reference}
+\label{namespacefractal}\index{fractal@{fractal}}
+}
+
+
+The topmost namespace of libfractal.  
+
+
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacefractal_1_1basicLayers}{basic\+Layers}
+\item 
+ \hyperlink{namespacefractal_1_1cudaKernels}{cuda\+Kernels}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classfractal_1_1AutoOptimizer}{Auto\+Optimizer}
+\item 
+class \hyperlink{classfractal_1_1BackpropArgs}{Backprop\+Args}
+\item 
+class \hyperlink{classfractal_1_1ClassificationEvaluator}{Classification\+Evaluator}
+\item 
+class \hyperlink{classfractal_1_1Connection}{Connection}
+\item 
+class \hyperlink{classfractal_1_1DataSet}{Data\+Set}
+\item 
+class \hyperlink{classfractal_1_1DataStream}{Data\+Stream}
+\item 
+class \hyperlink{classfractal_1_1Engine}{Engine}
+\item 
+class \hyperlink{classfractal_1_1EvaluateArgs}{Evaluate\+Args}
+\item 
+class \hyperlink{classfractal_1_1Evaluator}{Evaluator}
+\item 
+class \hyperlink{classfractal_1_1InitWeightParam}{Init\+Weight\+Param}
+\item 
+class \hyperlink{classfractal_1_1Layer}{Layer}
+\item 
+class \hyperlink{classfractal_1_1LayerParam}{Layer\+Param}
+\item 
+class \hyperlink{classfractal_1_1Matrix}{Matrix}
+\item 
+class \hyperlink{classfractal_1_1Mem}{Mem}
+\item 
+class \hyperlink{classfractal_1_1Optimizer}{Optimizer}
+\item 
+class \hyperlink{classfractal_1_1PEvent}{P\+Event}
+\item 
+class \hyperlink{classfractal_1_1Pipe}{Pipe}
+\item 
+class \hyperlink{classfractal_1_1Probe}{Probe}
+\item 
+class \hyperlink{classfractal_1_1PStream}{P\+Stream}
+\item 
+class \hyperlink{classfractal_1_1RegressionEvaluator}{Regression\+Evaluator}
+\item 
+class \hyperlink{classfractal_1_1Rnn}{Rnn}
+\begin{DoxyCompactList}\small\item\em A network structure container. \end{DoxyCompactList}\item 
+class \hyperlink{classfractal_1_1Stream}{Stream}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T}
+\item 
+typedef std\+::tuple\\*
+$<$ std\+::string, unsigned long $>$ \hyperlink{namespacefractal_af1c057caf828f6870c4524aaa6fafc54}{Port\+Map}
+\item 
+typedef std\+::list$<$ \hyperlink{namespacefractal_af1c057caf828f6870c4524aaa6fafc54}{Port\+Map} $>$ \hyperlink{namespacefractal_a9697dee0746adccf37331470de749c2b}{Port\+Map\+List}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ec}{Act\+Type} \{ \\*
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecad9a6664920b3541bab96fee4ef9226d7}{A\+C\+T\+\_\+\+B\+I\+A\+S}, 
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecad79228aab50a1c107bcdbfa529be1b85}{A\+C\+T\+\_\+\+S\+I\+G\+M\+O\+I\+D}, 
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca3e879907718cae2d7762f355d2fe3323}{A\+C\+T\+\_\+\+T\+A\+N\+H}, 
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca0dc23db4bc10d6e8a461086872775608}{A\+C\+T\+\_\+\+S\+O\+F\+T\+P\+L\+U\+S}, 
+\\*
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecaccc74ffea0fe8dcbcbbbb6de0e751a61}{A\+C\+T\+\_\+\+R\+E\+C\+T\+L\+I\+N\+E\+A\+R}, 
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecaef31411d2f9dd557d226c83ec8ededed}{A\+C\+T\+\_\+\+L\+I\+N\+E\+A\+R}, 
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca0ad95b2307861206d003120e1a902971}{A\+C\+T\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+L\+I\+N\+E\+A\+R}, 
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca67becdba90800166f0d7edb2ab916c04}{A\+C\+T\+\_\+\+I\+N\+V\+E\+R\+S\+E}, 
+\\*
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecae33e8292806910b4a5775d855b230148}{A\+C\+T\+\_\+\+S\+O\+F\+T\+M\+A\+X}
+ \}
+\item 
+enum \hyperlink{namespacefractal_a17646dafc0f3fc262f238822cca09f2e}{State\+Type} \{ \hyperlink{namespacefractal_a17646dafc0f3fc262f238822cca09f2ea539d248725917ab8cb897eac721c506f}{A\+G\+G\+\_\+\+D\+O\+N\+T\+C\+A\+R\+E}, 
+\hyperlink{namespacefractal_a17646dafc0f3fc262f238822cca09f2eafcfb9237899ae4b7403d98342e6aa449}{A\+G\+G\+\_\+\+S\+U\+M}, 
+\hyperlink{namespacefractal_a17646dafc0f3fc262f238822cca09f2ea5ab727a7408a6f23e3c0c93b9f2ce80a}{A\+G\+G\+\_\+\+M\+U\+L\+T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{namespacefractal_abf28c8af1594ddabd026166384d71f3d}{N\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+A\+L\+T\+Y} = (\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T}) -\/1
+\item 
+static const long \hyperlink{namespacefractal_a4a8aba0e06362fc4539e2bd952ca11b5}{U\+N\+T\+O\+U\+C\+H\+E\+D} = -\/1
+\item 
+static const long \hyperlink{namespacefractal_affbd8e698e8d877464a1ac3be5d2a758}{T\+O\+U\+C\+H\+E\+D} = -\/2
+\item 
+static const long \hyperlink{namespacefractal_a3287683802bb03d81549392013a9c759}{S\+C\+C\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D} = -\/3
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The topmost namespace of libfractal. 
+
+Contains all libfractal classes. 
+
+\subsection{Typedef Documentation}
+\hypertarget{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{\index{fractal@{fractal}!F\+L\+O\+A\+T@{F\+L\+O\+A\+T}}
+\index{F\+L\+O\+A\+T@{F\+L\+O\+A\+T}!fractal@{fractal}}
+\subsubsection[{F\+L\+O\+A\+T}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf fractal\+::\+F\+L\+O\+A\+T}}}\label{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}
+
+
+Definition at line 34 of file Fractal\+Common.\+h.
+
+\hypertarget{namespacefractal_af1c057caf828f6870c4524aaa6fafc54}{\index{fractal@{fractal}!Port\+Map@{Port\+Map}}
+\index{Port\+Map@{Port\+Map}!fractal@{fractal}}
+\subsubsection[{Port\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::tuple$<$std\+::string, unsigned long$>$ {\bf fractal\+::\+Port\+Map}}}\label{namespacefractal_af1c057caf828f6870c4524aaa6fafc54}
+
+
+Definition at line 32 of file Port\+Map.\+h.
+
+\hypertarget{namespacefractal_a9697dee0746adccf37331470de749c2b}{\index{fractal@{fractal}!Port\+Map\+List@{Port\+Map\+List}}
+\index{Port\+Map\+List@{Port\+Map\+List}!fractal@{fractal}}
+\subsubsection[{Port\+Map\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Port\+Map}$>$ {\bf fractal\+::\+Port\+Map\+List}}}\label{namespacefractal_a9697dee0746adccf37331470de749c2b}
+
+
+Definition at line 33 of file Port\+Map.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ec}{\index{fractal@{fractal}!Act\+Type@{Act\+Type}}
+\index{Act\+Type@{Act\+Type}!fractal@{fractal}}
+\subsubsection[{Act\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf fractal\+::\+Act\+Type}}}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ec}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\+C\+T\+\_\+\+B\+I\+A\+S@{A\+C\+T\+\_\+\+B\+I\+A\+S}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+B\+I\+A\+S@{A\+C\+T\+\_\+\+B\+I\+A\+S}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecad9a6664920b3541bab96fee4ef9226d7}{A\+C\+T\+\_\+\+B\+I\+A\+S}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecad9a6664920b3541bab96fee4ef9226d7}
+}]\index{A\+C\+T\+\_\+\+S\+I\+G\+M\+O\+I\+D@{A\+C\+T\+\_\+\+S\+I\+G\+M\+O\+I\+D}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+S\+I\+G\+M\+O\+I\+D@{A\+C\+T\+\_\+\+S\+I\+G\+M\+O\+I\+D}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecad79228aab50a1c107bcdbfa529be1b85}{A\+C\+T\+\_\+\+S\+I\+G\+M\+O\+I\+D}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecad79228aab50a1c107bcdbfa529be1b85}
+}]\index{A\+C\+T\+\_\+\+T\+A\+N\+H@{A\+C\+T\+\_\+\+T\+A\+N\+H}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+T\+A\+N\+H@{A\+C\+T\+\_\+\+T\+A\+N\+H}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca3e879907718cae2d7762f355d2fe3323}{A\+C\+T\+\_\+\+T\+A\+N\+H}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca3e879907718cae2d7762f355d2fe3323}
+}]\index{A\+C\+T\+\_\+\+S\+O\+F\+T\+P\+L\+U\+S@{A\+C\+T\+\_\+\+S\+O\+F\+T\+P\+L\+U\+S}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+S\+O\+F\+T\+P\+L\+U\+S@{A\+C\+T\+\_\+\+S\+O\+F\+T\+P\+L\+U\+S}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca0dc23db4bc10d6e8a461086872775608}{A\+C\+T\+\_\+\+S\+O\+F\+T\+P\+L\+U\+S}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca0dc23db4bc10d6e8a461086872775608}
+}]\index{A\+C\+T\+\_\+\+R\+E\+C\+T\+L\+I\+N\+E\+A\+R@{A\+C\+T\+\_\+\+R\+E\+C\+T\+L\+I\+N\+E\+A\+R}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+R\+E\+C\+T\+L\+I\+N\+E\+A\+R@{A\+C\+T\+\_\+\+R\+E\+C\+T\+L\+I\+N\+E\+A\+R}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecaccc74ffea0fe8dcbcbbbb6de0e751a61}{A\+C\+T\+\_\+\+R\+E\+C\+T\+L\+I\+N\+E\+A\+R}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecaccc74ffea0fe8dcbcbbbb6de0e751a61}
+}]\index{A\+C\+T\+\_\+\+L\+I\+N\+E\+A\+R@{A\+C\+T\+\_\+\+L\+I\+N\+E\+A\+R}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+L\+I\+N\+E\+A\+R@{A\+C\+T\+\_\+\+L\+I\+N\+E\+A\+R}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecaef31411d2f9dd557d226c83ec8ededed}{A\+C\+T\+\_\+\+L\+I\+N\+E\+A\+R}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecaef31411d2f9dd557d226c83ec8ededed}
+}]\index{A\+C\+T\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+L\+I\+N\+E\+A\+R@{A\+C\+T\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+L\+I\+N\+E\+A\+R}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+L\+I\+N\+E\+A\+R@{A\+C\+T\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+L\+I\+N\+E\+A\+R}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca0ad95b2307861206d003120e1a902971}{A\+C\+T\+\_\+\+O\+N\+E\+\_\+\+M\+I\+N\+U\+S\+\_\+\+L\+I\+N\+E\+A\+R}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca0ad95b2307861206d003120e1a902971}
+}]\index{A\+C\+T\+\_\+\+I\+N\+V\+E\+R\+S\+E@{A\+C\+T\+\_\+\+I\+N\+V\+E\+R\+S\+E}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+I\+N\+V\+E\+R\+S\+E@{A\+C\+T\+\_\+\+I\+N\+V\+E\+R\+S\+E}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca67becdba90800166f0d7edb2ab916c04}{A\+C\+T\+\_\+\+I\+N\+V\+E\+R\+S\+E}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833eca67becdba90800166f0d7edb2ab916c04}
+}]\index{A\+C\+T\+\_\+\+S\+O\+F\+T\+M\+A\+X@{A\+C\+T\+\_\+\+S\+O\+F\+T\+M\+A\+X}!fractal@{fractal}}\index{fractal@{fractal}!A\+C\+T\+\_\+\+S\+O\+F\+T\+M\+A\+X@{A\+C\+T\+\_\+\+S\+O\+F\+T\+M\+A\+X}}\item[{\em 
+\hypertarget{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecae33e8292806910b4a5775d855b230148}{A\+C\+T\+\_\+\+S\+O\+F\+T\+M\+A\+X}\label{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ecae33e8292806910b4a5775d855b230148}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 34 of file Layer.\+h.
+
+\hypertarget{namespacefractal_a17646dafc0f3fc262f238822cca09f2e}{\index{fractal@{fractal}!State\+Type@{State\+Type}}
+\index{State\+Type@{State\+Type}!fractal@{fractal}}
+\subsubsection[{State\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf fractal\+::\+State\+Type}}}\label{namespacefractal_a17646dafc0f3fc262f238822cca09f2e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\+G\+G\+\_\+\+D\+O\+N\+T\+C\+A\+R\+E@{A\+G\+G\+\_\+\+D\+O\+N\+T\+C\+A\+R\+E}!fractal@{fractal}}\index{fractal@{fractal}!A\+G\+G\+\_\+\+D\+O\+N\+T\+C\+A\+R\+E@{A\+G\+G\+\_\+\+D\+O\+N\+T\+C\+A\+R\+E}}\item[{\em 
+\hypertarget{namespacefractal_a17646dafc0f3fc262f238822cca09f2ea539d248725917ab8cb897eac721c506f}{A\+G\+G\+\_\+\+D\+O\+N\+T\+C\+A\+R\+E}\label{namespacefractal_a17646dafc0f3fc262f238822cca09f2ea539d248725917ab8cb897eac721c506f}
+}]\index{A\+G\+G\+\_\+\+S\+U\+M@{A\+G\+G\+\_\+\+S\+U\+M}!fractal@{fractal}}\index{fractal@{fractal}!A\+G\+G\+\_\+\+S\+U\+M@{A\+G\+G\+\_\+\+S\+U\+M}}\item[{\em 
+\hypertarget{namespacefractal_a17646dafc0f3fc262f238822cca09f2eafcfb9237899ae4b7403d98342e6aa449}{A\+G\+G\+\_\+\+S\+U\+M}\label{namespacefractal_a17646dafc0f3fc262f238822cca09f2eafcfb9237899ae4b7403d98342e6aa449}
+}]\index{A\+G\+G\+\_\+\+M\+U\+L\+T@{A\+G\+G\+\_\+\+M\+U\+L\+T}!fractal@{fractal}}\index{fractal@{fractal}!A\+G\+G\+\_\+\+M\+U\+L\+T@{A\+G\+G\+\_\+\+M\+U\+L\+T}}\item[{\em 
+\hypertarget{namespacefractal_a17646dafc0f3fc262f238822cca09f2ea5ab727a7408a6f23e3c0c93b9f2ce80a}{A\+G\+G\+\_\+\+M\+U\+L\+T}\label{namespacefractal_a17646dafc0f3fc262f238822cca09f2ea5ab727a7408a6f23e3c0c93b9f2ce80a}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 35 of file Layer.\+h.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacefractal_abf28c8af1594ddabd026166384d71f3d}{\index{fractal@{fractal}!N\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+A\+L\+T\+Y@{N\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+A\+L\+T\+Y}}
+\index{N\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+A\+L\+T\+Y@{N\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+A\+L\+T\+Y}!fractal@{fractal}}
+\subsubsection[{N\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+A\+L\+T\+Y}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf F\+L\+O\+A\+T} fractal\+::\+N\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+A\+L\+T\+Y = ({\bf F\+L\+O\+A\+T}) -\/1}}\label{namespacefractal_abf28c8af1594ddabd026166384d71f3d}
+
+
+Definition at line 27 of file Layer.\+cc.
+
+\hypertarget{namespacefractal_a3287683802bb03d81549392013a9c759}{\index{fractal@{fractal}!S\+C\+C\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D@{S\+C\+C\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D}}
+\index{S\+C\+C\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D@{S\+C\+C\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D}!fractal@{fractal}}
+\subsubsection[{S\+C\+C\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}const long fractal\+::\+S\+C\+C\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D = -\/3\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacefractal_a3287683802bb03d81549392013a9c759}
+
+
+Definition at line 36 of file Rnn.\+cc.
+
+\hypertarget{namespacefractal_affbd8e698e8d877464a1ac3be5d2a758}{\index{fractal@{fractal}!T\+O\+U\+C\+H\+E\+D@{T\+O\+U\+C\+H\+E\+D}}
+\index{T\+O\+U\+C\+H\+E\+D@{T\+O\+U\+C\+H\+E\+D}!fractal@{fractal}}
+\subsubsection[{T\+O\+U\+C\+H\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}const long fractal\+::\+T\+O\+U\+C\+H\+E\+D = -\/2\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacefractal_affbd8e698e8d877464a1ac3be5d2a758}
+
+
+Definition at line 35 of file Rnn.\+cc.
+
+\hypertarget{namespacefractal_a4a8aba0e06362fc4539e2bd952ca11b5}{\index{fractal@{fractal}!U\+N\+T\+O\+U\+C\+H\+E\+D@{U\+N\+T\+O\+U\+C\+H\+E\+D}}
+\index{U\+N\+T\+O\+U\+C\+H\+E\+D@{U\+N\+T\+O\+U\+C\+H\+E\+D}!fractal@{fractal}}
+\subsubsection[{U\+N\+T\+O\+U\+C\+H\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}const long fractal\+::\+U\+N\+T\+O\+U\+C\+H\+E\+D = -\/1\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacefractal_a4a8aba0e06362fc4539e2bd952ca11b5}
+
+
+Definition at line 34 of file Rnn.\+cc.
+

@@ -1,0 +1,25 @@
+<map id="fractal::Engine::MemCopy" name="fractal::Engine::MemCopy">
+<area shape="rect" id="node2" href="$d0/d81/classfractal_1_1Engine.html#a455fb7b51e838f09bfedf7915c25cadc" title="fractal::Engine::MemPull" alt="" coords="233,213,398,239"/>
+<area shape="rect" id="node20" href="$d0/d81/classfractal_1_1Engine.html#a71cd485bef6bde65f3b372e130eeb32b" title="fractal::Engine::MemCopy\lFromHost" alt="" coords="228,281,403,323"/>
+<area shape="rect" id="node22" href="$d0/d81/classfractal_1_1Engine.html#addf726a73831cdc0408294811ba93b34" title="fractal::Engine::MemCopy\lToHost" alt="" coords="228,347,403,388"/>
+<area shape="rect" id="node24" href="$d0/d81/classfractal_1_1Engine.html#af63cba9be1c0af513e8155678edf8bf4" title="fractal::Engine::MemCopy" alt="" coords="228,413,403,439"/>
+<area shape="rect" id="node3" href="$d2/d2d/classfractal_1_1Mem.html#ac519f15876ce1fbb5bae620524b84ddf" title="fractal::Mem::Pull" alt="" coords="484,195,609,222"/>
+<area shape="rect" id="node18" href="$d2/d13/classfractal_1_1Evaluator.html#a37874e270a3691656a3840f3d6e87d8d" title="fractal::Evaluator\l::EvaluatePipe1" alt="" coords="1331,5,1453,47"/>
+<area shape="rect" id="node19" href="$d8/ddf/classfractal_1_1Optimizer.html#acb69ea9328efed040ef54b0150f96663" title="fractal::Optimizer\l::BackpropPipe1" alt="" coords="718,279,841,320"/>
+<area shape="rect" id="node4" href="$d0/d81/classfractal_1_1Engine.html#a8c5528c801c14c37268ec3dad8596ab6" title="fractal::Engine::MatMult" alt="" coords="699,166,860,193"/>
+<area shape="rect" id="node15" href="$d0/d81/classfractal_1_1Engine.html#aa23cc72f5e2f83fafb4ebbbbf5da23a1" title="fractal::Engine::MatRandN" alt="" coords="691,221,868,247"/>
+<area shape="rect" id="node5" href="$da/dbf/classfractal_1_1Connection.html#af95b3556c57e92edb06a4d33364dc0c2" title="fractal::Connection\l::Forward" alt="" coords="916,60,1048,101"/>
+<area shape="rect" id="node12" href="$da/dbf/classfractal_1_1Connection.html#a983f5ebf6c8072f950a0ca3c0bfdb6f1" title="fractal::Connection\l::Backward" alt="" coords="916,191,1048,232"/>
+<area shape="rect" id="node14" href="$da/dbf/classfractal_1_1Connection.html#a2b8a12fcdb97fe575d48348ac3e42daa" title="fractal::Connection\l::UpdateWeights" alt="" coords="916,125,1048,167"/>
+<area shape="rect" id="node6" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="1117,93,1262,119"/>
+<area shape="rect" id="node7" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="1331,85,1453,127"/>
+<area shape="rect" id="node10" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="1331,155,1453,196"/>
+<area shape="rect" id="node8" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="1502,85,1623,127"/>
+<area shape="rect" id="node9" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="1672,120,1821,161"/>
+<area shape="rect" id="node11" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="1501,155,1624,196"/>
+<area shape="rect" id="node13" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="1111,169,1267,195"/>
+<area shape="rect" id="node16" href="$da/dbf/classfractal_1_1Connection.html#a462d4925a2c205cf6c1640efe6b723be" title="fractal::Connection\l::InitWeights" alt="" coords="916,256,1048,297"/>
+<area shape="rect" id="node17" href="$de/dca/classfractal_1_1Rnn.html#aab6852a5cb264078d3ea17c264bdd569" title="Add a connection. " alt="" coords="1096,263,1283,290"/>
+<area shape="rect" id="node21" href="$d2/d2d/classfractal_1_1Mem.html#a53625eca9f0dbaf09a39d175962c6f4b" title="fractal::Mem::CopyFromHost" alt="" coords="451,297,643,323"/>
+<area shape="rect" id="node23" href="$d2/d2d/classfractal_1_1Mem.html#a5acd986b3c170d6800fa85f605466068" title="fractal::Mem::CopyToHost" alt="" coords="458,354,635,381"/>
+</map>

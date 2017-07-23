@@ -1,0 +1,50 @@
+1. Prerequisites
+
+  - g++ 4.7 or higher
+  - CUDA Toolkit 6.5 or higher
+  - NVIDIA GPU with Fermi architecture or higher
+  - CUDNN v2 (higher version is not compatibled with v2)
+
+
+
+2. Quick start guide
+
+  2.1. Install libfractal (local)
+
+    - Generate libfractal library files in build/lib/
+    - Generate libfractal header files in build/include/fractal/
+
+    $ ./build-local.sh
+
+
+  2.2. Compile and run "MNIST" example
+
+    - Simple MNIST example
+
+    $ cd example/MNIST/src
+    $ make
+    $ cd ../run
+    $ ./run.sh
+
+3. Install libfractal (global)
+
+  - Install libfractal in global zone (e.g. /usr/local/lib, /usr/local/include/)
+
+  $ cd libfractal
+  $ mkdir build
+  $ cd build
+  $ ../configure
+  $ make
+  $ sudo make install
+
+4. How to use the library
+
+  - Include Fractal header in your C++ source code:
+    #include <fractal/fractal.h>
+
+  - Currently, you need to specify where CUDA include directory is:
+    $ g++ -o foo.o -c foo.cpp -I/usr/local/cuda/include
+
+  - Link with -lfractal:
+    $ g++ -o foo foo.o -lfractal
+

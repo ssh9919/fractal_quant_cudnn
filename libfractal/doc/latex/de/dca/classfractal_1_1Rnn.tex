@@ -1,0 +1,1765 @@
+\hypertarget{classfractal_1_1Rnn}{\section{fractal\+:\+:Rnn Class Reference}
+\label{classfractal_1_1Rnn}\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+}
+
+
+A network structure container.  
+
+
+
+
+{\ttfamily \#include $<$Rnn.\+h$>$}
+
+
+
+Collaboration diagram for fractal\+:\+:Rnn\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{d8/dc5/classfractal_1_1Rnn__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Rnn_a544edffb4b139d116f151647a024f0cc}{Rnn} ()
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classfractal_1_1Rnn_a7c31fea1e6eecb80d0f3139b2ea12206}{$\sim$\+Rnn} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a81f50740ac51ff686045dbc632029b8b}{Set\+Engine} (\hyperlink{classfractal_1_1Engine}{Engine} $\ast$\hyperlink{classfractal_1_1Rnn_ae1ab28da171d29e77200295cf86e85f7}{engine})
+\begin{DoxyCompactList}\small\item\em Set a computation engine. \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Rnn_a8bdfcdaeda6fbd1b02ab77f720140e65}{Get\+Engine} () const 
+\begin{DoxyCompactList}\small\item\em Get the computation engine. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_acd58e1c848aaa729566ab15fe53f0a11}{Add\+Layer} (const std\+::string \&name, \hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ec}{Act\+Type} act\+Type, \hyperlink{namespacefractal_a17646dafc0f3fc262f238822cca09f2e}{State\+Type} state\+Type, const unsigned long size, const \hyperlink{classfractal_1_1LayerParam}{Layer\+Param} \&param=\hyperlink{classfractal_1_1LayerParam}{Layer\+Param}())
+\begin{DoxyCompactList}\small\item\em Add a layer. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a2d5b53ec397838bd9fa7f1d1e3dd1ea9}{Add\+Connection} (const std\+::string \&from, const std\+::string \&to, const unsigned long delay\+Amount, const bool is\+Identity, const \hyperlink{classfractal_1_1InitWeightParam}{Init\+Weight\+Param} \&init\+Weight\+Param=\hyperlink{classfractal_1_1InitWeightParam}{Init\+Weight\+Param}())
+\begin{DoxyCompactList}\small\item\em Add a connection. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a7eb0a079ff4771e29182e1827757faa2}{Delete\+Layer} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Delete a \hyperlink{classfractal_1_1Layer}{Layer}. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a0b79a070742c4f39f13267f62e36996d}{Delete\+Connection} (const std\+::string \&from, const std\+::string \&to)
+\begin{DoxyCompactList}\small\item\em Delete a connection. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_ad8c57efd5d6de9043f7861b7432c1208}{Link\+Probe} (\hyperlink{classfractal_1_1Probe}{Probe} \&probe, const std\+::string \&layer\+Name)
+\begin{DoxyCompactList}\small\item\em Link a probe to a layer. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a9bd883f73fede973121b095c13fd8ef8}{Set\+Batch\+Size} (const unsigned long \hyperlink{classfractal_1_1Rnn_a18afcf7887c5a86d4f6cccae67646ed0}{batch\+Size})
+\begin{DoxyCompactList}\small\item\em Set the mini-\/batch size. \end{DoxyCompactList}\item 
+const unsigned long \hyperlink{classfractal_1_1Rnn_a10b9fb7a283460b9ea2bbaa5b9efb9ae}{Get\+Batch\+Size} () const 
+\begin{DoxyCompactList}\small\item\em Get the mini-\/batch size. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a7552f1eb6e925b2996d092371d578076}{Init\+Forward} (const unsigned long batch\+From, const unsigned long batch\+To)
+\begin{DoxyCompactList}\small\item\em Initialize layer activations for forward propagation. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a7b6cce657b3a765903d4f90076555e5b}{Init\+Backward} (const unsigned long batch\+From, const unsigned long batch\+To)
+\begin{DoxyCompactList}\small\item\em Initialize errors in connections for backward propagation. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_afa174b5308bcc168f69dc62a0a3f8764}{Init\+Weights} (const \hyperlink{classfractal_1_1InitWeightParam}{Init\+Weight\+Param} \&param)
+\begin{DoxyCompactList}\small\item\em Initialize all weights. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a267ef049cbe20675a8e38c72406db3d2}{Init\+Adadelta} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} decay\+Rate)
+\begin{DoxyCompactList}\small\item\em Initialize Ada\+Delta. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_ad8ccfbbadc57a8d69927b15596e91be0}{Init\+Nesterov} ()
+\begin{DoxyCompactList}\small\item\em Initialize Nesterov momentum. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_af8c861ddd6a937c03ed98f96583fa0a4}{Init\+Rmsprop} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} decay\+Rate)
+\begin{DoxyCompactList}\small\item\em Initialize R\+M\+Sprop. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_aec12209e9e2d9f47ee70eb714be32433}{Forward} (const unsigned long batch\+From, const unsigned long batch\+To, const unsigned long n\+Stream)
+\begin{DoxyCompactList}\small\item\em Forward propagation. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_ad0221aacc16940ec45bb5fef7a5106e5}{Backward} (const unsigned long batch\+From, const unsigned long batch\+To, const unsigned long n\+Stream)
+\begin{DoxyCompactList}\small\item\em Backward propagation. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a36ebbae7902ee09a1ee64eea1219e939}{Calc\+Act\+Deriv} (const unsigned long batch\+From, const unsigned long batch\+To)
+\begin{DoxyCompactList}\small\item\em Compute the derivatives of the activation functions with respect to the layer states. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_ac1431fc224150e1e7753b1a3ad2c7fac}{Update\+Weights} (const unsigned long batch\+From, const unsigned long batch\+To, const unsigned long n\+Frame, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} rate, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} momentum, const bool adadelta, const bool rmsprop)
+\begin{DoxyCompactList}\small\item\em Update the weights. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a61f2e8a15b24e37207f473418c30324e}{Synchronize} ()
+\begin{DoxyCompactList}\small\item\em Wait until all asynchronous operations are finished. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_ab309d7133835bb7c64415679c977c92d}{Stream\+Wait} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\begin{DoxyCompactList}\small\item\em Force a {\itshape stream} to wait until all asynchronous operations of this R\+N\+N are finished. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a907f94c280782ef96ee7041d5711db61}{Ready} ()
+\begin{DoxyCompactList}\small\item\em Get ready to perform forward and backward propagation. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_adfde0d83db888e47db7ed9e71369fab1}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Free resources. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a34a6ff28eb4507ef1ae8d88089c3161f}{Save\+State} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Save the current network states. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a50c21992806cf5bf160ec9c3b9a07a15}{Load\+State} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Load the previously saved network states. \end{DoxyCompactList}\item 
+const unsigned long \hyperlink{classfractal_1_1Rnn_af78a3d552f1abaa0ad8176a296ca72b4}{Get\+Num\+Weights} ()
+\begin{DoxyCompactList}\small\item\em Get the total number of weights. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{classfractal_1_1Layer}{Layer} $\ast$ $>$ \hyperlink{classfractal_1_1Rnn_aea69a9549eee7a4de8163e2bc6be19a1}{Scc}
+\begin{DoxyCompactList}\small\item\em Structure for strongly connected components. \end{DoxyCompactList}\item 
+typedef std\+::list$<$ \hyperlink{classfractal_1_1Layer}{Layer} $\ast$ $>$ \hyperlink{classfractal_1_1Rnn_a47ec5588c6a0bed3c6af1b34ea8e8070}{Layer\+List}
+\begin{DoxyCompactList}\small\item\em List structure of \hyperlink{classfractal_1_1Layer}{Layer} objects. \end{DoxyCompactList}\item 
+typedef std\+::unordered\+\_\+map\\*
+$<$ std\+::string, \hyperlink{classfractal_1_1Layer}{Layer} $\ast$ $>$ \hyperlink{classfractal_1_1Rnn_a41ef29c0e8d4bfa783a6abe33b685ec0}{Layer\+Map}
+\begin{DoxyCompactList}\small\item\em Map structure that maps each layer name to the corresponding \hyperlink{classfractal_1_1Layer}{Layer} object. \end{DoxyCompactList}\item 
+typedef std\+::unordered\+\_\+set\\*
+$<$ \hyperlink{classfractal_1_1Connection}{Connection} $\ast$ $>$ \hyperlink{classfractal_1_1Rnn_a9899dedd3e89a1375a09ba7cc86fbf2b}{Conn\+Set}
+\begin{DoxyCompactList}\small\item\em Set structure that contains the pointers to all connections. \end{DoxyCompactList}\item 
+typedef std\+::list$<$ \hyperlink{classfractal_1_1Rnn_aea69a9549eee7a4de8163e2bc6be19a1}{Scc} $\ast$ $>$ \hyperlink{classfractal_1_1Rnn_a640b44b0317d2b4055fcdabbfd6456ce}{Scc\+List}
+\begin{DoxyCompactList}\small\item\em List structure of Scc objects. \end{DoxyCompactList}\item 
+typedef std\+::list$<$ \hyperlink{classfractal_1_1PStream}{P\+Stream} $\ast$ $>$ \hyperlink{classfractal_1_1Rnn_af804f677610b7429ca199ac35510e503}{P\+Stream\+List}
+\begin{DoxyCompactList}\small\item\em List structure of \hyperlink{classfractal_1_1PStream}{P\+Stream} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Layer}{Layer} $\ast$ \hyperlink{classfractal_1_1Rnn_a5b97c7b0db5b405e8e2721155ed0514e}{Find\+Layer} (const std\+::string \&layer\+Name)
+\begin{DoxyCompactList}\small\item\em Find a layer using its name. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_aab6852a5cb264078d3ea17c264bdd569}{Add\+Connection} (\hyperlink{classfractal_1_1Layer}{Layer} $\ast$const from, \hyperlink{classfractal_1_1Layer}{Layer} $\ast$const to, const unsigned long delay\+Amount, const bool is\+Identity, const \hyperlink{classfractal_1_1InitWeightParam}{Init\+Weight\+Param} \&init\+Weight\+Param)
+\begin{DoxyCompactList}\small\item\em Add a connection. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a6962b669f59fced06ce094a6d08cbc4e}{Delete\+Connection} (\hyperlink{classfractal_1_1Layer}{Layer} $\ast$const from, \hyperlink{classfractal_1_1Layer}{Layer} $\ast$const to)
+\begin{DoxyCompactList}\small\item\em Delete a connection. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_aba2b13c1855723bef6ddfffd7fbc6f04}{Link\+Probe} (\hyperlink{classfractal_1_1Probe}{Probe} \&probe, \hyperlink{classfractal_1_1Layer}{Layer} $\ast$const layer)
+\begin{DoxyCompactList}\small\item\em Link a probe to a layer. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a54ec7bf1206c5f9bd634ee1703c859c1}{Clear\+Layers} ()
+\begin{DoxyCompactList}\small\item\em Clear all layers. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a961fb4540a58d76b4d9cab51cd5a3ef9}{Clear\+Connections} ()
+\begin{DoxyCompactList}\small\item\em Clear all connections. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a6bb983dfd300fc9d906ed05bc481d2e8}{Clear\+Scc\+List} ()
+\begin{DoxyCompactList}\small\item\em Clear all S\+C\+Cs. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a1a94073d8b65fbb0d9a1fa262f60bc3f}{Clear\+P\+Streams} ()
+\begin{DoxyCompactList}\small\item\em Clear all P\+Streams. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_aff5d760fe57f949ad69a913757deb874}{Tarjan} ()
+\begin{DoxyCompactList}\small\item\em Perform Tarjan's strongly connected component (S\+C\+C) algorithm. \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1Rnn_aea69a9549eee7a4de8163e2bc6be19a1}{Scc} $\ast$const \hyperlink{classfractal_1_1Rnn_a76287a6b58925f1a7b40ace3ed261e9f}{Create\+Scc} (std\+::stack$<$ \hyperlink{classfractal_1_1Layer}{Layer} $\ast$ $>$ \&scc\+Stack, const \hyperlink{classfractal_1_1Layer}{Layer} $\ast$const root, const long group)
+\begin{DoxyCompactList}\small\item\em Create an S\+C\+C and perform topological sort. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_adaf84bde48406ad0c51bfbba084c5516}{Create\+P\+Streams} (const unsigned long loc)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classfractal_1_1PStream}{P\+Stream} object with the location {\itshape loc}. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a3644eda8587be1557f9a3432bc6f4665}{Create\+Default\+P\+Stream} (const unsigned long loc)
+\begin{DoxyCompactList}\small\item\em Create the default \hyperlink{classfractal_1_1PStream}{P\+Stream} object with the location {\itshape loc}. \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Rnn_a7e1b6fb3ff4b5cb2de93f19ce94b709d}{Destroy\+Default\+P\+Stream} ()
+\begin{DoxyCompactList}\small\item\em Destroy the default \hyperlink{classfractal_1_1PStream}{P\+Stream} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Rnn_ae1ab28da171d29e77200295cf86e85f7}{engine}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classfractal_1_1Engine}{Engine} pointer. \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1Rnn_a41ef29c0e8d4bfa783a6abe33b685ec0}{Layer\+Map} \hyperlink{classfractal_1_1Rnn_ae1950b5b6ceb1b32a063d10b6e392f1d}{layer\+Map}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classfractal_1_1Layer}{Layer} map. \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1Rnn_a9899dedd3e89a1375a09ba7cc86fbf2b}{Conn\+Set} \hyperlink{classfractal_1_1Rnn_adc46382430319f0ef64ee9119f370cad}{conn\+Set}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classfractal_1_1Connection}{Connection} set. \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1Rnn_a640b44b0317d2b4055fcdabbfd6456ce}{Scc\+List} \hyperlink{classfractal_1_1Rnn_a796f665aead28ee054bd7eaec5270329}{scc\+List}
+\begin{DoxyCompactList}\small\item\em Scc list. \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1Rnn_af804f677610b7429ca199ac35510e503}{P\+Stream\+List} \hyperlink{classfractal_1_1Rnn_a0e876daf59f24181e88726b181b28748}{p\+Stream\+List}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classfractal_1_1PStream}{P\+Stream} list. \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} $\ast$ \hyperlink{classfractal_1_1Rnn_a69ee08dd3cf7e88e99b8138db8cdf8d7}{default\+P\+Stream}
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{classfractal_1_1PStream}{P\+Stream}. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{classfractal_1_1Rnn_a18afcf7887c5a86d4f6cccae67646ed0}{batch\+Size}
+\begin{DoxyCompactList}\small\item\em Mini-\/batch size. \end{DoxyCompactList}\item 
+bool \hyperlink{classfractal_1_1Rnn_a5d66a5d50e9c7282f467e3e1a947ff17}{is\+Ready}
+\begin{DoxyCompactList}\small\item\em Indicates whether the network is analyzed or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A network structure container. 
+
+This class contains a neural network structure with graph-\/based representation. Nodes and edges correspond to layers and connections respectively. 
+
+Definition at line 44 of file Rnn.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classfractal_1_1Rnn_a9899dedd3e89a1375a09ba7cc86fbf2b}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Conn\+Set@{Conn\+Set}}
+\index{Conn\+Set@{Conn\+Set}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Conn\+Set}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::unordered\+\_\+set$<${\bf Connection} $\ast$$>$ {\bf fractal\+::\+Rnn\+::\+Conn\+Set}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a9899dedd3e89a1375a09ba7cc86fbf2b}
+
+
+Set structure that contains the pointers to all connections. 
+
+
+
+Definition at line 234 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_a47ec5588c6a0bed3c6af1b34ea8e8070}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Layer\+List@{Layer\+List}}
+\index{Layer\+List@{Layer\+List}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Layer\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Layer} $\ast$$>$ {\bf fractal\+::\+Rnn\+::\+Layer\+List}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a47ec5588c6a0bed3c6af1b34ea8e8070}
+
+
+List structure of \hyperlink{classfractal_1_1Layer}{Layer} objects. 
+
+
+
+Definition at line 228 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_a41ef29c0e8d4bfa783a6abe33b685ec0}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Layer\+Map@{Layer\+Map}}
+\index{Layer\+Map@{Layer\+Map}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Layer\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::unordered\+\_\+map$<$std\+::string, {\bf Layer} $\ast$$>$ {\bf fractal\+::\+Rnn\+::\+Layer\+Map}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a41ef29c0e8d4bfa783a6abe33b685ec0}
+
+
+Map structure that maps each layer name to the corresponding \hyperlink{classfractal_1_1Layer}{Layer} object. 
+
+
+
+Definition at line 231 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_af804f677610b7429ca199ac35510e503}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!P\+Stream\+List@{P\+Stream\+List}}
+\index{P\+Stream\+List@{P\+Stream\+List}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{P\+Stream\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf P\+Stream} $\ast$$>$ {\bf fractal\+::\+Rnn\+::\+P\+Stream\+List}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_af804f677610b7429ca199ac35510e503}
+
+
+List structure of \hyperlink{classfractal_1_1PStream}{P\+Stream} objects. 
+
+
+
+Definition at line 240 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_aea69a9549eee7a4de8163e2bc6be19a1}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Scc@{Scc}}
+\index{Scc@{Scc}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Scc}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Layer} $\ast$$>$ {\bf fractal\+::\+Rnn\+::\+Scc}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_aea69a9549eee7a4de8163e2bc6be19a1}
+
+
+Structure for strongly connected components. 
+
+
+
+Definition at line 225 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_a640b44b0317d2b4055fcdabbfd6456ce}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Scc\+List@{Scc\+List}}
+\index{Scc\+List@{Scc\+List}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Scc\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Scc} $\ast$$>$ {\bf fractal\+::\+Rnn\+::\+Scc\+List}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a640b44b0317d2b4055fcdabbfd6456ce}
+
+
+List structure of Scc objects. 
+
+
+
+Definition at line 237 of file Rnn.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Rnn_a544edffb4b139d116f151647a024f0cc}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Rnn@{Rnn}}
+\index{Rnn@{Rnn}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Rnn}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Rnn\+::\+Rnn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a544edffb4b139d116f151647a024f0cc}
+
+
+The constructor. 
+
+Initialize variables. 
+
+Definition at line 39 of file Rnn.\+cc.
+
+\hypertarget{classfractal_1_1Rnn_a7c31fea1e6eecb80d0f3139b2ea12206}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!````~Rnn@{$\sim$\+Rnn}}
+\index{````~Rnn@{$\sim$\+Rnn}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{$\sim$\+Rnn}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Rnn\+::$\sim$\+Rnn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1Rnn_a7c31fea1e6eecb80d0f3139b2ea12206}
+
+
+The destructor. 
+
+Free resources. 
+
+Definition at line 48 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a7c31fea1e6eecb80d0f3139b2ea12206_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Rnn_a2d5b53ec397838bd9fa7f1d1e3dd1ea9}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Add\+Connection@{Add\+Connection}}
+\index{Add\+Connection@{Add\+Connection}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Add\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Add\+Connection (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{from, }
+\item[{const std\+::string \&}]{to, }
+\item[{const unsigned long}]{delay\+Amount, }
+\item[{const bool}]{is\+Identity, }
+\item[{const {\bf Init\+Weight\+Param} \&}]{init\+Weight\+Param = {\ttfamily {\bf Init\+Weight\+Param}()}}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a2d5b53ec397838bd9fa7f1d1e3dd1ea9}
+
+
+Add a connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The name of the anterior layer. \\
+\hline
+{\em to} & The name of the posterior layer. \\
+\hline
+{\em delay\+Amount} & Delay amount. \\
+\hline
+{\em is\+Identity} & If set to {\ttfamily true}, an identity matrix is used as the weight matrix. \\
+\hline
+{\em init\+Weight\+Param} & Weight initialization parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 104 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a2d5b53ec397838bd9fa7f1d1e3dd1ea9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a2d5b53ec397838bd9fa7f1d1e3dd1ea9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_aab6852a5cb264078d3ea17c264bdd569}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Add\+Connection@{Add\+Connection}}
+\index{Add\+Connection@{Add\+Connection}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Add\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Add\+Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf Layer} $\ast$const}]{from, }
+\item[{{\bf Layer} $\ast$const}]{to, }
+\item[{const unsigned long}]{delay\+Amount, }
+\item[{const bool}]{is\+Identity, }
+\item[{const {\bf Init\+Weight\+Param} \&}]{init\+Weight\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_aab6852a5cb264078d3ea17c264bdd569}
+
+
+Add a connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The pointer to the anterior layer. \\
+\hline
+{\em to} & The pointer to the posterior layer. \\
+\hline
+{\em delay\+Amount} & Delay amount. \\
+\hline
+{\em is\+Identity} & If set to {\ttfamily true}, an identity matrix is used as the weight matrix. \\
+\hline
+{\em init\+Weight\+Param} & Weight initialization parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1173 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_aab6852a5cb264078d3ea17c264bdd569_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_acd58e1c848aaa729566ab15fe53f0a11}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Add\+Layer@{Add\+Layer}}
+\index{Add\+Layer@{Add\+Layer}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Add\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Add\+Layer (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf Act\+Type}}]{act\+Type, }
+\item[{{\bf State\+Type}}]{state\+Type, }
+\item[{const unsigned long}]{size, }
+\item[{const {\bf Layer\+Param} \&}]{param = {\ttfamily {\bf Layer\+Param}()}}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_acd58e1c848aaa729566ab15fe53f0a11}
+
+
+Add a layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Layer name. \\
+\hline
+{\em act\+Type} & Activation function type. \\
+\hline
+{\em state\+Type} & Aggregation function type. \\
+\hline
+{\em size} & Layer size. \\
+\hline
+{\em param} & Extra layer parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_acd58e1c848aaa729566ab15fe53f0a11_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{de/dca/classfractal_1_1Rnn_acd58e1c848aaa729566ab15fe53f0a11_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_ad0221aacc16940ec45bb5fef7a5106e5}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Backward@{Backward}}
+\index{Backward@{Backward}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Backward}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Backward (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To, }
+\item[{const unsigned long}]{n\+Stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_ad0221aacc16940ec45bb5fef7a5106e5}
+
+
+Backward propagation. 
+
+Perform backward propagation from {\itshape batch\+To} to {\itshape batch\+From} with the stride of {\itshape n\+Stream}. The total number of backward steps per data stream is ({\itshape batch\+To} -\/ {\itshape batch\+From} + 1) / {\itshape n\+Stream}. 
+\begin{DoxyParams}{Parameters}
+{\em batch\+From} & The start index of the mini-\/batch to perform the operation. \\
+\hline
+{\em batch\+To} & The end index of the mini-\/batch to perform the operation. \\
+\hline
+{\em n\+Stream} & The number of data streams. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 448 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_ad0221aacc16940ec45bb5fef7a5106e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_ad0221aacc16940ec45bb5fef7a5106e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a36ebbae7902ee09a1ee64eea1219e939}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Calc\+Act\+Deriv@{Calc\+Act\+Deriv}}
+\index{Calc\+Act\+Deriv@{Calc\+Act\+Deriv}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Calc\+Act\+Deriv}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Calc\+Act\+Deriv (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a36ebbae7902ee09a1ee64eea1219e939}
+
+
+Compute the derivatives of the activation functions with respect to the layer states. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+From} & The start index of the mini-\/batch to perform the operation. \\
+\hline
+{\em batch\+To} & The end index of the mini-\/batch to perform the operation. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 603 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a36ebbae7902ee09a1ee64eea1219e939_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_adfde0d83db888e47db7ed9e71369fab1}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Clear@{Clear}}
+\index{Clear@{Clear}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_adfde0d83db888e47db7ed9e71369fab1}
+
+
+Free resources. 
+
+
+
+Definition at line 1148 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_adfde0d83db888e47db7ed9e71369fab1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{de/dca/classfractal_1_1Rnn_adfde0d83db888e47db7ed9e71369fab1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a961fb4540a58d76b4d9cab51cd5a3ef9}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Clear\+Connections@{Clear\+Connections}}
+\index{Clear\+Connections@{Clear\+Connections}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Clear\+Connections}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Clear\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a961fb4540a58d76b4d9cab51cd5a3ef9}
+
+
+Clear all connections. 
+
+
+
+Definition at line 1238 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a961fb4540a58d76b4d9cab51cd5a3ef9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a54ec7bf1206c5f9bd634ee1703c859c1}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Clear\+Layers@{Clear\+Layers}}
+\index{Clear\+Layers@{Clear\+Layers}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Clear\+Layers}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Clear\+Layers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a54ec7bf1206c5f9bd634ee1703c859c1}
+
+
+Clear all layers. 
+
+
+
+Definition at line 1224 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a54ec7bf1206c5f9bd634ee1703c859c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a1a94073d8b65fbb0d9a1fa262f60bc3f}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Clear\+P\+Streams@{Clear\+P\+Streams}}
+\index{Clear\+P\+Streams@{Clear\+P\+Streams}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Clear\+P\+Streams}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Clear\+P\+Streams (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a1a94073d8b65fbb0d9a1fa262f60bc3f}
+
+
+Clear all P\+Streams. 
+
+
+
+Definition at line 1266 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a1a94073d8b65fbb0d9a1fa262f60bc3f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a1a94073d8b65fbb0d9a1fa262f60bc3f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a6bb983dfd300fc9d906ed05bc481d2e8}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Clear\+Scc\+List@{Clear\+Scc\+List}}
+\index{Clear\+Scc\+List@{Clear\+Scc\+List}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Clear\+Scc\+List}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Clear\+Scc\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a6bb983dfd300fc9d906ed05bc481d2e8}
+
+
+Clear all S\+C\+Cs. 
+
+
+
+Definition at line 1252 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a6bb983dfd300fc9d906ed05bc481d2e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a3644eda8587be1557f9a3432bc6f4665}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Create\+Default\+P\+Stream@{Create\+Default\+P\+Stream}}
+\index{Create\+Default\+P\+Stream@{Create\+Default\+P\+Stream}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Create\+Default\+P\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Create\+Default\+P\+Stream (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a3644eda8587be1557f9a3432bc6f4665}
+
+
+Create the default \hyperlink{classfractal_1_1PStream}{P\+Stream} object with the location {\itshape loc}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loc} & Location. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1090 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a3644eda8587be1557f9a3432bc6f4665_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a3644eda8587be1557f9a3432bc6f4665_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_adaf84bde48406ad0c51bfbba084c5516}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Create\+P\+Streams@{Create\+P\+Streams}}
+\index{Create\+P\+Streams@{Create\+P\+Streams}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Create\+P\+Streams}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Create\+P\+Streams (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_adaf84bde48406ad0c51bfbba084c5516}
+
+
+Create a \hyperlink{classfractal_1_1PStream}{P\+Stream} object with the location {\itshape loc}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loc} & Location. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 975 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_adaf84bde48406ad0c51bfbba084c5516_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_adaf84bde48406ad0c51bfbba084c5516_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a76287a6b58925f1a7b40ace3ed261e9f}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Create\+Scc@{Create\+Scc}}
+\index{Create\+Scc@{Create\+Scc}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Create\+Scc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rnn\+::\+Scc} $\ast$const fractal\+::\+Rnn\+::\+Create\+Scc (
+\begin{DoxyParamCaption}
+\item[{std\+::stack$<$ {\bf Layer} $\ast$ $>$ \&}]{scc\+Stack, }
+\item[{const {\bf Layer} $\ast$const}]{root, }
+\item[{const long}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a76287a6b58925f1a7b40ace3ed261e9f}
+
+
+Create an S\+C\+C and perform topological sort. 
+
+Subroutine of \hyperlink{classfractal_1_1Rnn_aff5d760fe57f949ad69a913757deb874}{Tarjan()}. 
+\begin{DoxyParams}{Parameters}
+{\em scc\+Stack} & Stack of nodes (\hyperlink{classfractal_1_1Layer}{Layer} objects). \\
+\hline
+{\em root} & The pointer to the root node (\hyperlink{classfractal_1_1Layer}{Layer} object). \\
+\hline
+{\em group} & The group index or S\+C\+C index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to the newly created S\+C\+C object. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Memory space is dynamically allocated for the returned S\+C\+C object. 
+\end{DoxyNote}
+
+
+Definition at line 755 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a76287a6b58925f1a7b40ace3ed261e9f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a76287a6b58925f1a7b40ace3ed261e9f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a0b79a070742c4f39f13267f62e36996d}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Delete\+Connection@{Delete\+Connection}}
+\index{Delete\+Connection@{Delete\+Connection}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Delete\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Delete\+Connection (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{from, }
+\item[{const std\+::string \&}]{to}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a0b79a070742c4f39f13267f62e36996d}
+
+
+Delete a connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The name of the anterior layer of the connection to be deleted. \\
+\hline
+{\em to} & The name of the posterior layer of the connection to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 158 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a0b79a070742c4f39f13267f62e36996d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a6962b669f59fced06ce094a6d08cbc4e}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Delete\+Connection@{Delete\+Connection}}
+\index{Delete\+Connection@{Delete\+Connection}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Delete\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Delete\+Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf Layer} $\ast$const}]{from, }
+\item[{{\bf Layer} $\ast$const}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a6962b669f59fced06ce094a6d08cbc4e}
+
+
+Delete a connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The pointer to the anterior layer of the connection to be deleted. \\
+\hline
+{\em to} & The pointer to the posterior layer of the connection to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1192 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a6962b669f59fced06ce094a6d08cbc4e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a7eb0a079ff4771e29182e1827757faa2}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Delete\+Layer@{Delete\+Layer}}
+\index{Delete\+Layer@{Delete\+Layer}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Delete\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Delete\+Layer (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a7eb0a079ff4771e29182e1827757faa2}
+
+
+Delete a \hyperlink{classfractal_1_1Layer}{Layer}. 
+
+All connections from or to this layer is automatically removed. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the layer to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 120 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a7eb0a079ff4771e29182e1827757faa2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a7e1b6fb3ff4b5cb2de93f19ce94b709d}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Destroy\+Default\+P\+Stream@{Destroy\+Default\+P\+Stream}}
+\index{Destroy\+Default\+P\+Stream@{Destroy\+Default\+P\+Stream}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Destroy\+Default\+P\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Destroy\+Default\+P\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a7e1b6fb3ff4b5cb2de93f19ce94b709d}
+
+
+Destroy the default \hyperlink{classfractal_1_1PStream}{P\+Stream} object. 
+
+
+
+Definition at line 1099 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a7e1b6fb3ff4b5cb2de93f19ce94b709d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a7e1b6fb3ff4b5cb2de93f19ce94b709d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a5b97c7b0db5b405e8e2721155ed0514e}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Find\+Layer@{Find\+Layer}}
+\index{Find\+Layer@{Find\+Layer}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Find\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer} $\ast$ fractal\+::\+Rnn\+::\+Find\+Layer (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{layer\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a5b97c7b0db5b405e8e2721155ed0514e}
+
+
+Find a layer using its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Name} & Layer name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to the corresponding layer. If there is no matching layer, {\ttfamily N\+U\+L\+L} is returned. 
+\end{DoxyReturn}
+
+
+Definition at line 1162 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a5b97c7b0db5b405e8e2721155ed0514e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_aec12209e9e2d9f47ee70eb714be32433}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Forward@{Forward}}
+\index{Forward@{Forward}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Forward}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Forward (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To, }
+\item[{const unsigned long}]{n\+Stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_aec12209e9e2d9f47ee70eb714be32433}
+
+
+Forward propagation. 
+
+Perform forward propagation from {\itshape batch\+From} to {\itshape batch\+To} with the stride of {\itshape n\+Stream}. The total number of forward steps per data stream is ({\itshape batch\+To} -\/ {\itshape batch\+From} + 1) / {\itshape n\+Stream}. 
+\begin{DoxyParams}{Parameters}
+{\em batch\+From} & The start index of the mini-\/batch to perform the operation. \\
+\hline
+{\em batch\+To} & The end index of the mini-\/batch to perform the operation. \\
+\hline
+{\em n\+Stream} & The number of data streams. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 308 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_aec12209e9e2d9f47ee70eb714be32433_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_aec12209e9e2d9f47ee70eb714be32433_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a10b9fb7a283460b9ea2bbaa5b9efb9ae}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Get\+Batch\+Size@{Get\+Batch\+Size}}
+\index{Get\+Batch\+Size@{Get\+Batch\+Size}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Get\+Batch\+Size}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Rnn\+::\+Get\+Batch\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Rnn_a10b9fb7a283460b9ea2bbaa5b9efb9ae}
+
+
+Get the mini-\/batch size. 
+
+\begin{DoxyReturn}{Returns}
+Mini-\/batch size. 
+\end{DoxyReturn}
+
+
+Definition at line 210 of file Rnn.\+cc.
+
+\hypertarget{classfractal_1_1Rnn_a8bdfcdaeda6fbd1b02ab77f720140e65}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Get\+Engine@{Get\+Engine}}
+\index{Get\+Engine@{Get\+Engine}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Get\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Engine} $\ast$ fractal\+::\+Rnn\+::\+Get\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Rnn_a8bdfcdaeda6fbd1b02ab77f720140e65}
+
+
+Get the computation engine. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the \hyperlink{classfractal_1_1Engine}{Engine} instance of this R\+N\+N. The return value is {\ttfamily N\+U\+L\+L} when the engine is not set. 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a8bdfcdaeda6fbd1b02ab77f720140e65_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_af78a3d552f1abaa0ad8176a296ca72b4}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Get\+Num\+Weights@{Get\+Num\+Weights}}
+\index{Get\+Num\+Weights@{Get\+Num\+Weights}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Get\+Num\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Rnn\+::\+Get\+Num\+Weights (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_af78a3d552f1abaa0ad8176a296ca72b4}
+
+
+Get the total number of weights. 
+
+
+
+Definition at line 1341 of file Rnn.\+cc.
+
+\hypertarget{classfractal_1_1Rnn_a267ef049cbe20675a8e38c72406db3d2}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Init\+Adadelta@{Init\+Adadelta}}
+\index{Init\+Adadelta@{Init\+Adadelta}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Init\+Adadelta}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Init\+Adadelta (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{decay\+Rate}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a267ef049cbe20675a8e38c72406db3d2}
+
+
+Initialize Ada\+Delta. 
+
+Initialize mean-\/square variables. 
+\begin{DoxyParams}{Parameters}
+{\em decay\+Rate} & Decay rate of exponential averaging. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 280 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a267ef049cbe20675a8e38c72406db3d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a7b6cce657b3a765903d4f90076555e5b}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Init\+Backward@{Init\+Backward}}
+\index{Init\+Backward@{Init\+Backward}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Init\+Backward}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Init\+Backward (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a7b6cce657b3a765903d4f90076555e5b}
+
+
+Initialize errors in connections for backward propagation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+From} & The start index of the mini-\/batch to perform the operation. \\
+\hline
+{\em batch\+To} & The end index of the mini-\/batch to perform the operation. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 234 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a7b6cce657b3a765903d4f90076555e5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a7552f1eb6e925b2996d092371d578076}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Init\+Forward@{Init\+Forward}}
+\index{Init\+Forward@{Init\+Forward}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Init\+Forward}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Init\+Forward (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a7552f1eb6e925b2996d092371d578076}
+
+
+Initialize layer activations for forward propagation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+From} & The start index of the mini-\/batch to perform the operation. \\
+\hline
+{\em batch\+To} & The end index of the mini-\/batch to perform the operation. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a7552f1eb6e925b2996d092371d578076_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_ad8ccfbbadc57a8d69927b15596e91be0}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Init\+Nesterov@{Init\+Nesterov}}
+\index{Init\+Nesterov@{Init\+Nesterov}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Init\+Nesterov}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Init\+Nesterov (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_ad8ccfbbadc57a8d69927b15596e91be0}
+
+
+Initialize Nesterov momentum. 
+
+Initialize the velocities to zero. 
+
+Definition at line 268 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_ad8ccfbbadc57a8d69927b15596e91be0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_af8c861ddd6a937c03ed98f96583fa0a4}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Init\+Rmsprop@{Init\+Rmsprop}}
+\index{Init\+Rmsprop@{Init\+Rmsprop}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Init\+Rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Init\+Rmsprop (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{decay\+Rate}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_af8c861ddd6a937c03ed98f96583fa0a4}
+
+
+Initialize R\+M\+Sprop. 
+
+Initialize the mean-\/square variables to one. 
+\begin{DoxyParams}{Parameters}
+{\em decay\+Rate} & Decay rate of exponential averaging. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 294 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_af8c861ddd6a937c03ed98f96583fa0a4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_afa174b5308bcc168f69dc62a0a3f8764}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Init\+Weights@{Init\+Weights}}
+\index{Init\+Weights@{Init\+Weights}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Init\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Init\+Weights (
+\begin{DoxyParamCaption}
+\item[{const {\bf Init\+Weight\+Param} \&}]{param}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_afa174b5308bcc168f69dc62a0a3f8764}
+
+
+Initialize all weights. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & Weight initialization parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 252 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_afa174b5308bcc168f69dc62a0a3f8764_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_ad8c57efd5d6de9043f7861b7432c1208}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Link\+Probe@{Link\+Probe}}
+\index{Link\+Probe@{Link\+Probe}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Link\+Probe}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Link\+Probe (
+\begin{DoxyParamCaption}
+\item[{{\bf Probe} \&}]{probe, }
+\item[{const std\+::string \&}]{layer\+Name}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_ad8c57efd5d6de9043f7861b7432c1208}
+
+
+Link a probe to a layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em probe} & The probe instance. \\
+\hline
+{\em layer\+Name} & Layer name. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{de/dca/classfractal_1_1Rnn_ad8c57efd5d6de9043f7861b7432c1208_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_ad8c57efd5d6de9043f7861b7432c1208_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_aba2b13c1855723bef6ddfffd7fbc6f04}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Link\+Probe@{Link\+Probe}}
+\index{Link\+Probe@{Link\+Probe}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Link\+Probe}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Link\+Probe (
+\begin{DoxyParamCaption}
+\item[{{\bf Probe} \&}]{probe, }
+\item[{{\bf Layer} $\ast$const}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_aba2b13c1855723bef6ddfffd7fbc6f04}
+
+
+Link a probe to a layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em probe} & The probe instance. \\
+\hline
+{\em layer} & The pointer to the layer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1218 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_aba2b13c1855723bef6ddfffd7fbc6f04_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a50c21992806cf5bf160ec9c3b9a07a15}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Load\+State@{Load\+State}}
+\index{Load\+State@{Load\+State}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Load\+State}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Load\+State (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a50c21992806cf5bf160ec9c3b9a07a15}
+
+
+Load the previously saved network states. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to load. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1313 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{de/dca/classfractal_1_1Rnn_a50c21992806cf5bf160ec9c3b9a07a15_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a907f94c280782ef96ee7041d5711db61}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Ready@{Ready}}
+\index{Ready@{Ready}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Ready}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Ready (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a907f94c280782ef96ee7041d5711db61}
+
+
+Get ready to perform forward and backward propagation. 
+
+Analyze the network structure to find strongly connected components (loops) and determine the activation order. Automatically called when needed. 
+
+Definition at line 632 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a907f94c280782ef96ee7041d5711db61_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a907f94c280782ef96ee7041d5711db61_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a34a6ff28eb4507ef1ae8d88089c3161f}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Save\+State@{Save\+State}}
+\index{Save\+State@{Save\+State}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Save\+State}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Save\+State (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a34a6ff28eb4507ef1ae8d88089c3161f}
+
+
+Save the current network states. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to save. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1281 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{de/dca/classfractal_1_1Rnn_a34a6ff28eb4507ef1ae8d88089c3161f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a9bd883f73fede973121b095c13fd8ef8}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Set\+Batch\+Size@{Set\+Batch\+Size}}
+\index{Set\+Batch\+Size@{Set\+Batch\+Size}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Set\+Batch\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Set\+Batch\+Size (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+Size}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a9bd883f73fede973121b095c13fd8ef8}
+
+
+Set the mini-\/batch size. 
+
+Unroll the network {\itshape batch\+Size} times with a circular buffer. 
+\begin{DoxyParams}{Parameters}
+{\em batch\+Size} & Mini-\/batch size. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 186 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a9bd883f73fede973121b095c13fd8ef8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a81f50740ac51ff686045dbc632029b8b}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Set\+Engine@{Set\+Engine}}
+\index{Set\+Engine@{Set\+Engine}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Set\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Set\+Engine (
+\begin{DoxyParamCaption}
+\item[{{\bf Engine} $\ast$}]{engine}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a81f50740ac51ff686045dbc632029b8b}
+
+
+Set a computation engine. 
+
+If {\itshape engine} is set to {\ttfamily N\+U\+L\+L}, free resources. 
+\begin{DoxyParams}{Parameters}
+{\em engine} & A pointer to an \hyperlink{classfractal_1_1Engine}{Engine} instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a81f50740ac51ff686045dbc632029b8b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a81f50740ac51ff686045dbc632029b8b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_ab309d7133835bb7c64415679c977c92d}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Stream\+Wait@{Stream\+Wait}}
+\index{Stream\+Wait@{Stream\+Wait}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Stream\+Wait}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Stream\+Wait (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_ab309d7133835bb7c64415679c977c92d}
+
+
+Force a {\itshape stream} to wait until all asynchronous operations of this R\+N\+N are finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & \hyperlink{classfractal_1_1PStream}{P\+Stream} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1124 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_ab309d7133835bb7c64415679c977c92d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_a61f2e8a15b24e37207f473418c30324e}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Synchronize@{Synchronize}}
+\index{Synchronize@{Synchronize}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Synchronize}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Synchronize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_a61f2e8a15b24e37207f473418c30324e}
+
+
+Wait until all asynchronous operations are finished. 
+
+
+
+Definition at line 1110 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a61f2e8a15b24e37207f473418c30324e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_a61f2e8a15b24e37207f473418c30324e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_aff5d760fe57f949ad69a913757deb874}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Tarjan@{Tarjan}}
+\index{Tarjan@{Tarjan}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Tarjan}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Tarjan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_aff5d760fe57f949ad69a913757deb874}
+
+
+Perform Tarjan's strongly connected component (S\+C\+C) algorithm. 
+
+This function analyzes the network structure to find S\+C\+Cs and loops. 
+
+Definition at line 665 of file Rnn.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_aff5d760fe57f949ad69a913757deb874_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_aff5d760fe57f949ad69a913757deb874_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Rnn_ac1431fc224150e1e7753b1a3ad2c7fac}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!Update\+Weights@{Update\+Weights}}
+\index{Update\+Weights@{Update\+Weights}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{Update\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Rnn\+::\+Update\+Weights (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To, }
+\item[{const unsigned long}]{n\+Frame, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{rate, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{momentum, }
+\item[{const bool}]{adadelta, }
+\item[{const bool}]{rmsprop}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Rnn_ac1431fc224150e1e7753b1a3ad2c7fac}
+
+
+Update the weights. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+From} & The start index of the mini-\/batch to perform the operation. \\
+\hline
+{\em batch\+To} & The end index of the mini-\/batch to perform the operation. \\
+\hline
+{\em n\+Frame} & The total number of forward frames. \\
+\hline
+{\em rate} & Learning rate. \\
+\hline
+{\em momentum} & Momentum. \\
+\hline
+{\em adadelta} & Set to {\ttfamily true} to perform Ada\+Delta. \\
+\hline
+{\em rmsprop} & Set to {\ttfamily true} to perform R\+M\+Sprop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+{\itshape Ada\+Delta} and {\itshape R\+M\+Sprop} cannot be set to {\ttfamily true} at the same time. 
+\end{DoxyNote}
+
+
+Definition at line 616 of file Rnn.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dca/classfractal_1_1Rnn_ac1431fc224150e1e7753b1a3ad2c7fac_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Rnn_a18afcf7887c5a86d4f6cccae67646ed0}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!batch\+Size@{batch\+Size}}
+\index{batch\+Size@{batch\+Size}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{batch\+Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Rnn\+::batch\+Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a18afcf7887c5a86d4f6cccae67646ed0}
+
+
+Mini-\/batch size. 
+
+The network is unrolled {\itshape batch\+Size} times. 
+
+Definition at line 331 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_adc46382430319f0ef64ee9119f370cad}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!conn\+Set@{conn\+Set}}
+\index{conn\+Set@{conn\+Set}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{conn\+Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conn\+Set} fractal\+::\+Rnn\+::conn\+Set\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_adc46382430319f0ef64ee9119f370cad}
+
+
+\hyperlink{classfractal_1_1Connection}{Connection} set. 
+
+
+
+Definition at line 317 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_a69ee08dd3cf7e88e99b8138db8cdf8d7}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!default\+P\+Stream@{default\+P\+Stream}}
+\index{default\+P\+Stream@{default\+P\+Stream}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{default\+P\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream}$\ast$ fractal\+::\+Rnn\+::default\+P\+Stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a69ee08dd3cf7e88e99b8138db8cdf8d7}
+
+
+Default \hyperlink{classfractal_1_1PStream}{P\+Stream}. 
+
+
+
+Definition at line 326 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_ae1ab28da171d29e77200295cf86e85f7}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!engine@{engine}}
+\index{engine@{engine}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Engine}$\ast$ fractal\+::\+Rnn\+::engine\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_ae1ab28da171d29e77200295cf86e85f7}
+
+
+\hyperlink{classfractal_1_1Engine}{Engine} pointer. 
+
+
+
+Definition at line 311 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_a5d66a5d50e9c7282f467e3e1a947ff17}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!is\+Ready@{is\+Ready}}
+\index{is\+Ready@{is\+Ready}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{is\+Ready}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Rnn\+::is\+Ready\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a5d66a5d50e9c7282f467e3e1a947ff17}
+
+
+Indicates whether the network is analyzed or not. 
+
+
+
+Definition at line 334 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_ae1950b5b6ceb1b32a063d10b6e392f1d}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!layer\+Map@{layer\+Map}}
+\index{layer\+Map@{layer\+Map}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{layer\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer\+Map} fractal\+::\+Rnn\+::layer\+Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_ae1950b5b6ceb1b32a063d10b6e392f1d}
+
+
+\hyperlink{classfractal_1_1Layer}{Layer} map. 
+
+
+
+Definition at line 314 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_a0e876daf59f24181e88726b181b28748}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!p\+Stream\+List@{p\+Stream\+List}}
+\index{p\+Stream\+List@{p\+Stream\+List}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{p\+Stream\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream\+List} fractal\+::\+Rnn\+::p\+Stream\+List\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a0e876daf59f24181e88726b181b28748}
+
+
+\hyperlink{classfractal_1_1PStream}{P\+Stream} list. 
+
+
+
+Definition at line 323 of file Rnn.\+h.
+
+\hypertarget{classfractal_1_1Rnn_a796f665aead28ee054bd7eaec5270329}{\index{fractal\+::\+Rnn@{fractal\+::\+Rnn}!scc\+List@{scc\+List}}
+\index{scc\+List@{scc\+List}!fractal\+::\+Rnn@{fractal\+::\+Rnn}}
+\subsubsection[{scc\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scc\+List} fractal\+::\+Rnn\+::scc\+List\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Rnn_a796f665aead28ee054bd7eaec5270329}
+
+
+Scc list. 
+
+
+
+Definition at line 320 of file Rnn.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\hyperlink{Rnn_8h}{Rnn.\+h}\item 
+src/core/\hyperlink{Rnn_8cc}{Rnn.\+cc}\end{DoxyCompactItemize}

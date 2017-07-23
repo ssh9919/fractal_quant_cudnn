@@ -1,0 +1,1423 @@
+\hypertarget{classfractal_1_1Layer}{\section{fractal\+:\+:Layer Class Reference}
+\label{classfractal_1_1Layer}\index{fractal\+::\+Layer@{fractal\+::\+Layer}}
+}
+
+
+{\ttfamily \#include $<$Layer.\+h$>$}
+
+
+
+Collaboration diagram for fractal\+:\+:Layer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d56/classfractal_1_1Layer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{classfractal_1_1Connection}{Connection} $\ast$ $>$ \hyperlink{classfractal_1_1Layer_a112ea548588704c0915a32aa3269b5a6}{Conn\+List}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Layer_a5b609c2c63c95ace0b4bc7d787def055}{Layer} (const std\+::string \&\hyperlink{classfractal_1_1Layer_a657c8772dd166aca9aafc082850c1c78}{name}, \hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ec}{Act\+Type} \hyperlink{classfractal_1_1Layer_a042deda27b82d3ff498bb5f9c4bbf115}{act\+Type}, \hyperlink{namespacefractal_a17646dafc0f3fc262f238822cca09f2e}{State\+Type} \hyperlink{classfractal_1_1Layer_a4f837fc5c1e649317ef534083ea24dfe}{state\+Type}, const unsigned long \hyperlink{classfractal_1_1Layer_ad772ed1139baedba2bb70b7f235f32d5}{size}, const \hyperlink{classfractal_1_1LayerParam}{Layer\+Param} \&param)
+\item 
+virtual \hyperlink{classfractal_1_1Layer_ab3e3a921b0b98b1a8b9dc749bc55239f}{$\sim$\+Layer} ()
+\item 
+void \hyperlink{classfractal_1_1Layer_ae407d121b9ce2586d782bb7a61a7ed81}{Set\+Engine} (\hyperlink{classfractal_1_1Engine}{Engine} $\ast$const \hyperlink{classfractal_1_1Layer_a95f0129c9d79e1292d7d1e5732d70e5e}{engine}, \hyperlink{classfractal_1_1PStream}{P\+Stream} $\ast$const \hyperlink{classfractal_1_1Layer_aef36108269bffa0d3ecbd67f190362fa}{stream})
+\item 
+void \hyperlink{classfractal_1_1Layer_aec6987d45b69d42f21f58c28443d9b1f}{Add\+Src\+Connection} (\hyperlink{classfractal_1_1Connection}{Connection} $\ast$const conn)
+\item 
+void \hyperlink{classfractal_1_1Layer_ac5eb5c22c720d95cf37d05a2e73a85e4}{Add\+Dst\+Connection} (\hyperlink{classfractal_1_1Connection}{Connection} $\ast$const conn)
+\item 
+void \hyperlink{classfractal_1_1Layer_a2d2919469482d824750ef4b901181a35}{Remove\+Src\+Connection} (\hyperlink{classfractal_1_1Connection}{Connection} $\ast$const conn)
+\item 
+void \hyperlink{classfractal_1_1Layer_afbdad6fd27ae9498f4b2070099b84619}{Remove\+Dst\+Connection} (\hyperlink{classfractal_1_1Connection}{Connection} $\ast$const conn)
+\item 
+const std\+::string \& \hyperlink{classfractal_1_1Layer_a2759b1e5c36b3e0c9bc904f8648f5ca1}{Get\+Name} () const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1Layer_a5d7c10187a49ccdadedc12e4c930c090}{Get\+Size} () const 
+\item 
+const unsigned long \hyperlink{classfractal_1_1Layer_ad1e9cb194a5ad8ea269857b2f16e001b}{Get\+Batch\+Size} () const 
+\item 
+void \hyperlink{classfractal_1_1Layer_af2dd6884fc31a42299d200e6c872e67f}{Set\+Batch\+Size} (const unsigned long \hyperlink{classfractal_1_1Layer_ab1bc36200fdb731ad1142d1dc96a6031}{batch\+Size})
+\item 
+void \hyperlink{classfractal_1_1Layer_a48def7f0cfc273b4b56c52d8d73670b6}{Set\+Init\+Val} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1Layer_a0c698b46cbbf0b8c3cc58605dfcbf21c}{Set\+State\+Penalty} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val)
+\item 
+void \hyperlink{classfractal_1_1Layer_af834c8d49a9c2edffd2652b4ae344aa9}{Unlink\+Matrices} ()
+\item 
+void \hyperlink{classfractal_1_1Layer_a9e26171500b461c31e56f34debd96796}{Init\+Act} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_a6e7a9753a4995b1774080fa078354125}{Init\+Err} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_a242176b7a427ac0f4e522ca43f311878}{Forward} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_abebbf457abc715017fc0f5813ccfa699}{Backward} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_a4665111b779d272a8b01258625b2116d}{Calc\+Act\+Deriv} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_a506a056312e53b1589f8238df9f6b24b}{Link\+Probe} (\hyperlink{classfractal_1_1Probe}{Probe} $\ast$const probe)
+\item 
+void \hyperlink{classfractal_1_1Layer_a25ddff557cde6b0e741fdaa71918aedf}{Unlink\+Probe} ()
+\item 
+const bool \hyperlink{classfractal_1_1Layer_a0582631c535238fac0448fad1b248323}{Is\+Linked} () const 
+\item 
+const \hyperlink{classfractal_1_1Layer_a112ea548588704c0915a32aa3269b5a6}{Conn\+List} \& \hyperlink{classfractal_1_1Layer_a345e1871562625f4f230f66a2953efa8}{Get\+Src\+Connections} () const 
+\item 
+const \hyperlink{classfractal_1_1Layer_a112ea548588704c0915a32aa3269b5a6}{Conn\+List} \& \hyperlink{classfractal_1_1Layer_a6ca77ba55f272bd0dc70ad4787c8925a}{Get\+Dst\+Connections} () const 
+\item 
+void \hyperlink{classfractal_1_1Layer_abe9143e5f9015b11b2b189cff34f19c1}{Set\+Visited} (const bool \hyperlink{classfractal_1_1Layer_a4c2ad17160182ca22905e7439138a93e}{is\+Visited})
+\item 
+const bool \hyperlink{classfractal_1_1Layer_a2306748e27c9a06e8b30b66e8ad73b05}{Get\+Visited} () const 
+\item 
+void \hyperlink{classfractal_1_1Layer_a21bda82f81853060af6b2b9482fae28f}{Set\+Index} (const long \hyperlink{classfractal_1_1Layer_ad144193dca351470ca700e0efcead8a2}{index})
+\item 
+const long \hyperlink{classfractal_1_1Layer_a0417ae6bb056b22b11028d2d3999b710}{Get\+Index} () const 
+\item 
+void \hyperlink{classfractal_1_1Layer_a28468f7fe1c049a6575a97dd4b2b567a}{Set\+Group} (const long \hyperlink{classfractal_1_1Layer_a10d561417d3701d22b3a0e87178f1dcb}{group})
+\item 
+const long \hyperlink{classfractal_1_1Layer_a540bed9ed5f273403b4ed3131b4da72d}{Get\+Group} () const 
+\item 
+void \hyperlink{classfractal_1_1Layer_a41741a12021eb7b3e700c1e5e7938ccb}{Set\+P\+Stream} (\hyperlink{classfractal_1_1PStream}{P\+Stream} $\ast$const \hyperlink{classfractal_1_1Layer_aef36108269bffa0d3ecbd67f190362fa}{stream})
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \& \hyperlink{classfractal_1_1Layer_a55796962120c83e2c69aaa982921f8aa}{Get\+P\+Stream} ()
+\item 
+void \hyperlink{classfractal_1_1Layer_af559422de96bff34f588f55fbf7be1ef}{Event\+Record} ()
+\item 
+void \hyperlink{classfractal_1_1Layer_a9d4506c25955a82e09f0c35d43e953d6}{Stream\+Wait\+Event} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&\hyperlink{classfractal_1_1Layer_aef36108269bffa0d3ecbd67f190362fa}{stream})
+\item 
+void \hyperlink{classfractal_1_1Layer_aebbc3e3f785b1761b50aa4d4607629e5}{Forward\+Wait} ()
+\item 
+void \hyperlink{classfractal_1_1Layer_aac82571573071128dbfcb4cbca2ae4d4}{Backward\+Wait} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Layer_a199534e5328b9f8032e8fb5825c6af08}{Layer} (const \hyperlink{classfractal_1_1Layer}{Layer} \&obj)
+\item 
+void \hyperlink{classfractal_1_1Layer_a15ae052db7f8840740bb8f0eb61ac495}{Activation} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_a85bedac6dd991b7a01a3332f469e2675}{Update\+State} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_a0fe2f9c641f45e5214ff8606a12a3bbe}{Update\+Dst\+Err} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_a19537c998c460cdeae37f20d522540fa}{Update\+Src\+Err} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Layer_a741bcadfe5821e3fc6a9a22bdd22e38a}{Distribute\+Err} (\hyperlink{classfractal_1_1Connection}{Connection} $\ast$conn, const unsigned long batch\+From, const unsigned long batch\+To)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Layer_a95f0129c9d79e1292d7d1e5732d70e5e}{engine}
+\item 
+\hyperlink{namespacefractal_a6b4f3887f3de57d4b1cbb00d198833ec}{Act\+Type} \hyperlink{classfractal_1_1Layer_a042deda27b82d3ff498bb5f9c4bbf115}{act\+Type}
+\item 
+\hyperlink{namespacefractal_a17646dafc0f3fc262f238822cca09f2e}{State\+Type} \hyperlink{classfractal_1_1Layer_a4f837fc5c1e649317ef534083ea24dfe}{state\+Type}
+\item 
+std\+::string \hyperlink{classfractal_1_1Layer_a657c8772dd166aca9aafc082850c1c78}{name}
+\item 
+unsigned long \hyperlink{classfractal_1_1Layer_ad772ed1139baedba2bb70b7f235f32d5}{size}
+\item 
+unsigned long \hyperlink{classfractal_1_1Layer_ab1bc36200fdb731ad1142d1dc96a6031}{batch\+Size}
+\item 
+\hyperlink{classfractal_1_1Layer_a112ea548588704c0915a32aa3269b5a6}{Conn\+List} \hyperlink{classfractal_1_1Layer_a9f497e9df823d1c65558e24a7ea2993e}{src\+List}
+\item 
+\hyperlink{classfractal_1_1Layer_a112ea548588704c0915a32aa3269b5a6}{Conn\+List} \hyperlink{classfractal_1_1Layer_ac0625856995bf53809a52fc1266bf706}{dst\+List}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Layer_ab25f2b99a417bff762f544adf1efb08c}{act}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Layer_a1d9a52b5c715cd8d769f36ed9136e1d3}{state}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Layer_a1b0dd6aba3bd642fd8d60914d070779d}{src\+Err}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Layer_a299f9cb54bb1bc123a78e2fe6486b6c2}{dst\+Err}
+\item 
+\hyperlink{classfractal_1_1Probe}{Probe} $\ast$ \hyperlink{classfractal_1_1Layer_a2c58f72836357e0ab4b16e7e2ee5b4b7}{linked\+Probe}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1Layer_a275d1bbf7c4d6976b695311dc8e7a71e}{init\+Val}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1Layer_a2d9020e0da1993e16d9fcd9b86b94d91}{state\+Penalty}
+\item 
+bool \hyperlink{classfractal_1_1Layer_a4c2ad17160182ca22905e7439138a93e}{is\+Visited}
+\item 
+long \hyperlink{classfractal_1_1Layer_ad144193dca351470ca700e0efcead8a2}{index}
+\item 
+long \hyperlink{classfractal_1_1Layer_a10d561417d3701d22b3a0e87178f1dcb}{group}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} $\ast$ \hyperlink{classfractal_1_1Layer_aef36108269bffa0d3ecbd67f190362fa}{stream}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Layer_a6f4b1783eae158a746c0f2d43114cba3}{event}
+\item 
+friend \hyperlink{classfractal_1_1Layer_af01de55572c632f393ec441fc4c244f5}{Probe}
+\item 
+friend \hyperlink{classfractal_1_1Layer_a462ead8af5a9f5acfc359a348488b87f}{Connection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 53 of file Layer.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classfractal_1_1Layer_a112ea548588704c0915a32aa3269b5a6}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Conn\+List@{Conn\+List}}
+\index{Conn\+List@{Conn\+List}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Conn\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::list$<${\bf Connection} $\ast$$>$ {\bf fractal\+::\+Layer\+::\+Conn\+List}}}\label{classfractal_1_1Layer_a112ea548588704c0915a32aa3269b5a6}
+
+
+Definition at line 56 of file Layer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Layer_a5b609c2c63c95ace0b4bc7d787def055}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Layer@{Layer}}
+\index{Layer@{Layer}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Layer}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Layer\+::\+Layer (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf Act\+Type}}]{act\+Type, }
+\item[{{\bf State\+Type}}]{state\+Type, }
+\item[{const unsigned long}]{size, }
+\item[{const {\bf Layer\+Param} \&}]{param}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a5b609c2c63c95ace0b4bc7d787def055}
+
+
+Definition at line 29 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{dc/d55/classfractal_1_1Layer_a5b609c2c63c95ace0b4bc7d787def055_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_ab3e3a921b0b98b1a8b9dc749bc55239f}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!````~Layer@{$\sim$\+Layer}}
+\index{````~Layer@{$\sim$\+Layer}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{$\sim$\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Layer\+::$\sim$\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1Layer_ab3e3a921b0b98b1a8b9dc749bc55239f}
+
+
+Definition at line 53 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_ab3e3a921b0b98b1a8b9dc749bc55239f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a199534e5328b9f8032e8fb5825c6af08}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Layer@{Layer}}
+\index{Layer@{Layer}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Layer}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Layer\+::\+Layer (
+\begin{DoxyParamCaption}
+\item[{const {\bf Layer} \&}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a199534e5328b9f8032e8fb5825c6af08}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Layer_a15ae052db7f8840740bb8f0eb61ac495}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Activation@{Activation}}
+\index{Activation@{Activation}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Activation}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Activation (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a15ae052db7f8840740bb8f0eb61ac495}
+
+
+Definition at line 302 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a15ae052db7f8840740bb8f0eb61ac495_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a15ae052db7f8840740bb8f0eb61ac495_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_ac5eb5c22c720d95cf37d05a2e73a85e4}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Add\+Dst\+Connection@{Add\+Dst\+Connection}}
+\index{Add\+Dst\+Connection@{Add\+Dst\+Connection}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Add\+Dst\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Add\+Dst\+Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf Connection} $\ast$const}]{conn}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_ac5eb5c22c720d95cf37d05a2e73a85e4}
+
+
+Definition at line 254 of file Layer.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_ac5eb5c22c720d95cf37d05a2e73a85e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_aec6987d45b69d42f21f58c28443d9b1f}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Add\+Src\+Connection@{Add\+Src\+Connection}}
+\index{Add\+Src\+Connection@{Add\+Src\+Connection}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Add\+Src\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Add\+Src\+Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf Connection} $\ast$const}]{conn}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_aec6987d45b69d42f21f58c28443d9b1f}
+
+
+Definition at line 248 of file Layer.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_aec6987d45b69d42f21f58c28443d9b1f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_abebbf457abc715017fc0f5813ccfa699}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Backward@{Backward}}
+\index{Backward@{Backward}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Backward}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Backward (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_abebbf457abc715017fc0f5813ccfa699}
+
+
+Definition at line 172 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_abebbf457abc715017fc0f5813ccfa699_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_abebbf457abc715017fc0f5813ccfa699_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_aac82571573071128dbfcb4cbca2ae4d4}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Backward\+Wait@{Backward\+Wait}}
+\index{Backward\+Wait@{Backward\+Wait}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Backward\+Wait}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Backward\+Wait (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_aac82571573071128dbfcb4cbca2ae4d4}
+
+
+Definition at line 614 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_aac82571573071128dbfcb4cbca2ae4d4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_aac82571573071128dbfcb4cbca2ae4d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a4665111b779d272a8b01258625b2116d}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Calc\+Act\+Deriv@{Calc\+Act\+Deriv}}
+\index{Calc\+Act\+Deriv@{Calc\+Act\+Deriv}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Calc\+Act\+Deriv}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Calc\+Act\+Deriv (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a4665111b779d272a8b01258625b2116d}
+
+
+Definition at line 195 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a4665111b779d272a8b01258625b2116d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a741bcadfe5821e3fc6a9a22bdd22e38a}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Distribute\+Err@{Distribute\+Err}}
+\index{Distribute\+Err@{Distribute\+Err}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Distribute\+Err}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Distribute\+Err (
+\begin{DoxyParamCaption}
+\item[{{\bf Connection} $\ast$}]{conn, }
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a741bcadfe5821e3fc6a9a22bdd22e38a}
+
+
+Definition at line 518 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a741bcadfe5821e3fc6a9a22bdd22e38a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a741bcadfe5821e3fc6a9a22bdd22e38a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_af559422de96bff34f588f55fbf7be1ef}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Event\+Record@{Event\+Record}}
+\index{Event\+Record@{Event\+Record}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Event\+Record}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Event\+Record (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_af559422de96bff34f588f55fbf7be1ef}
+
+
+Definition at line 583 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_af559422de96bff34f588f55fbf7be1ef_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_af559422de96bff34f588f55fbf7be1ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a242176b7a427ac0f4e522ca43f311878}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Forward@{Forward}}
+\index{Forward@{Forward}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Forward}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Forward (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a242176b7a427ac0f4e522ca43f311878}
+
+
+Definition at line 148 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a242176b7a427ac0f4e522ca43f311878_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a242176b7a427ac0f4e522ca43f311878_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_aebbc3e3f785b1761b50aa4d4607629e5}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Forward\+Wait@{Forward\+Wait}}
+\index{Forward\+Wait@{Forward\+Wait}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Forward\+Wait}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Forward\+Wait (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_aebbc3e3f785b1761b50aa4d4607629e5}
+
+
+Definition at line 597 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_aebbc3e3f785b1761b50aa4d4607629e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_aebbc3e3f785b1761b50aa4d4607629e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_ad1e9cb194a5ad8ea269857b2f16e001b}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+Batch\+Size@{Get\+Batch\+Size}}
+\index{Get\+Batch\+Size@{Get\+Batch\+Size}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+Batch\+Size}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Layer\+::\+Get\+Batch\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_ad1e9cb194a5ad8ea269857b2f16e001b}
+
+
+Definition at line 70 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a6ca77ba55f272bd0dc70ad4787c8925a}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+Dst\+Connections@{Get\+Dst\+Connections}}
+\index{Get\+Dst\+Connections@{Get\+Dst\+Connections}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+Dst\+Connections}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Conn\+List}\& fractal\+::\+Layer\+::\+Get\+Dst\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a6ca77ba55f272bd0dc70ad4787c8925a}
+
+
+Definition at line 91 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a6ca77ba55f272bd0dc70ad4787c8925a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a540bed9ed5f273403b4ed3131b4da72d}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+Group@{Get\+Group}}
+\index{Get\+Group@{Get\+Group}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+Group}]{\setlength{\rightskip}{0pt plus 5cm}const long fractal\+::\+Layer\+::\+Get\+Group (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a540bed9ed5f273403b4ed3131b4da72d}
+
+
+Definition at line 99 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a540bed9ed5f273403b4ed3131b4da72d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a0417ae6bb056b22b11028d2d3999b710}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+Index@{Get\+Index}}
+\index{Get\+Index@{Get\+Index}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+Index}]{\setlength{\rightskip}{0pt plus 5cm}const long fractal\+::\+Layer\+::\+Get\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a0417ae6bb056b22b11028d2d3999b710}
+
+
+Definition at line 97 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a0417ae6bb056b22b11028d2d3999b710_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a2759b1e5c36b3e0c9bc904f8648f5ca1}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& fractal\+::\+Layer\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a2759b1e5c36b3e0c9bc904f8648f5ca1}
+
+
+Definition at line 68 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a2759b1e5c36b3e0c9bc904f8648f5ca1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a55796962120c83e2c69aaa982921f8aa}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+P\+Stream@{Get\+P\+Stream}}
+\index{Get\+P\+Stream@{Get\+P\+Stream}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+P\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} \& fractal\+::\+Layer\+::\+Get\+P\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a55796962120c83e2c69aaa982921f8aa}
+
+
+Definition at line 576 of file Layer.\+cc.
+
+\hypertarget{classfractal_1_1Layer_a5d7c10187a49ccdadedc12e4c930c090}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Layer\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a5d7c10187a49ccdadedc12e4c930c090}
+
+
+Definition at line 69 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a5d7c10187a49ccdadedc12e4c930c090_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a345e1871562625f4f230f66a2953efa8}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+Src\+Connections@{Get\+Src\+Connections}}
+\index{Get\+Src\+Connections@{Get\+Src\+Connections}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+Src\+Connections}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Conn\+List}\& fractal\+::\+Layer\+::\+Get\+Src\+Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a345e1871562625f4f230f66a2953efa8}
+
+
+Definition at line 90 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a345e1871562625f4f230f66a2953efa8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a2306748e27c9a06e8b30b66e8ad73b05}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Get\+Visited@{Get\+Visited}}
+\index{Get\+Visited@{Get\+Visited}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Get\+Visited}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Layer\+::\+Get\+Visited (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a2306748e27c9a06e8b30b66e8ad73b05}
+
+
+Definition at line 95 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a2306748e27c9a06e8b30b66e8ad73b05_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a9e26171500b461c31e56f34debd96796}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Init\+Act@{Init\+Act}}
+\index{Init\+Act@{Init\+Act}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Init\+Act}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Init\+Act (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a9e26171500b461c31e56f34debd96796}
+
+
+Definition at line 122 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a9e26171500b461c31e56f34debd96796_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a6e7a9753a4995b1774080fa078354125}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Init\+Err@{Init\+Err}}
+\index{Init\+Err@{Init\+Err}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Init\+Err}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Init\+Err (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a6e7a9753a4995b1774080fa078354125}
+
+
+Definition at line 135 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a6e7a9753a4995b1774080fa078354125_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a0582631c535238fac0448fad1b248323}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Is\+Linked@{Is\+Linked}}
+\index{Is\+Linked@{Is\+Linked}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Is\+Linked}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Layer\+::\+Is\+Linked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classfractal_1_1Layer_a0582631c535238fac0448fad1b248323}
+
+
+Definition at line 296 of file Layer.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a0582631c535238fac0448fad1b248323_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a506a056312e53b1589f8238df9f6b24b}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Link\+Probe@{Link\+Probe}}
+\index{Link\+Probe@{Link\+Probe}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Link\+Probe}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Link\+Probe (
+\begin{DoxyParamCaption}
+\item[{{\bf Probe} $\ast$const}]{probe}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a506a056312e53b1589f8238df9f6b24b}
+
+
+Definition at line 272 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a506a056312e53b1589f8238df9f6b24b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a506a056312e53b1589f8238df9f6b24b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_afbdad6fd27ae9498f4b2070099b84619}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Remove\+Dst\+Connection@{Remove\+Dst\+Connection}}
+\index{Remove\+Dst\+Connection@{Remove\+Dst\+Connection}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Remove\+Dst\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Remove\+Dst\+Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf Connection} $\ast$const}]{conn}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_afbdad6fd27ae9498f4b2070099b84619}
+
+
+Definition at line 266 of file Layer.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_afbdad6fd27ae9498f4b2070099b84619_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a2d2919469482d824750ef4b901181a35}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Remove\+Src\+Connection@{Remove\+Src\+Connection}}
+\index{Remove\+Src\+Connection@{Remove\+Src\+Connection}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Remove\+Src\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Remove\+Src\+Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf Connection} $\ast$const}]{conn}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a2d2919469482d824750ef4b901181a35}
+
+
+Definition at line 260 of file Layer.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a2d2919469482d824750ef4b901181a35_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_af2dd6884fc31a42299d200e6c872e67f}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Set\+Batch\+Size@{Set\+Batch\+Size}}
+\index{Set\+Batch\+Size@{Set\+Batch\+Size}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Set\+Batch\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Set\+Batch\+Size (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+Size}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_af2dd6884fc31a42299d200e6c872e67f}
+
+
+Definition at line 86 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_af2dd6884fc31a42299d200e6c872e67f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_af2dd6884fc31a42299d200e6c872e67f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_ae407d121b9ce2586d782bb7a61a7ed81}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Set\+Engine@{Set\+Engine}}
+\index{Set\+Engine@{Set\+Engine}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Set\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Set\+Engine (
+\begin{DoxyParamCaption}
+\item[{{\bf Engine} $\ast$const}]{engine, }
+\item[{{\bf P\+Stream} $\ast$const}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_ae407d121b9ce2586d782bb7a61a7ed81}
+
+
+Definition at line 61 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_ae407d121b9ce2586d782bb7a61a7ed81_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_ae407d121b9ce2586d782bb7a61a7ed81_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a28468f7fe1c049a6575a97dd4b2b567a}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Set\+Group@{Set\+Group}}
+\index{Set\+Group@{Set\+Group}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Set\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Set\+Group (
+\begin{DoxyParamCaption}
+\item[{const long}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a28468f7fe1c049a6575a97dd4b2b567a}
+
+
+Definition at line 98 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a28468f7fe1c049a6575a97dd4b2b567a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a21bda82f81853060af6b2b9482fae28f}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Set\+Index@{Set\+Index}}
+\index{Set\+Index@{Set\+Index}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Set\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Set\+Index (
+\begin{DoxyParamCaption}
+\item[{const long}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_a21bda82f81853060af6b2b9482fae28f}
+
+
+Definition at line 96 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a21bda82f81853060af6b2b9482fae28f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a48def7f0cfc273b4b56c52d8d73670b6}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Set\+Init\+Val@{Set\+Init\+Val}}
+\index{Set\+Init\+Val@{Set\+Init\+Val}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Set\+Init\+Val}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Set\+Init\+Val (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a48def7f0cfc273b4b56c52d8d73670b6}
+
+
+Definition at line 116 of file Layer.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{dc/d55/classfractal_1_1Layer_a48def7f0cfc273b4b56c52d8d73670b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a41741a12021eb7b3e700c1e5e7938ccb}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Set\+P\+Stream@{Set\+P\+Stream}}
+\index{Set\+P\+Stream@{Set\+P\+Stream}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Set\+P\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Set\+P\+Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} $\ast$const}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a41741a12021eb7b3e700c1e5e7938ccb}
+
+
+Definition at line 569 of file Layer.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a41741a12021eb7b3e700c1e5e7938ccb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a0c698b46cbbf0b8c3cc58605dfcbf21c}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Set\+State\+Penalty@{Set\+State\+Penalty}}
+\index{Set\+State\+Penalty@{Set\+State\+Penalty}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Set\+State\+Penalty}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Set\+State\+Penalty (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{val}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a0c698b46cbbf0b8c3cc58605dfcbf21c}
+
+
+Definition at line 101 of file Layer.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{dc/d55/classfractal_1_1Layer_a0c698b46cbbf0b8c3cc58605dfcbf21c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_abe9143e5f9015b11b2b189cff34f19c1}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Set\+Visited@{Set\+Visited}}
+\index{Set\+Visited@{Set\+Visited}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Set\+Visited}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Set\+Visited (
+\begin{DoxyParamCaption}
+\item[{const bool}]{is\+Visited}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Layer_abe9143e5f9015b11b2b189cff34f19c1}
+
+
+Definition at line 94 of file Layer.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_abe9143e5f9015b11b2b189cff34f19c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a9d4506c25955a82e09f0c35d43e953d6}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Stream\+Wait\+Event@{Stream\+Wait\+Event}}
+\index{Stream\+Wait\+Event@{Stream\+Wait\+Event}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Stream\+Wait\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Stream\+Wait\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a9d4506c25955a82e09f0c35d43e953d6}
+
+
+Definition at line 590 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a9d4506c25955a82e09f0c35d43e953d6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a9d4506c25955a82e09f0c35d43e953d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_af834c8d49a9c2edffd2652b4ae344aa9}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Unlink\+Matrices@{Unlink\+Matrices}}
+\index{Unlink\+Matrices@{Unlink\+Matrices}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Unlink\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Unlink\+Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_af834c8d49a9c2edffd2652b4ae344aa9}
+
+
+Definition at line 107 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_af834c8d49a9c2edffd2652b4ae344aa9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_af834c8d49a9c2edffd2652b4ae344aa9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a25ddff557cde6b0e741fdaa71918aedf}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Unlink\+Probe@{Unlink\+Probe}}
+\index{Unlink\+Probe@{Unlink\+Probe}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Unlink\+Probe}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Unlink\+Probe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Layer_a25ddff557cde6b0e741fdaa71918aedf}
+
+
+Definition at line 283 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a25ddff557cde6b0e741fdaa71918aedf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a25ddff557cde6b0e741fdaa71918aedf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a0fe2f9c641f45e5214ff8606a12a3bbe}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Update\+Dst\+Err@{Update\+Dst\+Err}}
+\index{Update\+Dst\+Err@{Update\+Dst\+Err}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Update\+Dst\+Err}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Update\+Dst\+Err (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a0fe2f9c641f45e5214ff8606a12a3bbe}
+
+
+Definition at line 423 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a0fe2f9c641f45e5214ff8606a12a3bbe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a0fe2f9c641f45e5214ff8606a12a3bbe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a19537c998c460cdeae37f20d522540fa}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Update\+Src\+Err@{Update\+Src\+Err}}
+\index{Update\+Src\+Err@{Update\+Src\+Err}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Update\+Src\+Err}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Update\+Src\+Err (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a19537c998c460cdeae37f20d522540fa}
+
+
+Definition at line 474 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a19537c998c460cdeae37f20d522540fa_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a19537c998c460cdeae37f20d522540fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Layer_a85bedac6dd991b7a01a3332f469e2675}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Update\+State@{Update\+State}}
+\index{Update\+State@{Update\+State}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Update\+State}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Layer\+::\+Update\+State (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a85bedac6dd991b7a01a3332f469e2675}
+
+
+Definition at line 356 of file Layer.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a85bedac6dd991b7a01a3332f469e2675_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d55/classfractal_1_1Layer_a85bedac6dd991b7a01a3332f469e2675_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Layer_ab25f2b99a417bff762f544adf1efb08c}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!act@{act}}
+\index{act@{act}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{act}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Layer\+::act\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_ab25f2b99a417bff762f544adf1efb08c}
+
+
+Definition at line 131 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a042deda27b82d3ff498bb5f9c4bbf115}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!act\+Type@{act\+Type}}
+\index{act\+Type@{act\+Type}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{act\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Act\+Type} fractal\+::\+Layer\+::act\+Type\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a042deda27b82d3ff498bb5f9c4bbf115}
+
+
+Definition at line 122 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_ab1bc36200fdb731ad1142d1dc96a6031}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!batch\+Size@{batch\+Size}}
+\index{batch\+Size@{batch\+Size}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{batch\+Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Layer\+::batch\+Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_ab1bc36200fdb731ad1142d1dc96a6031}
+
+
+Definition at line 126 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a462ead8af5a9f5acfc359a348488b87f}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Connection@{Connection}}
+\index{Connection@{Connection}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Connection}]{\setlength{\rightskip}{0pt plus 5cm}friend fractal\+::\+Layer\+::\+Connection\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a462ead8af5a9f5acfc359a348488b87f}
+
+
+Definition at line 145 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a299f9cb54bb1bc123a78e2fe6486b6c2}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!dst\+Err@{dst\+Err}}
+\index{dst\+Err@{dst\+Err}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{dst\+Err}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Layer\+::dst\+Err\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a299f9cb54bb1bc123a78e2fe6486b6c2}
+
+
+Definition at line 131 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_ac0625856995bf53809a52fc1266bf706}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!dst\+List@{dst\+List}}
+\index{dst\+List@{dst\+List}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{dst\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conn\+List} fractal\+::\+Layer\+::dst\+List\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_ac0625856995bf53809a52fc1266bf706}
+
+
+Definition at line 129 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a95f0129c9d79e1292d7d1e5732d70e5e}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!engine@{engine}}
+\index{engine@{engine}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Engine}$\ast$ fractal\+::\+Layer\+::engine\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a95f0129c9d79e1292d7d1e5732d70e5e}
+
+
+Definition at line 120 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a6f4b1783eae158a746c0f2d43114cba3}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!event@{event}}
+\index{event@{event}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Layer\+::event\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a6f4b1783eae158a746c0f2d43114cba3}
+
+
+Definition at line 142 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a10d561417d3701d22b3a0e87178f1dcb}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!group@{group}}
+\index{group@{group}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{group}]{\setlength{\rightskip}{0pt plus 5cm}long fractal\+::\+Layer\+::group\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a10d561417d3701d22b3a0e87178f1dcb}
+
+
+Definition at line 139 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_ad144193dca351470ca700e0efcead8a2}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!index@{index}}
+\index{index@{index}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}long fractal\+::\+Layer\+::index\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_ad144193dca351470ca700e0efcead8a2}
+
+
+Definition at line 139 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a275d1bbf7c4d6976b695311dc8e7a71e}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!init\+Val@{init\+Val}}
+\index{init\+Val@{init\+Val}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{init\+Val}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Layer\+::init\+Val\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a275d1bbf7c4d6976b695311dc8e7a71e}
+
+
+Definition at line 135 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a4c2ad17160182ca22905e7439138a93e}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!is\+Visited@{is\+Visited}}
+\index{is\+Visited@{is\+Visited}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{is\+Visited}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Layer\+::is\+Visited\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a4c2ad17160182ca22905e7439138a93e}
+
+
+Definition at line 138 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a2c58f72836357e0ab4b16e7e2ee5b4b7}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!linked\+Probe@{linked\+Probe}}
+\index{linked\+Probe@{linked\+Probe}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{linked\+Probe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Probe}$\ast$ fractal\+::\+Layer\+::linked\+Probe\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a2c58f72836357e0ab4b16e7e2ee5b4b7}
+
+
+Definition at line 133 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a657c8772dd166aca9aafc082850c1c78}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!name@{name}}
+\index{name@{name}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fractal\+::\+Layer\+::name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a657c8772dd166aca9aafc082850c1c78}
+
+
+Definition at line 125 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_af01de55572c632f393ec441fc4c244f5}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!Probe@{Probe}}
+\index{Probe@{Probe}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{Probe}]{\setlength{\rightskip}{0pt plus 5cm}friend fractal\+::\+Layer\+::\+Probe\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_af01de55572c632f393ec441fc4c244f5}
+
+
+Definition at line 144 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_ad772ed1139baedba2bb70b7f235f32d5}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!size@{size}}
+\index{size@{size}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Layer\+::size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_ad772ed1139baedba2bb70b7f235f32d5}
+
+
+Definition at line 126 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a1b0dd6aba3bd642fd8d60914d070779d}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!src\+Err@{src\+Err}}
+\index{src\+Err@{src\+Err}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{src\+Err}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Layer\+::src\+Err\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a1b0dd6aba3bd642fd8d60914d070779d}
+
+
+Definition at line 131 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a9f497e9df823d1c65558e24a7ea2993e}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!src\+List@{src\+List}}
+\index{src\+List@{src\+List}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{src\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conn\+List} fractal\+::\+Layer\+::src\+List\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a9f497e9df823d1c65558e24a7ea2993e}
+
+
+Definition at line 128 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a1d9a52b5c715cd8d769f36ed9136e1d3}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!state@{state}}
+\index{state@{state}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Layer\+::state\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a1d9a52b5c715cd8d769f36ed9136e1d3}
+
+
+Definition at line 131 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a2d9020e0da1993e16d9fcd9b86b94d91}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!state\+Penalty@{state\+Penalty}}
+\index{state\+Penalty@{state\+Penalty}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{state\+Penalty}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Layer\+::state\+Penalty\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a2d9020e0da1993e16d9fcd9b86b94d91}
+
+
+Definition at line 135 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_a4f837fc5c1e649317ef534083ea24dfe}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!state\+Type@{state\+Type}}
+\index{state\+Type@{state\+Type}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{state\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State\+Type} fractal\+::\+Layer\+::state\+Type\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_a4f837fc5c1e649317ef534083ea24dfe}
+
+
+Definition at line 123 of file Layer.\+h.
+
+\hypertarget{classfractal_1_1Layer_aef36108269bffa0d3ecbd67f190362fa}{\index{fractal\+::\+Layer@{fractal\+::\+Layer}!stream@{stream}}
+\index{stream@{stream}!fractal\+::\+Layer@{fractal\+::\+Layer}}
+\subsubsection[{stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream}$\ast$ fractal\+::\+Layer\+::stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Layer_aef36108269bffa0d3ecbd67f190362fa}
+
+
+Definition at line 141 of file Layer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\hyperlink{Layer_8h}{Layer.\+h}\item 
+src/core/\hyperlink{Layer_8cc}{Layer.\+cc}\end{DoxyCompactItemize}

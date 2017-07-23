@@ -1,0 +1,14 @@
+<map id="fractal::Engine::EventDestroy" name="fractal::Engine::EventDestroy">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#a923b6313b13f60a464d417e638c4382b" title="fractal::Connection\l::SetEngine" alt="" coords="266,64,398,105"/>
+<area shape="rect" id="node5" href="$dc/d55/classfractal_1_1Layer.html#ae407d121b9ce2586d782bb7a61a7ed81" title="fractal::Layer::SetEngine" alt="" coords="249,151,415,178"/>
+<area shape="rect" id="node9" href="$de/db1/classfractal_1_1Probe.html#ab861ab7eb2377dda2c4f71f9d89de44c" title="fractal::Probe::SetEngine" alt="" coords="248,202,416,229"/>
+<area shape="rect" id="node11" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="271,253,393,295"/>
+<area shape="rect" id="node13" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="271,319,393,360"/>
+<area shape="rect" id="node3" href="$da/dbf/classfractal_1_1Connection.html#a796fda5dd4b253c792d144ff483a0331" title="fractal::Connection\l::~Connection" alt="" coords="491,5,623,47"/>
+<area shape="rect" id="node4" href="$de/dca/classfractal_1_1Rnn.html#aab6852a5cb264078d3ea17c264bdd569" title="Add a connection. " alt="" coords="464,71,651,98"/>
+<area shape="rect" id="node6" href="$dc/d55/classfractal_1_1Layer.html#ab3e3a921b0b98b1a8b9dc749bc55239f" title="fractal::Layer::~Layer" alt="" coords="484,122,631,149"/>
+<area shape="rect" id="node7" href="$de/dca/classfractal_1_1Rnn.html#acd58e1c848aaa729566ab15fe53f0a11" title="Add a layer. " alt="" coords="481,173,634,199"/>
+<area shape="rect" id="node8" href="$d9/d1c/namespacefractal_1_1basicLayers.html#a5b99ed6a0ad103b5fbff76a2d5c60480" title="fractal::basicLayers\l::AddLstmLayer" alt="" coords="699,165,835,207"/>
+<area shape="rect" id="node10" href="$de/db1/classfractal_1_1Probe.html#ab17d168b158187ba42171551da0beb2e" title="fractal::Probe::~Probe" alt="" coords="482,223,633,250"/>
+<area shape="rect" id="node12" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="483,296,632,337"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="fractal::DataStream::SetNumStream" name="fractal::DataStream::SetNumStream">
+<area shape="rect" id="node2" href="$de/d67/classfractal_1_1DataStream.html#adce5798d1aee0a41699ab115f9637bd4" title="fractal::DataStream\l::Alloc" alt="" coords="189,5,325,47"/>
+<area shape="rect" id="node3" href="$de/d67/classfractal_1_1DataStream.html#aff176d1279fbd908dd4e5053877c8431" title="fractal::DataStream\l::Reset" alt="" coords="189,71,325,112"/>
+<area shape="rect" id="node4" href="$de/d67/classfractal_1_1DataStream.html#aedc5d6e1ac88b56eb720ed6fa3c2cd88" title="fractal::DataStream\l::NewSeq" alt="" coords="593,41,729,83"/>
+<area shape="rect" id="node7" href="$de/d67/classfractal_1_1DataStream.html#afcd71486c0963a0b5bc3be09e9086ace" title="fractal::DataStream\l::Next" alt="" coords="373,100,509,141"/>
+<area shape="rect" id="node5" href="$dd/d28/classfractal_1_1DataSet.html#a77fa290db2143cc18c161ff3f85077f2" title="fractal::DataSet::GetNumSeq" alt="" coords="813,49,1008,75"/>
+<area shape="rect" id="node6" href="$dd/d28/classfractal_1_1DataSet.html#a83a59ea7372dbd74aa9a606042f236a1" title="fractal::DataSet::GetNum\lFrame" alt="" coords="825,100,996,141"/>
+<area shape="rect" id="node8" href="$dd/d28/classfractal_1_1DataSet.html#ab4e10bf83d6a877e3c39533d075e4595" title="fractal::DataSet::GetFrameData" alt="" coords="557,158,765,185"/>
+</map>

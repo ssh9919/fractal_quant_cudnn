@@ -1,0 +1,6 @@
+<map id="fractal::Mem::Mem" name="fractal::Mem::Mem">
+<area shape="rect" id="node2" href="$d0/d81/classfractal_1_1Engine.html#a7cdb2977899a112b465f4dbc23e1fd7f" title="fractal::Engine::GetNumLoc" alt="" coords="185,5,369,32"/>
+<area shape="rect" id="node3" href="$d0/d81/classfractal_1_1Engine.html#adc5826324465c211533c9899243bcb60" title="fractal::Engine::GetHostLoc" alt="" coords="185,56,369,83"/>
+<area shape="rect" id="node4" href="$d0/d81/classfractal_1_1Engine.html#a4dbcb6afa39e3d50e30533563c575e8e" title="fractal::Engine::MemAdd" alt="" coords="194,107,361,133"/>
+<area shape="rect" id="node5" href="$d2/d2d/classfractal_1_1Mem.html#ac8e506d4c690fed4e7247a8c1cf2e024" title="fractal::Mem::GetEngine" alt="" coords="417,107,581,133"/>
+</map>

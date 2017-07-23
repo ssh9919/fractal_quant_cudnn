@@ -1,0 +1,5 @@
+<map id="fractal::Matrix::Unlink" name="fractal::Matrix::Unlink">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#aab6dbd77374b404539f59d26d6c8f798" title="fractal::Connection\l::UnlinkMatrices" alt="" coords="231,5,363,47"/>
+<area shape="rect" id="node3" href="$dc/d55/classfractal_1_1Layer.html#af834c8d49a9c2edffd2652b4ae344aa9" title="fractal::Layer::UnlinkMatrices" alt="" coords="200,71,393,98"/>
+<area shape="rect" id="node4" href="$de/dca/classfractal_1_1Rnn.html#a6962b669f59fced06ce094a6d08cbc4e" title="Delete a connection. " alt="" coords="441,71,644,98"/>
+</map>

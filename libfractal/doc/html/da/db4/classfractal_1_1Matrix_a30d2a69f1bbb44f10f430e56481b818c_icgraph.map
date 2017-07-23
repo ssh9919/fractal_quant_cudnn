@@ -1,0 +1,9 @@
+<map id="fractal::Matrix::GetHostData" name="fractal::Matrix::GetHostData">
+<area shape="rect" id="node2" href="$d2/d9c/classfractal_1_1ClassificationEvaluator.html#a75e22cc1abbbeb16aa4d3e700fbe182c" title="fractal::ClassificationEvaluator\l::EvaluateFrames" alt="" coords="240,5,440,47"/>
+<area shape="rect" id="node3" href="$d2/d13/classfractal_1_1Evaluator.html#a01d3e00a030bc70c5e217f193bf25841" title="fractal::Evaluator\l::EvaluatePipe0" alt="" coords="279,71,401,112"/>
+<area shape="rect" id="node6" href="$d8/ddf/classfractal_1_1Optimizer.html#a37719e06ea61f1b0a6d77e8c75cc97d1" title="fractal::Optimizer\l::BackpropPipe0" alt="" coords="279,136,401,177"/>
+<area shape="rect" id="node8" href="$da/da8/classfractal_1_1RegressionEvaluator.html#ade117e7b38544fcee8c8a6518c7308b4" title="fractal::RegressionEvaluator\l::EvaluateFrames" alt="" coords="247,201,433,243"/>
+<area shape="rect" id="node4" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="489,71,610,112"/>
+<area shape="rect" id="node5" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="659,104,808,145"/>
+<area shape="rect" id="node7" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="488,136,611,177"/>
+</map>

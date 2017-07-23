@@ -1,0 +1,11 @@
+<map id="fractal::cudaKernels::FuncTanh" name="fractal::cudaKernels::FuncTanh">
+<area shape="rect" id="node2" href="$d0/d81/classfractal_1_1Engine.html#a62e164f627f2290f13762c4f0b8df066" title="fractal::Engine::FuncTanh" alt="" coords="192,46,364,73"/>
+<area shape="rect" id="node3" href="$dc/d55/classfractal_1_1Layer.html#a15ae052db7f8840740bb8f0eb61ac495" title="fractal::Layer::Activation" alt="" coords="412,46,576,73"/>
+<area shape="rect" id="node4" href="$dc/d55/classfractal_1_1Layer.html#a242176b7a427ac0f4e522ca43f311878" title="fractal::Layer::Forward" alt="" coords="624,46,777,73"/>
+<area shape="rect" id="node5" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="825,46,971,73"/>
+<area shape="rect" id="node6" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="1019,5,1141,47"/>
+<area shape="rect" id="node9" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="1019,71,1141,112"/>
+<area shape="rect" id="node7" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="1190,5,1311,47"/>
+<area shape="rect" id="node8" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="1360,39,1509,80"/>
+<area shape="rect" id="node10" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="1189,71,1312,112"/>
+</map>

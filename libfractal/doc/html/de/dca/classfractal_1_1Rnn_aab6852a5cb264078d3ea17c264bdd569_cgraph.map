@@ -1,0 +1,35 @@
+<map id="fractal::Rnn::AddConnection" name="fractal::Rnn::AddConnection">
+<area shape="rect" id="node2" href="$da/dbf/classfractal_1_1Connection.html#a09020f3027a886b7971baba901d8bf41" title="fractal::Connection\l::SetBatchSize" alt="" coords="282,49,414,90"/>
+<area shape="rect" id="node5" href="$da/dbf/classfractal_1_1Connection.html#a923b6313b13f60a464d417e638c4382b" title="fractal::Connection\l::SetEngine" alt="" coords="282,194,414,235"/>
+<area shape="rect" id="node10" href="$db/d0b/classfractal_1_1InitWeightParam.html#adef209133b1589188935bcfb306b7e8a" title="fractal::InitWeightParam\l::IsValid" alt="" coords="267,259,429,301"/>
+<area shape="rect" id="node11" href="$da/dbf/classfractal_1_1Connection.html#a462d4925a2c205cf6c1640efe6b723be" title="fractal::Connection\l::InitWeights" alt="" coords="282,325,414,366"/>
+<area shape="rect" id="node33" href="$dc/d55/classfractal_1_1Layer.html#ac5eb5c22c720d95cf37d05a2e73a85e4" title="fractal::Layer::AddDstConnection" alt="" coords="240,391,456,417"/>
+<area shape="rect" id="node34" href="$dc/d55/classfractal_1_1Layer.html#aec6987d45b69d42f21f58c28443d9b1f" title="fractal::Layer::AddSrcConnection" alt="" coords="241,441,455,468"/>
+<area shape="rect" id="node3" href="$da/db4/classfractal_1_1Matrix.html#aca1a601a0a04affdf12f6b0d1454cc55" title="fractal::Matrix::Resize" alt="" coords="526,5,677,32"/>
+<area shape="rect" id="node4" href="$dc/d55/classfractal_1_1Layer.html#a5d7c10187a49ccdadedc12e4c930c090" title="fractal::Layer::GetSize" alt="" coords="525,56,678,83"/>
+<area shape="rect" id="node6" href="$da/db4/classfractal_1_1Matrix.html#aa0ac62abd619f153baae9980b7731164" title="fractal::Matrix::SetEngine" alt="" coords="516,107,687,133"/>
+<area shape="rect" id="node7" href="$d0/d81/classfractal_1_1Engine.html#a28d6e3dfae065d1d66ee620db41b2e89" title="fractal::Engine::EventDestroy" alt="" coords="504,157,699,184"/>
+<area shape="rect" id="node8" href="$d0/d81/classfractal_1_1Engine.html#a49adf2ea56f47259c18841f66c0d2ec4" title="fractal::Engine::EventCreate" alt="" coords="508,208,695,235"/>
+<area shape="rect" id="node9" href="$da/dbf/classfractal_1_1Connection.html#adf2811ab3189c8e4733b157486b26eb6" title="fractal::Connection\l::SetPStream" alt="" coords="535,259,667,301"/>
+<area shape="rect" id="node12" href="$da/dbf/classfractal_1_1Connection.html#a88b1bd4a69a9c1533ce0d2b261ad0825" title="fractal::Connection\l::IsIdentity" alt="" coords="535,325,667,366"/>
+<area shape="rect" id="node13" href="$d0/d81/classfractal_1_1Engine.html#aa23cc72f5e2f83fafb4ebbbbf5da23a1" title="fractal::Engine::MatRandN" alt="" coords="513,391,690,417"/>
+<area shape="rect" id="node14" href="$da/db4/classfractal_1_1Matrix.html#a93c7ba34d553149900a652dcc8ece6c0" title="fractal::Matrix::GetEngine" alt="" coords="758,163,929,189"/>
+<area shape="rect" id="node15" href="$da/db4/classfractal_1_1Matrix.html#a09197b1241a2a0dab1454beca8c0e759" title="fractal::Matrix::GetMem" alt="" coords="763,213,923,240"/>
+<area shape="rect" id="node16" href="$da/db4/classfractal_1_1Matrix.html#ab2b62fd6991c32429b80c5e8d7b1b7d3" title="fractal::Matrix::GetNumRows" alt="" coords="747,264,940,291"/>
+<area shape="rect" id="node17" href="$da/db4/classfractal_1_1Matrix.html#a1877f1a0488da6737672fde4a1612718" title="fractal::Matrix::GetNumCols" alt="" coords="750,315,937,341"/>
+<area shape="rect" id="node18" href="$d2/d2d/classfractal_1_1Mem.html#ad43670c786097e153ce1348e57ca615c" title="fractal::Mem::GetSize" alt="" coords="1665,213,1816,240"/>
+<area shape="rect" id="node19" href="$d2/d2d/classfractal_1_1Mem.html#ac519f15876ce1fbb5bae620524b84ddf" title="fractal::Mem::Pull" alt="" coords="781,416,906,443"/>
+<area shape="rect" id="node26" href="$d0/d81/classfractal_1_1Engine.html#a17bcae32ab712a4b5e6a80fbaf229596" title="fractal::Engine::MemAlloc" alt="" coords="1431,467,1603,493"/>
+<area shape="rect" id="node29" href="$d2/d2d/classfractal_1_1Mem.html#a25560a7b7449ea9dd5362c0174281e66" title="fractal::Mem::Push" alt="" coords="1451,619,1584,645"/>
+<area shape="rect" id="node31" href="$d2/d2d/classfractal_1_1Mem.html#a978e450c0bba7860c86f7b850aca0a8c" title="fractal::Mem::GetPtr" alt="" coords="773,720,914,747"/>
+<area shape="rect" id="node32" href="$da/db4/classfractal_1_1Matrix.html#ad88d611ddf1f811d189229a80904b607" title="fractal::Matrix::GetOffset" alt="" coords="760,771,927,797"/>
+<area shape="rect" id="node20" href="$d0/d81/classfractal_1_1Engine.html#a455fb7b51e838f09bfedf7915c25cadc" title="fractal::Engine::MemPull" alt="" coords="988,416,1153,443"/>
+<area shape="rect" id="node21" href="$d2/d2d/classfractal_1_1Mem.html#a0e59780ee2946da2b5747b80265adee6" title="fractal::Mem::Lock" alt="" coords="1675,607,1806,633"/>
+<area shape="rect" id="node22" href="$d2/d2d/classfractal_1_1Mem.html#ac8e506d4c690fed4e7247a8c1cf2e024" title="fractal::Mem::GetEngine" alt="" coords="1659,416,1823,443"/>
+<area shape="rect" id="node23" href="$d2/d2d/classfractal_1_1Mem.html#aff8487ed33c6a9130f04c913901ee074" title="fractal::Mem::IsValid" alt="" coords="1446,315,1589,341"/>
+<area shape="rect" id="node24" href="$d2/d2d/classfractal_1_1Mem.html#ab247f522279cc0de74a9d21256026b95" title="fractal::Mem::Unlock" alt="" coords="1669,543,1813,569"/>
+<area shape="rect" id="node25" href="$d2/d2d/classfractal_1_1Mem.html#af6c5ae15ba7a93fbe8c817ac5795aac6" title="fractal::Mem::GetRecentLoc" alt="" coords="1424,365,1611,392"/>
+<area shape="rect" id="node28" href="$d0/d81/classfractal_1_1Engine.html#a0459bc0fb6fcf39f8dccbd0f0ceb0446" title="fractal::Engine::MemCopy" alt="" coords="1201,416,1376,443"/>
+<area shape="rect" id="node30" href="$d2/d2d/classfractal_1_1Mem.html#a81f0764f0de4a0f4ac82f298295ae6b5" title="fractal::Mem::Validate" alt="" coords="1442,568,1593,595"/>
+<area shape="rect" id="node27" href="$d2/d2d/classfractal_1_1Mem.html#a9c3533baf2dcbdc104da53029e687710" title="fractal::Mem::GetPtrs" alt="" coords="1667,467,1815,493"/>
+</map>

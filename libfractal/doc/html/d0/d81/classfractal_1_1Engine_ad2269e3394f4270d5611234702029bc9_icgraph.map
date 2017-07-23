@@ -1,0 +1,12 @@
+<map id="fractal::Engine::StreamSynchronize" name="fractal::Engine::StreamSynchronize">
+<area shape="rect" id="node2" href="$de/dca/classfractal_1_1Rnn.html#afa174b5308bcc168f69dc62a0a3f8764" title="Initialize all weights. " alt="" coords="299,5,463,32"/>
+<area shape="rect" id="node3" href="$de/dca/classfractal_1_1Rnn.html#a61f2e8a15b24e37207f473418c30324e" title="Wait until all asynchronous operations are finished. " alt="" coords="296,253,467,280"/>
+<area shape="rect" id="node7" href="$d2/d9c/classfractal_1_1ClassificationEvaluator.html#a75e22cc1abbbeb16aa4d3e700fbe182c" title="fractal::ClassificationEvaluator\l::EvaluateFrames" alt="" coords="281,122,481,163"/>
+<area shape="rect" id="node8" href="$d2/d13/classfractal_1_1Evaluator.html#a01d3e00a030bc70c5e217f193bf25841" title="fractal::Evaluator\l::EvaluatePipe0" alt="" coords="321,187,442,229"/>
+<area shape="rect" id="node9" href="$d2/d13/classfractal_1_1Evaluator.html#a79328ff78b4cc4cb8f712656cb9cfd82" title="fractal::Evaluator\l::EvaluatePipe6" alt="" coords="321,57,442,98"/>
+<area shape="rect" id="node10" href="$d8/ddf/classfractal_1_1Optimizer.html#a37719e06ea61f1b0a6d77e8c75cc97d1" title="fractal::Optimizer\l::BackpropPipe0" alt="" coords="320,305,443,346"/>
+<area shape="rect" id="node11" href="$da/da8/classfractal_1_1RegressionEvaluator.html#ade117e7b38544fcee8c8a6518c7308b4" title="fractal::RegressionEvaluator\l::EvaluateFrames" alt="" coords="288,370,475,411"/>
+<area shape="rect" id="node4" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="530,187,651,229"/>
+<area shape="rect" id="node6" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="529,253,652,294"/>
+<area shape="rect" id="node5" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="700,221,849,262"/>
+</map>

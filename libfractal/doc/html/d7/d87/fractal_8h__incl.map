@@ -1,0 +1,23 @@
+<map id="src/fractal.h" name="src/fractal.h">
+<area shape="rect" id="node2" href="$d5/dd4/Connection_8h.html" title="core/Connection.h" alt="" coords="661,379,789,405"/>
+<area shape="rect" id="node4" href="$d1/dd4/Engine_8h.html" title="Engine.h" alt="" coords="735,453,808,480"/>
+<area shape="rect" id="node9" href="$d3/db1/Matrix_8h.html" title="Matrix.h" alt="" coords="394,528,464,555"/>
+<area shape="rect" id="node11" href="$d1/dff/FractalCommon_8h.html" title="FractalCommon.h" alt="" coords="1531,603,1658,629"/>
+<area shape="rect" id="node14" href="$de/d56/Mem_8h.html" title="Mem.h" alt="" coords="488,528,551,555"/>
+<area shape="rect" id="node15" href="$d0/d58/CudaKernels_8h.html" title="core/CudaKernels.h" alt="" coords="1784,453,1922,480"/>
+<area shape="rect" id="node16" href="$d6/db0/InitWeightParam_8h.html" title="core/InitWeightParam.h" alt="" coords="1835,379,1994,405"/>
+<area shape="rect" id="node17" href="$dc/dca/Layer_8h.html" title="core/Layer.h" alt="" coords="288,379,383,405"/>
+<area shape="rect" id="node19" href="$dd/d7b/Probe_8h.html" title="core/Probe.h" alt="" coords="813,379,909,405"/>
+<area shape="rect" id="node20" href="$df/d7e/Rnn_8h.html" title="core/Rnn.h" alt="" coords="1100,304,1187,331"/>
+<area shape="rect" id="node24" href="$dc/d15/AutoOptimizer_8h.html" title="util/AutoOptimizer.h" alt="" coords="1347,155,1484,181"/>
+<area shape="rect" id="node25" href="$d6/d58/Optimizer_8h.html" title="Optimizer.h" alt="" coords="1264,229,1354,256"/>
+<area shape="rect" id="node26" href="$d4/d5f/Pipe_8h.html" title="Pipe.h" alt="" coords="1017,304,1076,331"/>
+<area shape="rect" id="node28" href="$db/d85/PortMap_8h.html" title="PortMap.h" alt="" coords="362,304,445,331"/>
+<area shape="rect" id="node30" href="$de/dd1/Stream_8h.html" title="Stream.h" alt="" coords="2026,304,2101,331"/>
+<area shape="rect" id="node31" href="$df/d84/Evaluator_8h.html" title="Evaluator.h" alt="" coords="1478,229,1566,256"/>
+<area shape="rect" id="node32" href="$d8/d3f/BasicLayers_8h.html" title="util/BasicLayers.h" alt="" coords="1774,229,1900,256"/>
+<area shape="rect" id="node33" href="$db/d4a/ClassificationEvaluator_8h.html" title="util/ClassificationEvaluator.h" alt="" coords="1611,80,1799,107"/>
+<area shape="rect" id="node34" href="$da/d12/RegressionEvaluator_8h.html" title="RegressionEvaluator.h" alt="" coords="1696,155,1850,181"/>
+<area shape="rect" id="node35" href="$d3/d21/DataSet_8h.html" title="util/DataSet.h" alt="" coords="2179,80,2282,107"/>
+<area shape="rect" id="node36" href="$da/dd9/DataStream_8h.html" title="util/DataStream.h" alt="" coords="2272,229,2396,256"/>
+</map>

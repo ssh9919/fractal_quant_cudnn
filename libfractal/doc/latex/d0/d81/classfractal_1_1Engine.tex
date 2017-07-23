@@ -1,0 +1,1500 @@
+\hypertarget{classfractal_1_1Engine}{\section{fractal\+:\+:Engine Class Reference}
+\label{classfractal_1_1Engine}\index{fractal\+::\+Engine@{fractal\+::\+Engine}}
+}
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Engine_ae243fa407c42334a5863492b11dfa941}{Engine} ()
+\item 
+virtual \hyperlink{classfractal_1_1Engine_a1e9273ab68b6f3d204fe470d1817d304}{$\sim$\+Engine} ()
+\item 
+const unsigned long \hyperlink{classfractal_1_1Engine_a7cdb2977899a112b465f4dbc23e1fd7f}{Get\+Num\+Loc} ()
+\item 
+const unsigned long \hyperlink{classfractal_1_1Engine_adc5826324465c211533c9899243bcb60}{Get\+Host\+Loc} ()
+\item 
+void \hyperlink{classfractal_1_1Engine_a4dbcb6afa39e3d50e30533563c575e8e}{Mem\+Add} (\hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem)
+\item 
+void \hyperlink{classfractal_1_1Engine_a62a9540deeaab0ecf37509b3b8807940}{Mem\+Del} (\hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem)
+\item 
+void \hyperlink{classfractal_1_1Engine_a17bcae32ab712a4b5e6a80fbaf229596}{Mem\+Alloc} (\hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem, unsigned long loc)
+\item 
+void \hyperlink{classfractal_1_1Engine_a1d7b634924ee719da26505940ec1cb94}{Mem\+Dealloc} (\hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem)
+\item 
+void \hyperlink{classfractal_1_1Engine_a455fb7b51e838f09bfedf7915c25cadc}{Mem\+Pull} (\hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem, const unsigned long loc, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a0459bc0fb6fcf39f8dccbd0f0ceb0446}{Mem\+Copy} (const \hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem\+Src, const size\+\_\+t offset\+Src, \hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem\+Dst, const size\+\_\+t offset\+Dst, const size\+\_\+t size, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a71cd485bef6bde65f3b372e130eeb32b}{Mem\+Copy\+From\+Host} (\hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem\+Dst, const size\+\_\+t offset\+Dst, const void $\ast$ptr\+Src, const size\+\_\+t size, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_addf726a73831cdc0408294811ba93b34}{Mem\+Copy\+To\+Host} (const \hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem\+Src, const size\+\_\+t offset\+Src, void $\ast$ptr\+Dst, const size\+\_\+t size, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a8c5528c801c14c37268ec3dad8596ab6}{Mat\+Mult} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&A, const bool trans\+A, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&B, const bool trans\+B, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&C, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} alpha, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} beta, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_aa04b3c6a637a15d41a39b7a173ca68e3}{Mat\+Elem\+Mult} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&A, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&B, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&C, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a59291485d88c87ef48d07b08ec72876d}{Mat\+Add} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&A, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&B, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} alpha, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a4b9525243e39da8b02c6de0d297f78a2}{Mat\+Add} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&A, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&B, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&C, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_aaf52ba79666cb6803b7b47648b2f9695}{Mat\+Set} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&mat, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} val, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_aa23cc72f5e2f83fafb4ebbbbf5da23a1}{Mat\+Rand\+N} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&mat, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} mean, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} stdev, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_aa15f5b72bd80d305036151bc1fafe848}{Mat\+Copy} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&A, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&B, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a75edbac141ebf67953ec5a6934fb7e6e}{Mat\+Transpose} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&A, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&B, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a02808643a0a582b6b357d077e8355cd4}{Func\+Sigmoid} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a62e164f627f2290f13762c4f0b8df066}{Func\+Tanh} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a718512834ed660d461fea57dc89a9e75}{Func\+Softplus} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_ab47e0aa39c3aa8733a55aaee6adb9171}{Func\+Rect\+Linear} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a36831f905f730fe773ecf64bc668507e}{Func\+Softmax} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_aa40050d410d71f97873bc98fb5086a82}{Func\+Bound\+Range} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} min, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} max, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a0b83e5e468d5cebe5dbe101d3105e5c3}{Func\+Sigmoid\+Deriv} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a2274e6852df59b22f222c32fe8849591}{Func\+Tanh\+Deriv} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a326b78899fdc906948a157167af5bb2c}{Func\+Softplus\+Deriv} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_ac9a626dc3b4801eb971dfe3b8d83bdeb}{Func\+Rect\+Linear\+Deriv} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&X, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&Y, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a0099bf1f318cebb68c7d11640fb40a8e}{Rmsprop} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&new\+Derivs, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&derivs, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&mean\+Squares, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} decay\+Rate, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a3c46d42fbefc7465d122c6ef8ab08497}{Adadelta} (\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&deltas, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&derivs, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&ms\+Deriv, \hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \&ms\+Delta, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} learning\+Rate, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} decay\+Rate, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a49adf2ea56f47259c18841f66c0d2ec4}{Event\+Create} (\hyperlink{classfractal_1_1PEvent}{P\+Event} \&event, const unsigned long loc)
+\item 
+void \hyperlink{classfractal_1_1Engine_a28d6e3dfae065d1d66ee620db41b2e89}{Event\+Destroy} (\hyperlink{classfractal_1_1PEvent}{P\+Event} \&event)
+\item 
+void \hyperlink{classfractal_1_1Engine_a16d23d2844a3bb63df695b2455361a67}{Event\+Record} (\hyperlink{classfractal_1_1PEvent}{P\+Event} \&event, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a4fcd94e93136aa3a4b417da250081a6a}{Event\+Synchronize} (\hyperlink{classfractal_1_1PEvent}{P\+Event} \&event)
+\item 
+void \hyperlink{classfractal_1_1Engine_a780e465320bee254134a304ac30d5085}{Stream\+Create} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream, const unsigned long loc)
+\item 
+void \hyperlink{classfractal_1_1Engine_a5e0a97f06aa994afa0db976d93ed67e7}{Stream\+Destroy} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_adacb8057e763bf56883945cce3994814}{Stream\+Wait\+Event} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream, \hyperlink{classfractal_1_1PEvent}{P\+Event} \&event)
+\item 
+void \hyperlink{classfractal_1_1Engine_ad2269e3394f4270d5611234702029bc9}{Stream\+Synchronize} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_a2e4e430fb8ce9306d07afe33aa668f51}{Set\+Random\+Seed} (unsigned long long seed)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfractal_1_1Engine_af63cba9be1c0af513e8155678edf8bf4}{Mem\+Copy} (const \hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem\+Src, const size\+\_\+t offset\+Src, const unsigned long loc\+Src, \hyperlink{classfractal_1_1Mem}{Mem} $\ast$mem\+Dst, const size\+\_\+t offset\+Dst, const unsigned long loc\+Dst, const size\+\_\+t size, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\item 
+void \hyperlink{classfractal_1_1Engine_af28d68ffb1ec940480fddabef7b2cbe8}{Mem\+Copy} (const void $\ast$ptr\+Src, const unsigned long loc\+Src, void $\ast$ptr\+Dst, const unsigned long loc\+Dst, const size\+\_\+t size, \hyperlink{classfractal_1_1PStream}{P\+Stream} \&stream)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{classfractal_1_1Engine_a161e75f37c70d201d205da9c997499ff}{num\+Loc}
+\item 
+unsigned long \hyperlink{classfractal_1_1Engine_a044c1e5fff0b3a8b2090c2e47fe4cab5}{host\+Loc}
+\item 
+unsigned long \hyperlink{classfractal_1_1Engine_ad501516877aed3b1b94e4fac892c3697}{mem\+Count}
+\item 
+unsigned long \hyperlink{classfractal_1_1Engine_ac2fb29fed1472e2763e47843f7f01ccb}{mem\+Alloc\+Count}
+\item 
+unsigned long \hyperlink{classfractal_1_1Engine_a3b3e1a0a0ac3cf4d120429d023c0bd5f}{event\+Count}
+\item 
+unsigned long \hyperlink{classfractal_1_1Engine_a7f804a8833e727e97624a3313afa2a82}{stream\+Count}
+\item 
+std\+::recursive\+\_\+mutex \hyperlink{classfractal_1_1Engine_a8632cb104e50c26b60b0981d6f054663}{mtx\+Mem}
+\item 
+std\+::mutex \hyperlink{classfractal_1_1Engine_a55a0dd26d3982ace0575a3b83fd8d711}{mtx\+Stream}
+\item 
+std\+::mutex \hyperlink{classfractal_1_1Engine_a6f2ce328aab974d9e5e7b45e956ed099}{mtx\+Event}
+\item 
+cublas\+Handle\+\_\+t \hyperlink{classfractal_1_1Engine_a3eef7a026d5f0d211a224672c96d1391}{cublas\+Handle}
+\item 
+curand\+Generator\+\_\+t \hyperlink{classfractal_1_1Engine_a09c10e2ff4aee389a1a1af772def3f08}{curand\+Gen}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 80 of file Engine.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Engine_ae243fa407c42334a5863492b11dfa941}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Engine}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Engine\+::\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_ae243fa407c42334a5863492b11dfa941}
+
+
+Definition at line 61 of file Engine.\+cc.
+
+\hypertarget{classfractal_1_1Engine_a1e9273ab68b6f3d204fe470d1817d304}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!````~Engine@{$\sim$\+Engine}}
+\index{````~Engine@{$\sim$\+Engine}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{$\sim$\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Engine\+::$\sim$\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1Engine_a1e9273ab68b6f3d204fe470d1817d304}
+
+
+Definition at line 83 of file Engine.\+cc.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Engine_a3c46d42fbefc7465d122c6ef8ab08497}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Adadelta@{Adadelta}}
+\index{Adadelta@{Adadelta}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Adadelta}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Adadelta (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{deltas, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{derivs, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{ms\+Deriv, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{ms\+Delta, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{learning\+Rate, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{decay\+Rate, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a3c46d42fbefc7465d122c6ef8ab08497}
+
+
+Definition at line 1063 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a3c46d42fbefc7465d122c6ef8ab08497_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{d0/d81/classfractal_1_1Engine_a3c46d42fbefc7465d122c6ef8ab08497_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a49adf2ea56f47259c18841f66c0d2ec4}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Event\+Create@{Event\+Create}}
+\index{Event\+Create@{Event\+Create}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Event\+Create}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Event\+Create (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Event} \&}]{event, }
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a49adf2ea56f47259c18841f66c0d2ec4}
+
+
+Definition at line 1152 of file Engine.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a49adf2ea56f47259c18841f66c0d2ec4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a28d6e3dfae065d1d66ee620db41b2e89}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Event\+Destroy@{Event\+Destroy}}
+\index{Event\+Destroy@{Event\+Destroy}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Event\+Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Event\+Destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a28d6e3dfae065d1d66ee620db41b2e89}
+
+
+Definition at line 1172 of file Engine.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a28d6e3dfae065d1d66ee620db41b2e89_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a16d23d2844a3bb63df695b2455361a67}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Event\+Record@{Event\+Record}}
+\index{Event\+Record@{Event\+Record}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Event\+Record}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Event\+Record (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Event} \&}]{event, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a16d23d2844a3bb63df695b2455361a67}
+
+
+Definition at line 1189 of file Engine.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a16d23d2844a3bb63df695b2455361a67_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a4fcd94e93136aa3a4b417da250081a6a}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Event\+Synchronize@{Event\+Synchronize}}
+\index{Event\+Synchronize@{Event\+Synchronize}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Event\+Synchronize}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Event\+Synchronize (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a4fcd94e93136aa3a4b417da250081a6a}
+
+
+Definition at line 1210 of file Engine.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a4fcd94e93136aa3a4b417da250081a6a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_aa40050d410d71f97873bc98fb5086a82}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Bound\+Range@{Func\+Bound\+Range}}
+\index{Func\+Bound\+Range@{Func\+Bound\+Range}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Bound\+Range}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Bound\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{min, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{max, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_aa40050d410d71f97873bc98fb5086a82}
+
+
+Definition at line 882 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aa40050d410d71f97873bc98fb5086a82_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_ab47e0aa39c3aa8733a55aaee6adb9171}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Rect\+Linear@{Func\+Rect\+Linear}}
+\index{Func\+Rect\+Linear@{Func\+Rect\+Linear}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Rect\+Linear}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Rect\+Linear (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_ab47e0aa39c3aa8733a55aaee6adb9171}
+
+
+Definition at line 810 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_ab47e0aa39c3aa8733a55aaee6adb9171_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_ab47e0aa39c3aa8733a55aaee6adb9171_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_ac9a626dc3b4801eb971dfe3b8d83bdeb}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Rect\+Linear\+Deriv@{Func\+Rect\+Linear\+Deriv}}
+\index{Func\+Rect\+Linear\+Deriv@{Func\+Rect\+Linear\+Deriv}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Rect\+Linear\+Deriv}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Rect\+Linear\+Deriv (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_ac9a626dc3b4801eb971dfe3b8d83bdeb}
+
+
+Definition at line 1027 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_ac9a626dc3b4801eb971dfe3b8d83bdeb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_ac9a626dc3b4801eb971dfe3b8d83bdeb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a02808643a0a582b6b357d077e8355cd4}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Sigmoid@{Func\+Sigmoid}}
+\index{Func\+Sigmoid@{Func\+Sigmoid}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Sigmoid}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Sigmoid (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a02808643a0a582b6b357d077e8355cd4}
+
+
+Definition at line 702 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a02808643a0a582b6b357d077e8355cd4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a02808643a0a582b6b357d077e8355cd4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a0b83e5e468d5cebe5dbe101d3105e5c3}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Sigmoid\+Deriv@{Func\+Sigmoid\+Deriv}}
+\index{Func\+Sigmoid\+Deriv@{Func\+Sigmoid\+Deriv}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Sigmoid\+Deriv}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Sigmoid\+Deriv (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a0b83e5e468d5cebe5dbe101d3105e5c3}
+
+
+Definition at line 919 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a0b83e5e468d5cebe5dbe101d3105e5c3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a0b83e5e468d5cebe5dbe101d3105e5c3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a36831f905f730fe773ecf64bc668507e}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Softmax@{Func\+Softmax}}
+\index{Func\+Softmax@{Func\+Softmax}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Softmax}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Softmax (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a36831f905f730fe773ecf64bc668507e}
+
+
+Definition at line 846 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a36831f905f730fe773ecf64bc668507e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a36831f905f730fe773ecf64bc668507e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a718512834ed660d461fea57dc89a9e75}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Softplus@{Func\+Softplus}}
+\index{Func\+Softplus@{Func\+Softplus}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Softplus}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Softplus (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a718512834ed660d461fea57dc89a9e75}
+
+
+Definition at line 774 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a718512834ed660d461fea57dc89a9e75_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a718512834ed660d461fea57dc89a9e75_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a326b78899fdc906948a157167af5bb2c}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Softplus\+Deriv@{Func\+Softplus\+Deriv}}
+\index{Func\+Softplus\+Deriv@{Func\+Softplus\+Deriv}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Softplus\+Deriv}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Softplus\+Deriv (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a326b78899fdc906948a157167af5bb2c}
+
+
+Definition at line 991 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a326b78899fdc906948a157167af5bb2c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a326b78899fdc906948a157167af5bb2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a62e164f627f2290f13762c4f0b8df066}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Tanh@{Func\+Tanh}}
+\index{Func\+Tanh@{Func\+Tanh}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Tanh}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Tanh (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a62e164f627f2290f13762c4f0b8df066}
+
+
+Definition at line 738 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a62e164f627f2290f13762c4f0b8df066_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a62e164f627f2290f13762c4f0b8df066_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a2274e6852df59b22f222c32fe8849591}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Func\+Tanh\+Deriv@{Func\+Tanh\+Deriv}}
+\index{Func\+Tanh\+Deriv@{Func\+Tanh\+Deriv}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Func\+Tanh\+Deriv}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Func\+Tanh\+Deriv (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{X, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{Y, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a2274e6852df59b22f222c32fe8849591}
+
+
+Definition at line 955 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a2274e6852df59b22f222c32fe8849591_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a2274e6852df59b22f222c32fe8849591_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_adc5826324465c211533c9899243bcb60}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Get\+Host\+Loc@{Get\+Host\+Loc}}
+\index{Get\+Host\+Loc@{Get\+Host\+Loc}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Get\+Host\+Loc}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Engine\+::\+Get\+Host\+Loc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Engine_adc5826324465c211533c9899243bcb60}
+
+
+Definition at line 87 of file Engine.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_adc5826324465c211533c9899243bcb60_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a7cdb2977899a112b465f4dbc23e1fd7f}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Get\+Num\+Loc@{Get\+Num\+Loc}}
+\index{Get\+Num\+Loc@{Get\+Num\+Loc}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Get\+Num\+Loc}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Engine\+::\+Get\+Num\+Loc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Engine_a7cdb2977899a112b465f4dbc23e1fd7f}
+
+
+Definition at line 86 of file Engine.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a7cdb2977899a112b465f4dbc23e1fd7f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a59291485d88c87ef48d07b08ec72876d}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mat\+Add@{Mat\+Add}}
+\index{Mat\+Add@{Mat\+Add}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mat\+Add}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mat\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{A, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{B, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{alpha, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a59291485d88c87ef48d07b08ec72876d}
+
+
+Definition at line 455 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a59291485d88c87ef48d07b08ec72876d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a59291485d88c87ef48d07b08ec72876d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a4b9525243e39da8b02c6de0d297f78a2}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mat\+Add@{Mat\+Add}}
+\index{Mat\+Add@{Mat\+Add}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mat\+Add}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mat\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{A, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{B, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{C, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a4b9525243e39da8b02c6de0d297f78a2}
+
+
+Definition at line 496 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a4b9525243e39da8b02c6de0d297f78a2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_aa15f5b72bd80d305036151bc1fafe848}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mat\+Copy@{Mat\+Copy}}
+\index{Mat\+Copy@{Mat\+Copy}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mat\+Copy}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mat\+Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{A, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{B, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_aa15f5b72bd80d305036151bc1fafe848}
+
+
+Definition at line 604 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aa15f5b72bd80d305036151bc1fafe848_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aa15f5b72bd80d305036151bc1fafe848_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_aa04b3c6a637a15d41a39b7a173ca68e3}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mat\+Elem\+Mult@{Mat\+Elem\+Mult}}
+\index{Mat\+Elem\+Mult@{Mat\+Elem\+Mult}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mat\+Elem\+Mult}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mat\+Elem\+Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{A, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{B, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{C, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_aa04b3c6a637a15d41a39b7a173ca68e3}
+
+
+Definition at line 413 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aa04b3c6a637a15d41a39b7a173ca68e3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aa04b3c6a637a15d41a39b7a173ca68e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a8c5528c801c14c37268ec3dad8596ab6}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mat\+Mult@{Mat\+Mult}}
+\index{Mat\+Mult@{Mat\+Mult}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mat\+Mult}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mat\+Mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{A, }
+\item[{const bool}]{trans\+A, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{B, }
+\item[{const bool}]{trans\+B, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{C, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{alpha, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{beta, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a8c5528c801c14c37268ec3dad8596ab6}
+
+
+Definition at line 336 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a8c5528c801c14c37268ec3dad8596ab6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a8c5528c801c14c37268ec3dad8596ab6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_aa23cc72f5e2f83fafb4ebbbbf5da23a1}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mat\+Rand\+N@{Mat\+Rand\+N}}
+\index{Mat\+Rand\+N@{Mat\+Rand\+N}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mat\+Rand\+N}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mat\+Rand\+N (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{mat, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{mean, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{stdev, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_aa23cc72f5e2f83fafb4ebbbbf5da23a1}
+
+
+Definition at line 567 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aa23cc72f5e2f83fafb4ebbbbf5da23a1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aa23cc72f5e2f83fafb4ebbbbf5da23a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_aaf52ba79666cb6803b7b47648b2f9695}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mat\+Set@{Mat\+Set}}
+\index{Mat\+Set@{Mat\+Set}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mat\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mat\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{mat, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{val, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_aaf52ba79666cb6803b7b47648b2f9695}
+
+
+Definition at line 538 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aaf52ba79666cb6803b7b47648b2f9695_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_aaf52ba79666cb6803b7b47648b2f9695_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a75edbac141ebf67953ec5a6934fb7e6e}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mat\+Transpose@{Mat\+Transpose}}
+\index{Mat\+Transpose@{Mat\+Transpose}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mat\+Transpose}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mat\+Transpose (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{A, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{B, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a75edbac141ebf67953ec5a6934fb7e6e}
+
+
+Definition at line 648 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a75edbac141ebf67953ec5a6934fb7e6e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a75edbac141ebf67953ec5a6934fb7e6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a4dbcb6afa39e3d50e30533563c575e8e}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Add@{Mem\+Add}}
+\index{Mem\+Add@{Mem\+Add}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Add}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Add (
+\begin{DoxyParamCaption}
+\item[{{\bf Mem} $\ast$}]{mem}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a4dbcb6afa39e3d50e30533563c575e8e}
+
+
+Definition at line 100 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a4dbcb6afa39e3d50e30533563c575e8e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d0/d81/classfractal_1_1Engine_a4dbcb6afa39e3d50e30533563c575e8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a17bcae32ab712a4b5e6a80fbaf229596}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Alloc@{Mem\+Alloc}}
+\index{Mem\+Alloc@{Mem\+Alloc}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Alloc}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Alloc (
+\begin{DoxyParamCaption}
+\item[{{\bf Mem} $\ast$}]{mem, }
+\item[{unsigned long}]{loc}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a17bcae32ab712a4b5e6a80fbaf229596}
+
+
+Definition at line 124 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a17bcae32ab712a4b5e6a80fbaf229596_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a17bcae32ab712a4b5e6a80fbaf229596_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a0459bc0fb6fcf39f8dccbd0f0ceb0446}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Copy@{Mem\+Copy}}
+\index{Mem\+Copy@{Mem\+Copy}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Copy}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mem} $\ast$}]{mem\+Src, }
+\item[{const size\+\_\+t}]{offset\+Src, }
+\item[{{\bf Mem} $\ast$}]{mem\+Dst, }
+\item[{const size\+\_\+t}]{offset\+Dst, }
+\item[{const size\+\_\+t}]{size, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a0459bc0fb6fcf39f8dccbd0f0ceb0446}
+
+
+Definition at line 240 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a0459bc0fb6fcf39f8dccbd0f0ceb0446_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a0459bc0fb6fcf39f8dccbd0f0ceb0446_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_af63cba9be1c0af513e8155678edf8bf4}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Copy@{Mem\+Copy}}
+\index{Mem\+Copy@{Mem\+Copy}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Copy}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mem} $\ast$}]{mem\+Src, }
+\item[{const size\+\_\+t}]{offset\+Src, }
+\item[{const unsigned long}]{loc\+Src, }
+\item[{{\bf Mem} $\ast$}]{mem\+Dst, }
+\item[{const size\+\_\+t}]{offset\+Dst, }
+\item[{const unsigned long}]{loc\+Dst, }
+\item[{const size\+\_\+t}]{size, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_af63cba9be1c0af513e8155678edf8bf4}
+
+
+Definition at line 299 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_af63cba9be1c0af513e8155678edf8bf4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_af28d68ffb1ec940480fddabef7b2cbe8}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Copy@{Mem\+Copy}}
+\index{Mem\+Copy@{Mem\+Copy}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Copy}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Copy (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{ptr\+Src, }
+\item[{const unsigned long}]{loc\+Src, }
+\item[{void $\ast$}]{ptr\+Dst, }
+\item[{const unsigned long}]{loc\+Dst, }
+\item[{const size\+\_\+t}]{size, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_af28d68ffb1ec940480fddabef7b2cbe8}
+
+
+Definition at line 317 of file Engine.\+cc.
+
+\hypertarget{classfractal_1_1Engine_a71cd485bef6bde65f3b372e130eeb32b}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Copy\+From\+Host@{Mem\+Copy\+From\+Host}}
+\index{Mem\+Copy\+From\+Host@{Mem\+Copy\+From\+Host}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Copy\+From\+Host}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Copy\+From\+Host (
+\begin{DoxyParamCaption}
+\item[{{\bf Mem} $\ast$}]{mem\+Dst, }
+\item[{const size\+\_\+t}]{offset\+Dst, }
+\item[{const void $\ast$}]{ptr\+Src, }
+\item[{const size\+\_\+t}]{size, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a71cd485bef6bde65f3b372e130eeb32b}
+
+
+Definition at line 263 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a71cd485bef6bde65f3b372e130eeb32b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a71cd485bef6bde65f3b372e130eeb32b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_addf726a73831cdc0408294811ba93b34}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Copy\+To\+Host@{Mem\+Copy\+To\+Host}}
+\index{Mem\+Copy\+To\+Host@{Mem\+Copy\+To\+Host}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Copy\+To\+Host}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Copy\+To\+Host (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mem} $\ast$}]{mem\+Src, }
+\item[{const size\+\_\+t}]{offset\+Src, }
+\item[{void $\ast$}]{ptr\+Dst, }
+\item[{const size\+\_\+t}]{size, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_addf726a73831cdc0408294811ba93b34}
+
+
+Definition at line 282 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_addf726a73831cdc0408294811ba93b34_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_addf726a73831cdc0408294811ba93b34_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a1d7b634924ee719da26505940ec1cb94}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Dealloc@{Mem\+Dealloc}}
+\index{Mem\+Dealloc@{Mem\+Dealloc}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Dealloc}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Dealloc (
+\begin{DoxyParamCaption}
+\item[{{\bf Mem} $\ast$}]{mem}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a1d7b634924ee719da26505940ec1cb94}
+
+
+Definition at line 167 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a1d7b634924ee719da26505940ec1cb94_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a1d7b634924ee719da26505940ec1cb94_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a62a9540deeaab0ecf37509b3b8807940}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Del@{Mem\+Del}}
+\index{Mem\+Del@{Mem\+Del}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Del}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Del (
+\begin{DoxyParamCaption}
+\item[{{\bf Mem} $\ast$}]{mem}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a62a9540deeaab0ecf37509b3b8807940}
+
+
+Definition at line 112 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a62a9540deeaab0ecf37509b3b8807940_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{d0/d81/classfractal_1_1Engine_a62a9540deeaab0ecf37509b3b8807940_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a455fb7b51e838f09bfedf7915c25cadc}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Mem\+Pull@{Mem\+Pull}}
+\index{Mem\+Pull@{Mem\+Pull}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Mem\+Pull}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Mem\+Pull (
+\begin{DoxyParamCaption}
+\item[{{\bf Mem} $\ast$}]{mem, }
+\item[{const unsigned long}]{loc, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a455fb7b51e838f09bfedf7915c25cadc}
+
+
+Definition at line 209 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a455fb7b51e838f09bfedf7915c25cadc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a455fb7b51e838f09bfedf7915c25cadc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a0099bf1f318cebb68c7d11640fb40a8e}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Rmsprop@{Rmsprop}}
+\index{Rmsprop@{Rmsprop}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Rmsprop (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{new\+Derivs, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{derivs, }
+\item[{{\bf Matrix}$<$ {\bf F\+L\+O\+A\+T} $>$ \&}]{mean\+Squares, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{decay\+Rate, }
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a0099bf1f318cebb68c7d11640fb40a8e}
+
+
+Definition at line 1110 of file Engine.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a0099bf1f318cebb68c7d11640fb40a8e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d0/d81/classfractal_1_1Engine_a0099bf1f318cebb68c7d11640fb40a8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a2e4e430fb8ce9306d07afe33aa668f51}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Set\+Random\+Seed@{Set\+Random\+Seed}}
+\index{Set\+Random\+Seed@{Set\+Random\+Seed}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Set\+Random\+Seed}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Set\+Random\+Seed (
+\begin{DoxyParamCaption}
+\item[{unsigned long long}]{seed}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a2e4e430fb8ce9306d07afe33aa668f51}
+
+
+Definition at line 1316 of file Engine.\+cc.
+
+\hypertarget{classfractal_1_1Engine_a780e465320bee254134a304ac30d5085}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Stream\+Create@{Stream\+Create}}
+\index{Stream\+Create@{Stream\+Create}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Stream\+Create}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Stream\+Create (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream, }
+\item[{const unsigned long}]{loc}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a780e465320bee254134a304ac30d5085}
+
+
+Definition at line 1224 of file Engine.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a780e465320bee254134a304ac30d5085_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_a5e0a97f06aa994afa0db976d93ed67e7}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Stream\+Destroy@{Stream\+Destroy}}
+\index{Stream\+Destroy@{Stream\+Destroy}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Stream\+Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Stream\+Destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_a5e0a97f06aa994afa0db976d93ed67e7}
+
+
+Definition at line 1246 of file Engine.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_a5e0a97f06aa994afa0db976d93ed67e7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_ad2269e3394f4270d5611234702029bc9}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Stream\+Synchronize@{Stream\+Synchronize}}
+\index{Stream\+Synchronize@{Stream\+Synchronize}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Stream\+Synchronize}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Stream\+Synchronize (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_ad2269e3394f4270d5611234702029bc9}
+
+
+Definition at line 1300 of file Engine.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_ad2269e3394f4270d5611234702029bc9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Engine_adacb8057e763bf56883945cce3994814}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!Stream\+Wait\+Event@{Stream\+Wait\+Event}}
+\index{Stream\+Wait\+Event@{Stream\+Wait\+Event}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{Stream\+Wait\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Engine\+::\+Stream\+Wait\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream, }
+\item[{{\bf P\+Event} \&}]{event}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Engine_adacb8057e763bf56883945cce3994814}
+
+
+Definition at line 1266 of file Engine.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d81/classfractal_1_1Engine_adacb8057e763bf56883945cce3994814_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Engine_a3eef7a026d5f0d211a224672c96d1391}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!cublas\+Handle@{cublas\+Handle}}
+\index{cublas\+Handle@{cublas\+Handle}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{cublas\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}cublas\+Handle\+\_\+t fractal\+::\+Engine\+::cublas\+Handle\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a3eef7a026d5f0d211a224672c96d1391}
+
+
+Definition at line 175 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_a09c10e2ff4aee389a1a1af772def3f08}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!curand\+Gen@{curand\+Gen}}
+\index{curand\+Gen@{curand\+Gen}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{curand\+Gen}]{\setlength{\rightskip}{0pt plus 5cm}curand\+Generator\+\_\+t fractal\+::\+Engine\+::curand\+Gen\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a09c10e2ff4aee389a1a1af772def3f08}
+
+
+Definition at line 176 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_a3b3e1a0a0ac3cf4d120429d023c0bd5f}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!event\+Count@{event\+Count}}
+\index{event\+Count@{event\+Count}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{event\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Engine\+::event\+Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a3b3e1a0a0ac3cf4d120429d023c0bd5f}
+
+
+Definition at line 167 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_a044c1e5fff0b3a8b2090c2e47fe4cab5}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!host\+Loc@{host\+Loc}}
+\index{host\+Loc@{host\+Loc}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{host\+Loc}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Engine\+::host\+Loc\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a044c1e5fff0b3a8b2090c2e47fe4cab5}
+
+
+Definition at line 162 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_ac2fb29fed1472e2763e47843f7f01ccb}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!mem\+Alloc\+Count@{mem\+Alloc\+Count}}
+\index{mem\+Alloc\+Count@{mem\+Alloc\+Count}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{mem\+Alloc\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Engine\+::mem\+Alloc\+Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_ac2fb29fed1472e2763e47843f7f01ccb}
+
+
+Definition at line 165 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_ad501516877aed3b1b94e4fac892c3697}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!mem\+Count@{mem\+Count}}
+\index{mem\+Count@{mem\+Count}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{mem\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Engine\+::mem\+Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_ad501516877aed3b1b94e4fac892c3697}
+
+
+Definition at line 164 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_a6f2ce328aab974d9e5e7b45e956ed099}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!mtx\+Event@{mtx\+Event}}
+\index{mtx\+Event@{mtx\+Event}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{mtx\+Event}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex fractal\+::\+Engine\+::mtx\+Event\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a6f2ce328aab974d9e5e7b45e956ed099}
+
+
+Definition at line 172 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_a8632cb104e50c26b60b0981d6f054663}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!mtx\+Mem@{mtx\+Mem}}
+\index{mtx\+Mem@{mtx\+Mem}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{mtx\+Mem}]{\setlength{\rightskip}{0pt plus 5cm}std\+::recursive\+\_\+mutex fractal\+::\+Engine\+::mtx\+Mem\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a8632cb104e50c26b60b0981d6f054663}
+
+
+Definition at line 170 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_a55a0dd26d3982ace0575a3b83fd8d711}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!mtx\+Stream@{mtx\+Stream}}
+\index{mtx\+Stream@{mtx\+Stream}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{mtx\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex fractal\+::\+Engine\+::mtx\+Stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a55a0dd26d3982ace0575a3b83fd8d711}
+
+
+Definition at line 171 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_a161e75f37c70d201d205da9c997499ff}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!num\+Loc@{num\+Loc}}
+\index{num\+Loc@{num\+Loc}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{num\+Loc}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Engine\+::num\+Loc\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a161e75f37c70d201d205da9c997499ff}
+
+
+Definition at line 161 of file Engine.\+h.
+
+\hypertarget{classfractal_1_1Engine_a7f804a8833e727e97624a3313afa2a82}{\index{fractal\+::\+Engine@{fractal\+::\+Engine}!stream\+Count@{stream\+Count}}
+\index{stream\+Count@{stream\+Count}!fractal\+::\+Engine@{fractal\+::\+Engine}}
+\subsubsection[{stream\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Engine\+::stream\+Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Engine_a7f804a8833e727e97624a3313afa2a82}
+
+
+Definition at line 168 of file Engine.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\hyperlink{Engine_8h}{Engine.\+h}\item 
+src/core/\hyperlink{Engine_8cc}{Engine.\+cc}\end{DoxyCompactItemize}

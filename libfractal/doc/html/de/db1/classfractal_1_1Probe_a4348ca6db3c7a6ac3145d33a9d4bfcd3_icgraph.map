@@ -1,0 +1,13 @@
+<map id="fractal::Probe::StreamWaitEvent" name="fractal::Probe::StreamWaitEvent">
+<area shape="rect" id="node2" href="$dc/d55/classfractal_1_1Layer.html#aebbc3e3f785b1761b50aa4d4607629e5" title="fractal::Layer::ForwardWait" alt="" coords="236,82,416,109"/>
+<area shape="rect" id="node9" href="$dc/d55/classfractal_1_1Layer.html#aac82571573071128dbfcb4cbca2ae4d4" title="fractal::Layer::BackwardWait" alt="" coords="231,27,421,54"/>
+<area shape="rect" id="node11" href="$d2/d13/classfractal_1_1Evaluator.html#a3e189048bf105581682a2dad0cd5d951" title="fractal::Evaluator\l::EvaluatePipe2" alt="" coords="487,191,608,232"/>
+<area shape="rect" id="node12" href="$d2/d13/classfractal_1_1Evaluator.html#a0d2aaa3679819e39c7627319179d66d5" title="fractal::Evaluator\l::EvaluatePipe4" alt="" coords="674,136,795,177"/>
+<area shape="rect" id="node3" href="$de/dca/classfractal_1_1Rnn.html#aec12209e9e2d9f47ee70eb714be32433" title="Forward propagation. " alt="" coords="475,78,620,105"/>
+<area shape="rect" id="node4" href="$d2/d13/classfractal_1_1Evaluator.html#a110e52128446e4a05007ba8a4660a665" title="fractal::Evaluator\l::EvaluatePipe3" alt="" coords="674,71,795,112"/>
+<area shape="rect" id="node7" href="$d8/ddf/classfractal_1_1Optimizer.html#a220eb53debdc9adc8462f993113da58d" title="fractal::Optimizer\l::BackpropPipe3" alt="" coords="673,5,796,47"/>
+<area shape="rect" id="node5" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="845,120,966,161"/>
+<area shape="rect" id="node6" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="1015,72,1164,113"/>
+<area shape="rect" id="node8" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="844,23,967,64"/>
+<area shape="rect" id="node10" href="$de/dca/classfractal_1_1Rnn.html#ad0221aacc16940ec45bb5fef7a5106e5" title="Backward propagation. " alt="" coords="469,21,625,47"/>
+</map>

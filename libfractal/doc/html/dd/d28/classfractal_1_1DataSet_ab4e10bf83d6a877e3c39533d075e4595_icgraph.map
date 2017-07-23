@@ -1,0 +1,8 @@
+<map id="fractal::DataSet::GetFrameData" name="fractal::DataSet::GetFrameData">
+<area shape="rect" id="node2" href="$de/d67/classfractal_1_1DataStream.html#afcd71486c0963a0b5bc3be09e9086ace" title="fractal::DataStream\l::Next" alt="" coords="261,71,397,112"/>
+<area shape="rect" id="node7" href="$de/d67/classfractal_1_1DataStream.html#ab77fa64192765973459f6d5602dbfd3a" title="fractal::DataStream\l::GenerateFrame" alt="" coords="261,136,397,177"/>
+<area shape="rect" id="node3" href="$de/d67/classfractal_1_1DataStream.html#aff176d1279fbd908dd4e5053877c8431" title="fractal::DataStream\l::Reset" alt="" coords="445,71,581,112"/>
+<area shape="rect" id="node4" href="$de/d67/classfractal_1_1DataStream.html#a8f0c3f1ba2567478f8b1ebdfe16592fd" title="fractal::DataStream\l::LinkDataSet" alt="" coords="629,5,765,47"/>
+<area shape="rect" id="node5" href="$de/d67/classfractal_1_1DataStream.html#a9959a6264209e2bace1e27b942e40544" title="fractal::DataStream\l::SetNumStream" alt="" coords="629,71,765,112"/>
+<area shape="rect" id="node6" href="$de/d67/classfractal_1_1DataStream.html#a60b12892a760220814b78daade8375d1" title="fractal::DataStream\l::SetDelay" alt="" coords="629,136,765,177"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="fractal::Stream::GenerateFrame" name="fractal::Stream::GenerateFrame">
+<area shape="rect" id="node2" href="$d2/d13/classfractal_1_1Evaluator.html#a01d3e00a030bc70c5e217f193bf25841" title="fractal::Evaluator\l::EvaluatePipe0" alt="" coords="223,5,345,47"/>
+<area shape="rect" id="node5" href="$d8/ddf/classfractal_1_1Optimizer.html#a37719e06ea61f1b0a6d77e8c75cc97d1" title="fractal::Optimizer\l::BackpropPipe0" alt="" coords="223,71,345,112"/>
+<area shape="rect" id="node3" href="$d2/d13/classfractal_1_1Evaluator.html#a66e573448393210cf678e564d0595879" title="fractal::Evaluator\l::Evaluate" alt="" coords="394,5,515,47"/>
+<area shape="rect" id="node4" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="564,39,713,80"/>
+<area shape="rect" id="node6" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="393,71,516,112"/>
+</map>

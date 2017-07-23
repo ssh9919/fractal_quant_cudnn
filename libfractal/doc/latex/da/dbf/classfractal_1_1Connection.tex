@@ -1,0 +1,1023 @@
+\hypertarget{classfractal_1_1Connection}{\section{fractal\+:\+:Connection Class Reference}
+\label{classfractal_1_1Connection}\index{fractal\+::\+Connection@{fractal\+::\+Connection}}
+}
+
+
+{\ttfamily \#include $<$Connection.\+h$>$}
+
+
+
+Collaboration diagram for fractal\+:\+:Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d34/classfractal_1_1Connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Connection_a2e77dd8f37c2021d7b08fc012bdcd30c}{Connection} (\hyperlink{classfractal_1_1Layer}{Layer} $\ast$const from, \hyperlink{classfractal_1_1Layer}{Layer} $\ast$const to, const unsigned long \hyperlink{classfractal_1_1Connection_aeed56c0faa379d9c695e49457b63bc03}{delay\+Amount}, const bool is\+Identity)
+\item 
+virtual \hyperlink{classfractal_1_1Connection_a796fda5dd4b253c792d144ff483a0331}{$\sim$\+Connection} ()
+\item 
+void \hyperlink{classfractal_1_1Connection_a923b6313b13f60a464d417e638c4382b}{Set\+Engine} (\hyperlink{classfractal_1_1Engine}{Engine} $\ast$const \hyperlink{classfractal_1_1Connection_aed0a390a46ba6bcdff5c6238ac5b9bda}{engine}, \hyperlink{classfractal_1_1PStream}{P\+Stream} $\ast$const \hyperlink{classfractal_1_1Connection_afd1476955597e7a1fddb196fec69af82}{stream})
+\item 
+void \hyperlink{classfractal_1_1Connection_a09020f3027a886b7971baba901d8bf41}{Set\+Batch\+Size} (const unsigned long \hyperlink{classfractal_1_1Connection_a1c06df140701c272107c47b4ce40792b}{batch\+Size})
+\item 
+void \hyperlink{classfractal_1_1Connection_aab6dbd77374b404539f59d26d6c8f798}{Unlink\+Matrices} ()
+\item 
+void \hyperlink{classfractal_1_1Connection_a462d4925a2c205cf6c1640efe6b723be}{Init\+Weights} (const \hyperlink{classfractal_1_1InitWeightParam}{Init\+Weight\+Param} \&param)
+\item 
+void \hyperlink{classfractal_1_1Connection_a6beb3752a66f62f60238c22430486593}{Init\+Adadelta} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} decay\+Rate)
+\item 
+void \hyperlink{classfractal_1_1Connection_addddbba4b7044cad62a0541d26569f3b}{Init\+Nesterov} ()
+\item 
+void \hyperlink{classfractal_1_1Connection_a74c18a8efe61e4890c69b26063f74175}{Init\+Rmsprop} (const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} decay\+Rate)
+\item 
+void \hyperlink{classfractal_1_1Connection_a07f221e1751d01ed357b8bd4cc49dfbc}{Init\+Err} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Connection_af95b3556c57e92edb06a4d33364dc0c2}{Forward} (const unsigned long batch\+From, const unsigned long batch\+To, const unsigned long n\+Stream)
+\item 
+void \hyperlink{classfractal_1_1Connection_af4754297e3aa7fcf27d68e7fc034d069}{Update\+Dst\+Err} (const unsigned long batch\+From, const unsigned long batch\+To)
+\item 
+void \hyperlink{classfractal_1_1Connection_a983f5ebf6c8072f950a0ca3c0bfdb6f1}{Backward} (const unsigned long batch\+From, const unsigned long batch\+To, const unsigned long n\+Stream)
+\item 
+void \hyperlink{classfractal_1_1Connection_a2b8a12fcdb97fe575d48348ac3e42daa}{Update\+Weights} (const unsigned long batch\+From, const unsigned long batch\+To, const unsigned long n\+Frame, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} rate, const \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} momentum, const bool adaptive\+Rates, const bool rmsprop)
+\item 
+const bool \hyperlink{classfractal_1_1Connection_a55a98b43749d2af37c492046bdabae30}{Is\+Delayed} () const 
+\item 
+const bool \hyperlink{classfractal_1_1Connection_a88b1bd4a69a9c1533ce0d2b261ad0825}{Is\+Identity} () const 
+\item 
+\hyperlink{classfractal_1_1Layer}{Layer} $\ast$const \hyperlink{classfractal_1_1Connection_a7ee554da75a227b017217121e9c0d70e}{Get\+Src\+Layer} () const 
+\item 
+\hyperlink{classfractal_1_1Layer}{Layer} $\ast$const \hyperlink{classfractal_1_1Connection_afeb565eb5cf7f0a86d78fb0b111eebc8}{Get\+Dst\+Layer} () const 
+\item 
+void \hyperlink{classfractal_1_1Connection_adf2811ab3189c8e4733b157486b26eb6}{Set\+P\+Stream} (\hyperlink{classfractal_1_1PStream}{P\+Stream} $\ast$const \hyperlink{classfractal_1_1Connection_afd1476955597e7a1fddb196fec69af82}{stream})
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} \& \hyperlink{classfractal_1_1Connection_ad8d0ba5c34c518c24f3104448c5b0d6f}{Get\+P\+Stream} ()
+\item 
+void \hyperlink{classfractal_1_1Connection_a54577602a6deab30026078ce5a44f5cd}{Event\+Record} ()
+\item 
+void \hyperlink{classfractal_1_1Connection_a74c50d78f6c779d0a82a58f097fca3ef}{Stream\+Wait\+Event} (\hyperlink{classfractal_1_1PStream}{P\+Stream} \&\hyperlink{classfractal_1_1Connection_afd1476955597e7a1fddb196fec69af82}{stream})
+\item 
+void \hyperlink{classfractal_1_1Connection_a4ccde8145227156ce639a1c050ddb2a4}{Forward\+Wait} ()
+\item 
+void \hyperlink{classfractal_1_1Connection_aca0b898cc635378f3f246dfc6de384c6}{Backward\+Wait} ()
+\item 
+void \hyperlink{classfractal_1_1Connection_ae6c82dd4868442e324489ea88d12121d}{Save\+State} (const std\+::string \&filename)
+\item 
+void \hyperlink{classfractal_1_1Connection_a0539fa32a3eab1298eb7c373114fcc9e}{Load\+State} (const std\+::string \&filename)
+\item 
+const unsigned long \hyperlink{classfractal_1_1Connection_a8da7f0061214ed460eef30d18be2966d}{Get\+Num\+Weights} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfractal_1_1Connection_a9901894e4bd46fdcc7a8d8aa8c35b586}{Transpose\+Weight\+Matrix} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Engine}{Engine} $\ast$ \hyperlink{classfractal_1_1Connection_aed0a390a46ba6bcdff5c6238ac5b9bda}{engine}
+\item 
+bool \hyperlink{classfractal_1_1Connection_aabe650cd29a9133e18de1a99bafd2069}{\+\_\+identity}
+\item 
+unsigned long \hyperlink{classfractal_1_1Connection_aeed56c0faa379d9c695e49457b63bc03}{delay\+Amount}
+\item 
+\hyperlink{classfractal_1_1Layer}{Layer} $\ast$ \hyperlink{classfractal_1_1Connection_a79a17a00d69083b24cd9ebcb11555952}{src\+Layer}
+\item 
+\hyperlink{classfractal_1_1Layer}{Layer} $\ast$ \hyperlink{classfractal_1_1Connection_a43d6bb6d604142602b3e339bb77bda33}{dst\+Layer}
+\item 
+unsigned long \hyperlink{classfractal_1_1Connection_a1c06df140701c272107c47b4ce40792b}{batch\+Size}
+\item 
+\hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} \hyperlink{classfractal_1_1Connection_ade0067c963f876032c92cd4198deaa32}{rms\+Decay\+Rate}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_a44f908ab921162e57108b5b6854e2ab0}{weights}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_a1df1793ca8ec947b29841138023e4ce7}{weights\+Trans}
+\item 
+bool \hyperlink{classfractal_1_1Connection_a22c55c2a935e38469f00cd7502d5bb0f}{weights\+Trans\+Valid}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_ae56d3a80cde5f872b18e11a9e087a335}{vels}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_a31f6cf9d89d0c4166dc8bde044fafd00}{derivs}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_ac4df1add96950e005f005047f25f158d}{ms\+Deriv}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_a0cd41b30d1dc0db0a6722521a20906ea}{ms\+Delta}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_a7e99d505ee81e3c7c00dceb70efdf8bf}{dst\+Act}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_aae995012548c5f535cf4dd16aa8985c5}{src\+Act}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_a2374b05f600966a36a1eec9b0946328d}{dst\+Err}
+\item 
+\hyperlink{classfractal_1_1Matrix}{Matrix}$<$ \hyperlink{namespacefractal_a1c2d2530689575d5ccb56bae52af70d3}{F\+L\+O\+A\+T} $>$ \hyperlink{classfractal_1_1Connection_abc00863a5dc0e43990ace905ed7f50c0}{src\+Err}
+\item 
+\hyperlink{classfractal_1_1PStream}{P\+Stream} $\ast$ \hyperlink{classfractal_1_1Connection_afd1476955597e7a1fddb196fec69af82}{stream}
+\item 
+\hyperlink{classfractal_1_1PEvent}{P\+Event} \hyperlink{classfractal_1_1Connection_a1440177a726771823d046340f1c24e59}{event}
+\item 
+friend \hyperlink{classfractal_1_1Connection_aee958063517851c72a62c55f049300be}{Layer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 36 of file Connection.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classfractal_1_1Connection_a2e77dd8f37c2021d7b08fc012bdcd30c}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Connection@{Connection}}
+\index{Connection@{Connection}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Connection}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Connection\+::\+Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf Layer} $\ast$const}]{from, }
+\item[{{\bf Layer} $\ast$const}]{to, }
+\item[{const unsigned long}]{delay\+Amount, }
+\item[{const bool}]{is\+Identity}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a2e77dd8f37c2021d7b08fc012bdcd30c}
+
+
+Definition at line 29 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{da/dbf/classfractal_1_1Connection_a2e77dd8f37c2021d7b08fc012bdcd30c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a796fda5dd4b253c792d144ff483a0331}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!````~Connection@{$\sim$\+Connection}}
+\index{````~Connection@{$\sim$\+Connection}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{$\sim$\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}fractal\+::\+Connection\+::$\sim$\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classfractal_1_1Connection_a796fda5dd4b253c792d144ff483a0331}
+
+
+Definition at line 54 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a796fda5dd4b253c792d144ff483a0331_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfractal_1_1Connection_a983f5ebf6c8072f950a0ca3c0bfdb6f1}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Backward@{Backward}}
+\index{Backward@{Backward}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Backward}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Backward (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To, }
+\item[{const unsigned long}]{n\+Stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a983f5ebf6c8072f950a0ca3c0bfdb6f1}
+
+
+Definition at line 264 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a983f5ebf6c8072f950a0ca3c0bfdb6f1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a983f5ebf6c8072f950a0ca3c0bfdb6f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_aca0b898cc635378f3f246dfc6de384c6}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Backward\+Wait@{Backward\+Wait}}
+\index{Backward\+Wait@{Backward\+Wait}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Backward\+Wait}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Backward\+Wait (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_aca0b898cc635378f3f246dfc6de384c6}
+
+
+Definition at line 400 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_aca0b898cc635378f3f246dfc6de384c6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_aca0b898cc635378f3f246dfc6de384c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a54577602a6deab30026078ce5a44f5cd}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Event\+Record@{Event\+Record}}
+\index{Event\+Record@{Event\+Record}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Event\+Record}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Event\+Record (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a54577602a6deab30026078ce5a44f5cd}
+
+
+Definition at line 380 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a54577602a6deab30026078ce5a44f5cd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a54577602a6deab30026078ce5a44f5cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_af95b3556c57e92edb06a4d33364dc0c2}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Forward@{Forward}}
+\index{Forward@{Forward}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Forward}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Forward (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To, }
+\item[{const unsigned long}]{n\+Stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_af95b3556c57e92edb06a4d33364dc0c2}
+
+
+Definition at line 195 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_af95b3556c57e92edb06a4d33364dc0c2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_af95b3556c57e92edb06a4d33364dc0c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a4ccde8145227156ce639a1c050ddb2a4}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Forward\+Wait@{Forward\+Wait}}
+\index{Forward\+Wait@{Forward\+Wait}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Forward\+Wait}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Forward\+Wait (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a4ccde8145227156ce639a1c050ddb2a4}
+
+
+Definition at line 394 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a4ccde8145227156ce639a1c050ddb2a4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a4ccde8145227156ce639a1c050ddb2a4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_afeb565eb5cf7f0a86d78fb0b111eebc8}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Get\+Dst\+Layer@{Get\+Dst\+Layer}}
+\index{Get\+Dst\+Layer@{Get\+Dst\+Layer}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Get\+Dst\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer}$\ast$ const fractal\+::\+Connection\+::\+Get\+Dst\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Connection_afeb565eb5cf7f0a86d78fb0b111eebc8}
+
+
+Definition at line 65 of file Connection.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_afeb565eb5cf7f0a86d78fb0b111eebc8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a8da7f0061214ed460eef30d18be2966d}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Get\+Num\+Weights@{Get\+Num\+Weights}}
+\index{Get\+Num\+Weights@{Get\+Num\+Weights}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Get\+Num\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned long fractal\+::\+Connection\+::\+Get\+Num\+Weights (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a8da7f0061214ed460eef30d18be2966d}
+
+
+Definition at line 500 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{da/dbf/classfractal_1_1Connection_a8da7f0061214ed460eef30d18be2966d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_ad8d0ba5c34c518c24f3104448c5b0d6f}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Get\+P\+Stream@{Get\+P\+Stream}}
+\index{Get\+P\+Stream@{Get\+P\+Stream}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Get\+P\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream} \& fractal\+::\+Connection\+::\+Get\+P\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_ad8d0ba5c34c518c24f3104448c5b0d6f}
+
+
+Definition at line 373 of file Connection.\+cc.
+
+\hypertarget{classfractal_1_1Connection_a7ee554da75a227b017217121e9c0d70e}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Get\+Src\+Layer@{Get\+Src\+Layer}}
+\index{Get\+Src\+Layer@{Get\+Src\+Layer}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Get\+Src\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer}$\ast$ const fractal\+::\+Connection\+::\+Get\+Src\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Connection_a7ee554da75a227b017217121e9c0d70e}
+
+
+Definition at line 64 of file Connection.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a7ee554da75a227b017217121e9c0d70e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a6beb3752a66f62f60238c22430486593}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Init\+Adadelta@{Init\+Adadelta}}
+\index{Init\+Adadelta@{Init\+Adadelta}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Init\+Adadelta}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Init\+Adadelta (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{decay\+Rate}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a6beb3752a66f62f60238c22430486593}
+
+
+Definition at line 138 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a6beb3752a66f62f60238c22430486593_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a07f221e1751d01ed357b8bd4cc49dfbc}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Init\+Err@{Init\+Err}}
+\index{Init\+Err@{Init\+Err}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Init\+Err}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Init\+Err (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a07f221e1751d01ed357b8bd4cc49dfbc}
+
+
+Definition at line 183 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a07f221e1751d01ed357b8bd4cc49dfbc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_addddbba4b7044cad62a0541d26569f3b}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Init\+Nesterov@{Init\+Nesterov}}
+\index{Init\+Nesterov@{Init\+Nesterov}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Init\+Nesterov}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Init\+Nesterov (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_addddbba4b7044cad62a0541d26569f3b}
+
+
+Definition at line 156 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_addddbba4b7044cad62a0541d26569f3b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a74c18a8efe61e4890c69b26063f74175}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Init\+Rmsprop@{Init\+Rmsprop}}
+\index{Init\+Rmsprop@{Init\+Rmsprop}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Init\+Rmsprop}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Init\+Rmsprop (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+L\+O\+A\+T}}]{decay\+Rate}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a74c18a8efe61e4890c69b26063f74175}
+
+
+Definition at line 167 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a74c18a8efe61e4890c69b26063f74175_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a462d4925a2c205cf6c1640efe6b723be}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Init\+Weights@{Init\+Weights}}
+\index{Init\+Weights@{Init\+Weights}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Init\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Init\+Weights (
+\begin{DoxyParamCaption}
+\item[{const {\bf Init\+Weight\+Param} \&}]{param}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a462d4925a2c205cf6c1640efe6b723be}
+
+
+Definition at line 125 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a462d4925a2c205cf6c1640efe6b723be_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a462d4925a2c205cf6c1640efe6b723be_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a55a98b43749d2af37c492046bdabae30}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Is\+Delayed@{Is\+Delayed}}
+\index{Is\+Delayed@{Is\+Delayed}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Is\+Delayed}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Connection\+::\+Is\+Delayed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Connection_a55a98b43749d2af37c492046bdabae30}
+
+
+Definition at line 62 of file Connection.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a55a98b43749d2af37c492046bdabae30_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a88b1bd4a69a9c1533ce0d2b261ad0825}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Is\+Identity@{Is\+Identity}}
+\index{Is\+Identity@{Is\+Identity}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Is\+Identity}]{\setlength{\rightskip}{0pt plus 5cm}const bool fractal\+::\+Connection\+::\+Is\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classfractal_1_1Connection_a88b1bd4a69a9c1533ce0d2b261ad0825}
+
+
+Definition at line 63 of file Connection.\+h.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a88b1bd4a69a9c1533ce0d2b261ad0825_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a0539fa32a3eab1298eb7c373114fcc9e}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Load\+State@{Load\+State}}
+\index{Load\+State@{Load\+State}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Load\+State}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Load\+State (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a0539fa32a3eab1298eb7c373114fcc9e}
+
+
+Definition at line 446 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{da/dbf/classfractal_1_1Connection_a0539fa32a3eab1298eb7c373114fcc9e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_ae6c82dd4868442e324489ea88d12121d}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Save\+State@{Save\+State}}
+\index{Save\+State@{Save\+State}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Save\+State}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Save\+State (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_ae6c82dd4868442e324489ea88d12121d}
+
+
+Definition at line 419 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{da/dbf/classfractal_1_1Connection_ae6c82dd4868442e324489ea88d12121d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a09020f3027a886b7971baba901d8bf41}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Set\+Batch\+Size@{Set\+Batch\+Size}}
+\index{Set\+Batch\+Size@{Set\+Batch\+Size}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Set\+Batch\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Set\+Batch\+Size (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+Size}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a09020f3027a886b7971baba901d8bf41}
+
+
+Definition at line 93 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{da/dbf/classfractal_1_1Connection_a09020f3027a886b7971baba901d8bf41_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a09020f3027a886b7971baba901d8bf41_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a923b6313b13f60a464d417e638c4382b}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Set\+Engine@{Set\+Engine}}
+\index{Set\+Engine@{Set\+Engine}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Set\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Set\+Engine (
+\begin{DoxyParamCaption}
+\item[{{\bf Engine} $\ast$const}]{engine, }
+\item[{{\bf P\+Stream} $\ast$const}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a923b6313b13f60a464d417e638c4382b}
+
+
+Definition at line 60 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a923b6313b13f60a464d417e638c4382b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a923b6313b13f60a464d417e638c4382b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_adf2811ab3189c8e4733b157486b26eb6}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Set\+P\+Stream@{Set\+P\+Stream}}
+\index{Set\+P\+Stream@{Set\+P\+Stream}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Set\+P\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Set\+P\+Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} $\ast$const}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_adf2811ab3189c8e4733b157486b26eb6}
+
+
+Definition at line 366 of file Connection.\+cc.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_adf2811ab3189c8e4733b157486b26eb6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a74c50d78f6c779d0a82a58f097fca3ef}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Stream\+Wait\+Event@{Stream\+Wait\+Event}}
+\index{Stream\+Wait\+Event@{Stream\+Wait\+Event}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Stream\+Wait\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Stream\+Wait\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf P\+Stream} \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a74c50d78f6c779d0a82a58f097fca3ef}
+
+
+Definition at line 387 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a74c50d78f6c779d0a82a58f097fca3ef_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a9901894e4bd46fdcc7a8d8aa8c35b586}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Transpose\+Weight\+Matrix@{Transpose\+Weight\+Matrix}}
+\index{Transpose\+Weight\+Matrix@{Transpose\+Weight\+Matrix}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Transpose\+Weight\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Transpose\+Weight\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a9901894e4bd46fdcc7a8d8aa8c35b586}
+
+
+Definition at line 406 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a9901894e4bd46fdcc7a8d8aa8c35b586_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a9901894e4bd46fdcc7a8d8aa8c35b586_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_aab6dbd77374b404539f59d26d6c8f798}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Unlink\+Matrices@{Unlink\+Matrices}}
+\index{Unlink\+Matrices@{Unlink\+Matrices}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Unlink\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Unlink\+Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_aab6dbd77374b404539f59d26d6c8f798}
+
+
+Definition at line 108 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{da/dbf/classfractal_1_1Connection_aab6dbd77374b404539f59d26d6c8f798_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_af4754297e3aa7fcf27d68e7fc034d069}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Update\+Dst\+Err@{Update\+Dst\+Err}}
+\index{Update\+Dst\+Err@{Update\+Dst\+Err}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Update\+Dst\+Err}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Update\+Dst\+Err (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_af4754297e3aa7fcf27d68e7fc034d069}
+
+
+Definition at line 248 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_af4754297e3aa7fcf27d68e7fc034d069_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_af4754297e3aa7fcf27d68e7fc034d069_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classfractal_1_1Connection_a2b8a12fcdb97fe575d48348ac3e42daa}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Update\+Weights@{Update\+Weights}}
+\index{Update\+Weights@{Update\+Weights}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Update\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}void fractal\+::\+Connection\+::\+Update\+Weights (
+\begin{DoxyParamCaption}
+\item[{const unsigned long}]{batch\+From, }
+\item[{const unsigned long}]{batch\+To, }
+\item[{const unsigned long}]{n\+Frame, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{rate, }
+\item[{const {\bf F\+L\+O\+A\+T}}]{momentum, }
+\item[{const bool}]{adaptive\+Rates, }
+\item[{const bool}]{rmsprop}
+\end{DoxyParamCaption}
+)}}\label{classfractal_1_1Connection_a2b8a12fcdb97fe575d48348ac3e42daa}
+
+
+Definition at line 316 of file Connection.\+cc.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dbf/classfractal_1_1Connection_a2b8a12fcdb97fe575d48348ac3e42daa_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classfractal_1_1Connection_aabe650cd29a9133e18de1a99bafd2069}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!\+\_\+identity@{\+\_\+identity}}
+\index{\+\_\+identity@{\+\_\+identity}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{\+\_\+identity}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Connection\+::\+\_\+identity\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_aabe650cd29a9133e18de1a99bafd2069}
+
+
+Definition at line 86 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a1c06df140701c272107c47b4ce40792b}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!batch\+Size@{batch\+Size}}
+\index{batch\+Size@{batch\+Size}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{batch\+Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Connection\+::batch\+Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a1c06df140701c272107c47b4ce40792b}
+
+
+Definition at line 91 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_aeed56c0faa379d9c695e49457b63bc03}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!delay\+Amount@{delay\+Amount}}
+\index{delay\+Amount@{delay\+Amount}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{delay\+Amount}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long fractal\+::\+Connection\+::delay\+Amount\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_aeed56c0faa379d9c695e49457b63bc03}
+
+
+Definition at line 87 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a31f6cf9d89d0c4166dc8bde044fafd00}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!derivs@{derivs}}
+\index{derivs@{derivs}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{derivs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::derivs\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a31f6cf9d89d0c4166dc8bde044fafd00}
+
+
+Definition at line 99 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a7e99d505ee81e3c7c00dceb70efdf8bf}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!dst\+Act@{dst\+Act}}
+\index{dst\+Act@{dst\+Act}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{dst\+Act}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::dst\+Act\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a7e99d505ee81e3c7c00dceb70efdf8bf}
+
+
+Definition at line 101 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a2374b05f600966a36a1eec9b0946328d}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!dst\+Err@{dst\+Err}}
+\index{dst\+Err@{dst\+Err}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{dst\+Err}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::dst\+Err\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a2374b05f600966a36a1eec9b0946328d}
+
+
+Definition at line 102 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a43d6bb6d604142602b3e339bb77bda33}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!dst\+Layer@{dst\+Layer}}
+\index{dst\+Layer@{dst\+Layer}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{dst\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer} $\ast$ fractal\+::\+Connection\+::dst\+Layer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a43d6bb6d604142602b3e339bb77bda33}
+
+
+Definition at line 89 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_aed0a390a46ba6bcdff5c6238ac5b9bda}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!engine@{engine}}
+\index{engine@{engine}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Engine}$\ast$ fractal\+::\+Connection\+::engine\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_aed0a390a46ba6bcdff5c6238ac5b9bda}
+
+
+Definition at line 84 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a1440177a726771823d046340f1c24e59}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!event@{event}}
+\index{event@{event}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Event} fractal\+::\+Connection\+::event\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a1440177a726771823d046340f1c24e59}
+
+
+Definition at line 105 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_aee958063517851c72a62c55f049300be}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!Layer@{Layer}}
+\index{Layer@{Layer}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{Layer}]{\setlength{\rightskip}{0pt plus 5cm}friend fractal\+::\+Connection\+::\+Layer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_aee958063517851c72a62c55f049300be}
+
+
+Definition at line 107 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a0cd41b30d1dc0db0a6722521a20906ea}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!ms\+Delta@{ms\+Delta}}
+\index{ms\+Delta@{ms\+Delta}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{ms\+Delta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::ms\+Delta\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a0cd41b30d1dc0db0a6722521a20906ea}
+
+
+Definition at line 100 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_ac4df1add96950e005f005047f25f158d}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!ms\+Deriv@{ms\+Deriv}}
+\index{ms\+Deriv@{ms\+Deriv}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{ms\+Deriv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::ms\+Deriv\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_ac4df1add96950e005f005047f25f158d}
+
+
+Definition at line 99 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_ade0067c963f876032c92cd4198deaa32}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!rms\+Decay\+Rate@{rms\+Decay\+Rate}}
+\index{rms\+Decay\+Rate@{rms\+Decay\+Rate}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{rms\+Decay\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+L\+O\+A\+T} fractal\+::\+Connection\+::rms\+Decay\+Rate\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_ade0067c963f876032c92cd4198deaa32}
+
+
+Definition at line 93 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_aae995012548c5f535cf4dd16aa8985c5}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!src\+Act@{src\+Act}}
+\index{src\+Act@{src\+Act}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{src\+Act}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::src\+Act\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_aae995012548c5f535cf4dd16aa8985c5}
+
+
+Definition at line 101 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_abc00863a5dc0e43990ace905ed7f50c0}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!src\+Err@{src\+Err}}
+\index{src\+Err@{src\+Err}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{src\+Err}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::src\+Err\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_abc00863a5dc0e43990ace905ed7f50c0}
+
+
+Definition at line 102 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a79a17a00d69083b24cd9ebcb11555952}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!src\+Layer@{src\+Layer}}
+\index{src\+Layer@{src\+Layer}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{src\+Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layer}$\ast$ fractal\+::\+Connection\+::src\+Layer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a79a17a00d69083b24cd9ebcb11555952}
+
+
+Definition at line 89 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_afd1476955597e7a1fddb196fec69af82}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!stream@{stream}}
+\index{stream@{stream}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+Stream}$\ast$ fractal\+::\+Connection\+::stream\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_afd1476955597e7a1fddb196fec69af82}
+
+
+Definition at line 104 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_ae56d3a80cde5f872b18e11a9e087a335}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!vels@{vels}}
+\index{vels@{vels}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{vels}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::vels\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_ae56d3a80cde5f872b18e11a9e087a335}
+
+
+Definition at line 98 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a44f908ab921162e57108b5b6854e2ab0}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!weights@{weights}}
+\index{weights@{weights}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{weights}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::weights\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a44f908ab921162e57108b5b6854e2ab0}
+
+
+Definition at line 95 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a1df1793ca8ec947b29841138023e4ce7}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!weights\+Trans@{weights\+Trans}}
+\index{weights\+Trans@{weights\+Trans}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{weights\+Trans}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix}$<${\bf F\+L\+O\+A\+T}$>$ fractal\+::\+Connection\+::weights\+Trans\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a1df1793ca8ec947b29841138023e4ce7}
+
+
+Definition at line 95 of file Connection.\+h.
+
+\hypertarget{classfractal_1_1Connection_a22c55c2a935e38469f00cd7502d5bb0f}{\index{fractal\+::\+Connection@{fractal\+::\+Connection}!weights\+Trans\+Valid@{weights\+Trans\+Valid}}
+\index{weights\+Trans\+Valid@{weights\+Trans\+Valid}!fractal\+::\+Connection@{fractal\+::\+Connection}}
+\subsubsection[{weights\+Trans\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool fractal\+::\+Connection\+::weights\+Trans\+Valid\hspace{0.3cm}{\ttfamily [protected]}}}\label{classfractal_1_1Connection_a22c55c2a935e38469f00cd7502d5bb0f}
+
+
+Definition at line 96 of file Connection.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\hyperlink{Connection_8h}{Connection.\+h}\item 
+src/core/\hyperlink{Connection_8cc}{Connection.\+cc}\end{DoxyCompactItemize}

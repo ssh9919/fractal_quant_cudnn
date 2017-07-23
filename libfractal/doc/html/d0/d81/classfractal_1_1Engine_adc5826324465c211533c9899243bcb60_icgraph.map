@@ -1,0 +1,7 @@
+<map id="fractal::Engine::GetHostLoc" name="fractal::Engine::GetHostLoc">
+<area shape="rect" id="node2" href="$d0/d81/classfractal_1_1Engine.html#a71cd485bef6bde65f3b372e130eeb32b" title="fractal::Engine::MemCopy\lFromHost" alt="" coords="237,5,412,47"/>
+<area shape="rect" id="node4" href="$d0/d81/classfractal_1_1Engine.html#addf726a73831cdc0408294811ba93b34" title="fractal::Engine::MemCopy\lToHost" alt="" coords="237,71,412,112"/>
+<area shape="rect" id="node6" href="$d2/d2d/classfractal_1_1Mem.html#a4b62d6cdc99c862d4d0aeca2bd1f67d4" title="fractal::Mem::Mem" alt="" coords="259,137,391,163"/>
+<area shape="rect" id="node3" href="$d2/d2d/classfractal_1_1Mem.html#a53625eca9f0dbaf09a39d175962c6f4b" title="fractal::Mem::CopyFromHost" alt="" coords="460,13,652,39"/>
+<area shape="rect" id="node5" href="$d2/d2d/classfractal_1_1Mem.html#a5acd986b3c170d6800fa85f605466068" title="fractal::Mem::CopyToHost" alt="" coords="467,78,645,105"/>
+</map>

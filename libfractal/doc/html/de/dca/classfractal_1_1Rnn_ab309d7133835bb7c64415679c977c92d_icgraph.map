@@ -1,0 +1,5 @@
+<map id="fractal::Rnn::StreamWait" name="fractal::Rnn::StreamWait">
+<area shape="rect" id="node2" href="$d8/ddf/classfractal_1_1Optimizer.html#a38d36c5b2dd0d4d2d971d6d8a7d2631e" title="fractal::Optimizer\l::BackpropPipe2" alt="" coords="220,5,343,47"/>
+<area shape="rect" id="node3" href="$d8/ddf/classfractal_1_1Optimizer.html#a64b16b4d1cf533253a137a2bb6744b53" title="fractal::Optimizer\l::Backprop" alt="" coords="391,5,513,47"/>
+<area shape="rect" id="node4" href="$d0/dc0/classfractal_1_1AutoOptimizer.html#afd0ac1c7fc8ee5ac80fabd38fa8891c7" title="fractal::AutoOptimizer\l::Optimize" alt="" coords="561,5,711,47"/>
+</map>
