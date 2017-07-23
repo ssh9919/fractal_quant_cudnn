@@ -1,3 +1,21 @@
+@@ Important information @@
+
+The source code for Fractal library is in libfractal/src/
+
+I add comments "/* IBM check start */" for every src line that I handled for quantization and cudnn.
+
+Please use the grep command.
+
+ex) grep -nr "IBM check start"
+
+Cheers,
+
+Sungho shin
+
+
+
+@@ How to use Fractal @@
+
 1. Prerequisites
 
   - g++ 4.7 or higher
@@ -47,4 +65,5 @@
 
   - Link with -lfractal:
     $ g++ -o foo foo.o -lfractal
+
 
